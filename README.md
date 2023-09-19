@@ -12,3 +12,6 @@ These modules cover a wide range of topics, from basic syntax to advanced data s
 - [Megaphone](https://github.com/arommers/CPP_Modules/blob/master/00/ex00/README.md)
 - [My Awesome Phonebook](https://github.com/arommers/CPP_Modules/tree/master/00/ex01)
 - [The Job of Your Dreams](https://github.com/arommers/CPP_Modules/tree/master/00/ex02)
+## Sources
+- https://cplusplus.com/
+- https://www.youtube.com/watch?v=_bYFu9mBnr4&t=32398s
