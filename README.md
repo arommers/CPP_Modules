@@ -9,6 +9,6 @@ These modules cover a wide range of topics, from basic syntax to advanced data s
 - **STL Containers:** Explores the Standard Template Library (STL) and its various container classes like vectors, lists, and maps
 ## Table of contents
 ### [Module 00](https://github.com/arommers/CPP_Modules/tree/master/00)
-- [Megaphone]
-- [My Awesome Phonebook]
-- [The Job of Your Dreams]
+- [Megaphone](https://github.com/arommers/CPP_Modules/tree/master/00/ex00)
+- [My Awesome Phonebook](https://github.com/arommers/CPP_Modules/tree/master/00/ex01)
+- [The Job of Your Dreams](https://github.com/arommers/CPP_Modules/tree/master/00/ex02)
