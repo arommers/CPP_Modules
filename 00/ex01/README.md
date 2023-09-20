@@ -18,7 +18,7 @@ The program only accepts ADD, SEARCH and EXIT.
 
 I added two extra commands, ("FILL" and "PRINT") for testing convenience.
 
-Below is a digital display of our PhoneBook class.
+Below is a digital display of our PhoneBook class' output.
 ***
 <img src="https://i.imgur.com/9kAdfPZ.png" alt="ERROR" style="max-width: 50%;">
 
