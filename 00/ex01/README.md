@@ -2,15 +2,27 @@
 The goal of this project is to create a program that emulates an 80's-style phonebook.  
 This will involve two main classes: Contact and Phonebook.  
 
-Contact Class:  
+`Contact Class`:  
 - The Contact class will hold essential information such as first name, last name, and phone number.
 
-Phonebook Class:  
+`Phonebook Class`:  
 - The Phonebook class will manage a collection of contacts. It will have a maximum capacity of 8 contacts.
 
 On program start-up, the phonebook is empty and the user is prompted to enter one
 of three commands.  
 The program only accepts ADD, SEARCH and EXIT.  
+- ADD: saves a new contac in the phonebook and prompts the user to input one field at a time.
+- SEARCH: Display the saved contacts as a list of 4 columns: index, first name, last name and nickname.
+  The user will be prompted for the index of the entry they would like to be displayed.
+- EXIT: Exits the program.
+
+I added two extra commands, ("FILL" and "PRINT") for convenience during testing.
+
+Below is an example of digital display of our phonebook.
+***
+<img src="https://i.imgur.com/9kAdfPZ.png" alt="ERROR" style="max-width: 50%;">
+
+***
 
 ## Key Concepts
 #### Classes
@@ -30,6 +42,10 @@ Some important concepts associated with classes:
 - Constructor: A special member function called a constructor is used to initialize the object's attributes when it is created.
 
 - Destructor: Optionally, a destructor can be defined to perform cleanup tasks when an object goes out of scope or is destroyed.
+
+Our phonebook class:
+
+<img src="https://i.imgur.com/NH3uiMQ.png" alt="ERROR" style="max-width: 50%;">
 
 #### Encapsulation
 Encapsulation is one of the four fundamental Object-Oriented Programming (OOP) principles, (along with inheritance, polymorphism, and abstraction).
