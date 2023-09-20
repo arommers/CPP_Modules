@@ -34,5 +34,27 @@ Some important concepts associated with classes:
 #### Encapsulation
 Encapsulation is one of the four fundamental Object-Oriented Programming (OOP) principles, (along with inheritance, polymorphism, and abstraction).
 It refers to the bundling of data (attributes) and methods (functions) that operate on the data, into a single unit, which is known as a class.
+
 This access control manages access to certain parts of an object, allowing some parts to be `public` (accessible outside the class) and others to be `private` (only accessible within the class).
-We mostly deal with learning how to declare `getters` and `setters` to protect our private data and acces it in a proper manner.
+We mostly deal with learning how to declare `getters` and `setters` to protect our private data and access it in a proper manner.
+
+In object-oriented programming (OOP), public and private members are two types of class members that determine their visibility and accessibility within a class.
+
+`Public Members`:
+- Definition: Public members are accessible from outside the class. They form the interface of the class, providing a way for external code to interact with and manipulate the class's objects.
+
+- Access: Public members can be accessed by objects of the class and external code that uses those objects.
+
+- Purpose: They are typically used to define the behaviors and functionalities that the class provides to its users.
+
+An example of a class with public members:
+
+
+
+`Private Members`:
+
+- Definition: Private members are only accessible within the class in which they are declared. They are hidden from external code and provide encapsulation of the class's implementation details.
+
+- Access: They can be accessed and modified only by the methods of the same class.
+
+- Purpose: They are used to store and manage the internal state of objects, maintaining data integrity and controlling how objects are manipulated
