@@ -12,7 +12,7 @@ These modules cover a wide range of topics, from basic syntax to advanced data s
 ## Table of contents
 ### [Module 00](https://github.com/arommers/CPP_Modules/tree/master/00)
 - [Megaphone](https://github.com/arommers/CPP_Modules/blob/master/00/ex00/README.md) (*Namespaces, Standard output stream.*)
-- [My Awesome Phonebook](https://github.com/arommers/CPP_Modules/tree/master/00/ex01) (*Encapsulation, Initialization, String library,*)
+- [My Awesome Phonebook](https://github.com/arommers/CPP_Modules/tree/master/00/ex01) (*Encapsulation, Initialization, String library*)
 - [The Job of Your Dreams](https://github.com/arommers/CPP_Modules/tree/master/00/ex02) (*Static data, vectors*)
 ## Sources
 - https://cplusplus.com/
