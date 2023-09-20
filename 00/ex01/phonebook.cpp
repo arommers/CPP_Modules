@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/09/11 13:56:26 by arommers      #+#    #+#                 */
-/*   Updated: 2023/09/18 11:24:40 by arommers      ########   odam.nl         */
+/*   Updated: 2023/09/20 16:40:25 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@ PhoneBook::PhoneBook()
     std::cout << "Please use one of he following commands to operate our phonebook:" << std::endl;
     std::cout << "- ADD to add a new entry" << std::endl;
     std::cout << "- SEARCH to look for a specfic entry," << std::endl;
-    std::cout << "- FILL to fill the phonebook with random entries" << std::endl;
-    std::cout << "- PRINT to display our phonebook" << std::endl;
     std::cout << "- EXIT to exit the simulator" << std::endl;
     std::cout << std::endl;
     std::cout << "How can we be of service today?" << std::endl;
@@ -101,6 +99,7 @@ void PhoneBook::Search()
         std::cout << "Our phonebook is currently empty" << std::endl;
         return;
     }
+    PrintAll();
     while (true) 
     {
         std::cout << "Please provide the index of the entry you would like to be displayed: ";
@@ -156,29 +155,27 @@ void PhoneBook::Fill(Contact *contacts)
 
 void    PhoneBook::PrintAll()
 {
+    int         i = 0;
     std::string tmp;
 
-    if (this->_contacts[0].IsEmpty())
-    {
-        std::cout << "Our phonebook is currently empty" << std::endl;
-        return ;
-    }
-    std::cout << "---------------------------------------------" << std::endl;
-    std::cout <<"|    Index |First Name| Last Name| Nick Name|" << std::endl;
-    std::cout << "---------------------------------------------" << std::endl;
-    for (int i = 0; i < 8; i++)
+    std::cout << "------------------------------------------------------------------" << std::endl;
+    std::cout <<"|    Index |First Name| Last Name| Nick Name|  PhoneNr.|    Secret|" << std::endl;
+    std::cout << "------------------------------------------------------------------" << std::endl;
+    while (i < 8 && !this->_contacts[i].IsEmpty())
     {
         tmp.clear();
-        if (!this->_contacts[i].IsEmpty())
-        {
-            std::cout << "|" << _contacts->AddSpaces(tmp, 9) << i + 1;
-            tmp = _contacts->MakeFit(_contacts[i].GetFirstName());
-            std::cout << "|" << _contacts->AddSpaces(tmp, 10 - tmp.size());
-            tmp = _contacts->MakeFit(_contacts[i].GetLastName());
-            std::cout << "|" << _contacts->AddSpaces(tmp, 10 - tmp.size());
-            tmp = _contacts->MakeFit(_contacts[i].GetNicktName());
-            std::cout << "|" << _contacts->AddSpaces(tmp, 10 - tmp.size()) << "|" << std::endl;
-            std::cout << "---------------------------------------------" << std::endl;
-        }
+        std::cout << "|" << _contacts->AddSpaces(tmp, 9) << i + 1;
+        tmp = _contacts->MakeFit(_contacts[i].GetFirstName());
+        std::cout << "|" << _contacts->AddSpaces(tmp, 10 - tmp.size());
+        tmp = _contacts->MakeFit(_contacts[i].GetLastName());
+        std::cout << "|" << _contacts->AddSpaces(tmp, 10 - tmp.size());
+        tmp = _contacts->MakeFit(_contacts[i].GetNicktName());
+        std::cout << "|" << _contacts->AddSpaces(tmp, 10 - tmp.size());
+        tmp = _contacts->MakeFit(_contacts[i].GetPhoneNr());
+        std::cout << "|" << _contacts->AddSpaces(tmp, 10 - tmp.size());
+        tmp = _contacts->MakeFit(_contacts[i].GetSecret());
+        std::cout << "|" << _contacts->AddSpaces(tmp, 10 - tmp.size()) << "|" << std::endl;
+        std::cout << "------------------------------------------------------------------" << std::endl;
+        i++;
     }
 }
