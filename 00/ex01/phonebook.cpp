@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/09/11 13:56:26 by arommers      #+#    #+#                 */
-/*   Updated: 2023/09/20 16:40:25 by arommers      ########   odam.nl         */
+/*   Updated: 2023/09/20 22:19:37 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -158,9 +158,9 @@ void    PhoneBook::PrintAll()
     int         i = 0;
     std::string tmp;
 
-    std::cout << "------------------------------------------------------------------" << std::endl;
-    std::cout <<"|    Index |First Name| Last Name| Nick Name|  PhoneNr.|    Secret|" << std::endl;
-    std::cout << "------------------------------------------------------------------" << std::endl;
+    std::cout << "---------------------------------------------" << std::endl;
+    std::cout <<"|    Index |First Name| Last Name| Nick Name|" << std::endl;
+    std::cout << "---------------------------------------------" << std::endl;
     while (i < 8 && !this->_contacts[i].IsEmpty())
     {
         tmp.clear();
@@ -170,12 +170,12 @@ void    PhoneBook::PrintAll()
         tmp = _contacts->MakeFit(_contacts[i].GetLastName());
         std::cout << "|" << _contacts->AddSpaces(tmp, 10 - tmp.size());
         tmp = _contacts->MakeFit(_contacts[i].GetNicktName());
-        std::cout << "|" << _contacts->AddSpaces(tmp, 10 - tmp.size());
-        tmp = _contacts->MakeFit(_contacts[i].GetPhoneNr());
-        std::cout << "|" << _contacts->AddSpaces(tmp, 10 - tmp.size());
-        tmp = _contacts->MakeFit(_contacts[i].GetSecret());
+        // std::cout << "|" << _contacts->AddSpaces(tmp, 10 - tmp.size());
+        // tmp = _contacts->MakeFit(_contacts[i].GetPhoneNr());
+        // std::cout << "|" << _contacts->AddSpaces(tmp, 10 - tmp.size());
+        // tmp = _contacts->MakeFit(_contacts[i].GetSecret());
         std::cout << "|" << _contacts->AddSpaces(tmp, 10 - tmp.size()) << "|" << std::endl;
-        std::cout << "------------------------------------------------------------------" << std::endl;
+        std::cout << "---------------------------------------------" << std::endl;
         i++;
     }
 }
