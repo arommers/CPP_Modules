@@ -49,6 +49,8 @@ In object-oriented programming (OOP), public and private members are two types o
 
 An example of a class with public members:
 
+<img src="https://i.imgur.com/D945vHm.png" alt="ERROR" style="max-width: 50%;">
+
 
 
 `Private Members`:
@@ -58,3 +60,7 @@ An example of a class with public members:
 - Access: They can be accessed and modified only by the methods of the same class.
 
 - Purpose: They are used to store and manage the internal state of objects, maintaining data integrity and controlling how objects are manipulated
+
+An example of a class with public and private members:
+
+<img src="https://i.imgur.com/jUBFDDX.png" alt="ERROR" style="max-width: 50%;">
