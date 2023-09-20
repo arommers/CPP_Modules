@@ -11,9 +11,9 @@ This will involve two main classes: Contact and Phonebook.
 On program start-up, the phonebook is empty and the user is prompted to enter one
 of three commands.  
 The program only accepts ADD, SEARCH and EXIT.  
-- ADD: saves a new contac in the phonebook and prompts the user to input one field at a time.
+- ADD: saves a new contact in the phonebook and prompts the user to input one field at a time.
 - SEARCH: Display the saved contacts as a list of 4 columns: index, first name, last name and nickname.
-  The user will be prompted for the index of the entry they would like to be displayed.
+  The user will be prompted for the index of the entry that they would like to be displayed.
 - EXIT: Exits the program.
 
 I added two extra commands, ("FILL" and "PRINT") for convenience during testing.
