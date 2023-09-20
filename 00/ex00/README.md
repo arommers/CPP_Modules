@@ -4,7 +4,7 @@ The purpose of this assignment is to write a program that would take any number 
 ![ERROR](https://i.imgur.com/XmbVgb2.png)
 
 Meaning that the program is basically a glorified "[toupper](https://cplusplus.com/reference/cctype/toupper/?kw=toupper)" function.
-## Important concepts
+## Key concepts
 This project is my  introduction and limits the amount of C++'ness to a minimum.
 It focuses on namespaces, the use of the scope resolution operator and the standard output stream.
 
