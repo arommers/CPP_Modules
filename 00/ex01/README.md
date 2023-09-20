@@ -27,15 +27,17 @@ Below is a digital display of our PhoneBook class.
 ## Key Concepts
 #### Classes
 A class is a user-defined data type that serves as a blueprint for creating objects and usually is a digital representation of a real life concept.
-In our case for example, a person in a phonebook. Classes combine data (attributes) and operations (methods/functions) that can be performed on that data.
+In our case for example, a person entry in a phonebook. Classes combine variables/data (attributes) and operations (methods/functions) that can be performed on that data.
 Some important concepts associated with classes:
-- Members: A class contains members, which can be data members (attributes) or function members (methods).
+- Members: A class contains members, which can be variables/data members (attributes) or function members (methods).
 
 - Attributes: Data members (variables) represent the properties or characteristics of objects created from the class.
+  A string representing a first name for example.
 
-- Methods: Function members (functions) define the behavior or operations that can be performed on objects of the class.
+- Methods: Function members (functions) define the behavior or operations that can be performed on objects of the class. 
 
-- Encapsulation: Classes support the principle of encapsulation, allowing you to control access to the internal data and methods of an object. We will touch on that a bit further later on.
+- Encapsulation: Classes support the principle of encapsulation, allowing you to control access to the internal data and methods of an object.
+  This revolves around the concept of public versus private members and how they are utilized. We will touch on that a bit further later on.
 
 - Object: An object is an instance of a class, created based on the blueprint defined by the class.
 
