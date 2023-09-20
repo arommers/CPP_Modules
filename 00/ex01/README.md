@@ -1,4 +1,4 @@
-## My Awesome Phonebook
+# My Awesome Phonebook
 The goal of this project is to create a program that emulates an 80's-style phonebook.  
 This will involve two main classes: Contact and Phonebook.  
 
@@ -12,5 +12,5 @@ On program start-up, the phonebook is empty and the user is prompted to enter on
 of three commands.  
 The program only accepts ADD, SEARCH and EXIT.  
 
-### Key Concepts
+## Key Concepts
 - 
