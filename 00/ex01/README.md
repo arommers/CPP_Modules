@@ -1,12 +1,12 @@
 # My Awesome Phonebook
-The goal of this project is to create a program that emulates an 80's-style phonebook.  
-This will involve two main classes: Contact and Phonebook.  
+A project where we create a program that emulates an 80's-style "crappy" phonebook.  
+The program will use two main classes: Contact and Phonebook to realize our little 80's gem..  
 
 `Contact Class`:  
-- The Contact class will hold essential information such as first name, last name, and phone number.
+- The Contact class will hold essential information about our entries such as first name, last name, phone number etc.
 
 `Phonebook Class`:  
-- The Phonebook class will manage a collection of contacts. It will have a maximum capacity of 8 contacts.
+- The Phonebook class will manage our collection of contacts. It will have a maximum capacity of 8 contacts.
 
 On program start-up, the phonebook is empty and the user is prompted to enter one
 of three commands.  
@@ -16,9 +16,9 @@ The program only accepts ADD, SEARCH and EXIT.
   The user will be prompted for the index of the entry that they would like to be displayed.
 - EXIT: Exits the program.
 
-I added two extra commands, ("FILL" and "PRINT") for convenience during testing.
+I added two extra commands, ("FILL" and "PRINT") for testing convenience.
 
-Below is an example of digital display of our phonebook.
+Below is a digital display of our PhoneBook class.
 ***
 <img src="https://i.imgur.com/9kAdfPZ.png" alt="ERROR" style="max-width: 50%;">
 
