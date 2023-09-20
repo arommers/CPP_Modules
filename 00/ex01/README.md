@@ -40,6 +40,7 @@ Some important concepts associated with classes:
   This revolves around the concept of public versus private members and how they are utilized. We will touch on that a bit further later on.
 
 - Object: An object is an instance of a class, created based on the blueprint defined by the class.
+  In this program we create one instance of our phonebook class and an instanc of our contact class every time a new one gets added.
 
 - Constructor: A special member function called a constructor is used to initialize the object's attributes when it is created.
 
@@ -51,12 +52,12 @@ Our phonebook class:
 
 #### Encapsulation
 Encapsulation is one of the four fundamental Object-Oriented Programming (OOP) principles, (along with inheritance, polymorphism, and abstraction).
-It refers to the bundling of data (attributes) and methods (functions) that operate on the data, into a single unit, which is known as a class.
+It refers to the bundling of data/variables (attributes) and methods (functions) that operate on the data, into a single unit, which is known as a class.
 
-This access control manages access to certain parts of an object, allowing some parts to be `public` (accessible outside the class) and others to be `private` (only accessible within the class).
-We mostly deal with learning how to declare `getters` and `setters` to protect our private data and access it in a proper manner.
+This manages access control to certain parts of an object, allowing some parts to be `public` (accessible outside the class) and others to be `private` (only accessible within the class).
+With our current classes we mostly deal with learning how to declare `getters` and `setters` to protect our private data and access it in a proper manner.
 
-In object-oriented programming (OOP), public and private members are two types of class members that determine their visibility and accessibility within a class.
+In object-oriented programming (OOP), public and private members are two types of class members that determine the visibility and accessibility within a class.
 
 `Public Members`:
 - Definition: Public members are accessible from outside the class. They form the interface of the class, providing a way for external code to interact with and manipulate the class's objects.
@@ -75,7 +76,7 @@ An example of a class with public members:
 
 - Definition: Private members are only accessible within the class in which they are declared. They are hidden from external code and provide encapsulation of the class's implementation details.
 
-- Access: They can be accessed and modified only by the methods of the same class.
+- Access: They can be accessed and modified only by the methods of the same class (an example would be getters and setters).
 
 - Purpose: They are used to store and manage the internal state of objects, maintaining data integrity and controlling how objects are manipulated
 
