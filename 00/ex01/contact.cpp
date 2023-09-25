@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/09/11 14:15:47 by arommers      #+#    #+#                 */
-/*   Updated: 2023/09/20 16:40:32 by arommers      ########   odam.nl         */
+/*   Updated: 2023/09/20 22:20:36 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -134,9 +134,9 @@ void    Contact::Print()
 {
     std::string tmp;
     
-    std::cout << "------------------------------------------------------------------" << std::endl;
+    std::cout << "-------------------------------------------------------------------" << std::endl;
     std::cout <<"|    Index |First Name| Last Name| Nick Name|  PhoneNr.|    Secret|" << std::endl;
-    std::cout << "------------------------------------------------------------------" << std::endl;
+    std::cout << "-------------------------------------------------------------------" << std::endl;
     std::cout << "|" << AddSpaces(tmp, 9) << this->GetIndex() + 1;
     tmp = MakeFit(this->GetFirstName());
     std::cout << "|" << AddSpaces(tmp, 10 - tmp.size());
@@ -148,5 +148,5 @@ void    Contact::Print()
     std::cout << "|" << AddSpaces(tmp, 10 - tmp.size());
     tmp = MakeFit(this->GetSecret());
     std::cout << "|" << AddSpaces(tmp, 10 - tmp.size()) << "|" << std::endl;
-    std::cout << "------------------------------------------------------------------" << std::endl;
+    std::cout << "-------------------------------------------------------------------" << std::endl;
 }

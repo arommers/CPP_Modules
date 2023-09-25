@@ -1,0 +1,32 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    Makefile                                           :+:    :+:             #
+#                                                      +:+                     #
+#    By: adri <adri@student.codam.nl>                 +#+                      #
+#                                                    +#+                       #
+#    Created: 2023/09/23 19:38:37 by adri          #+#    #+#                  #
+#    Updated: 2023/09/23 19:43:28 by adri          ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+NAME	= violence
+CC		= g++
+FLAGS	= -Wall -Werror -Wextra
+SRC		= ./main.cpp ./Weapon.cpp ./HumanA.cpp ./HumanB.cpp
+OBJ		= $(SRC:.cpp=.o)
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	@$(CC) $(FLAGS) $(OBJ) -o $(NAME)
+
+clean:
+	@rm -f $(OBJ)
+
+fclean: clean
+	@rm -rf $(NAME)
+
+re: fclean all
+
+.PHONY: all clean fclean re
