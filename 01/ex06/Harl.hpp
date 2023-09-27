@@ -3,10 +3,10 @@
 /*                                                        ::::::::            */
 /*   Harl.hpp                                           :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: adri <adri@student.codam.nl>                 +#+                     */
+/*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2023/09/26 21:47:08 by adri          #+#    #+#                 */
-/*   Updated: 2023/09/27 10:21:40 by arommers      ########   odam.nl         */
+/*   Created: 2023/09/27 10:25:38 by arommers      #+#    #+#                 */
+/*   Updated: 2023/09/27 10:45:53 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,10 @@ class Harl
     public:
         Harl();
         ~Harl();
-        void    complain(std::string level);
+        void    complain(std::string level) const;
 };
+
+bool checkLevel(std::string level);
 
 // colors
 

@@ -3,17 +3,17 @@
 #                                                         ::::::::             #
 #    Makefile                                           :+:    :+:             #
 #                                                      +:+                     #
-#    By: adri <adri@student.codam.nl>                 +#+                      #
+#    By: arommers <arommers@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
-#    Created: 2023/09/24 14:10:34 by adri          #+#    #+#                  #
-#    Updated: 2023/09/27 10:23:03 by arommers      ########   odam.nl          #
+#    Created: 2023/09/27 10:23:53 by arommers      #+#    #+#                  #
+#    Updated: 2023/09/27 10:26:28 by arommers      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= sed
+NAME	= harlfilter
 CC		= g++
-FLAGS	= -Wall -Werror -Wextra -std=c++98
-SRC		= ./main.cpp ./sed.cpp
+FLAGS	= -Wall -Wextra -Werror -std=c++98
+SRC		= ./main.cpp ./Harl.cpp
 OBJ		= $(SRC:.cpp=.o)
 
 all: $(NAME)
@@ -26,7 +26,7 @@ clean:
 
 fclean: clean
 	rm -rf $(NAME)
-	
+
 re: fclean all
 
 .PHONY: all clean fclean re
