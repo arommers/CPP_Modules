@@ -6,7 +6,7 @@
 /*   By: adri <adri@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/09/26 21:55:18 by adri          #+#    #+#                 */
-/*   Updated: 2023/09/26 23:32:23 by adri          ########   odam.nl         */
+/*   Updated: 2023/09/27 11:07:34 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,11 @@ void    Harl::error()
     std::cout << RED "[ERROR]" RESET << std::endl;
     std::cout << "This is unacceptable! I want to speak to the manager now." << std::endl;
 }
+
+// Function to choose and call a complaint based on input level.
+// Defines an array of pointers to complain functions and an array of complaint levels.
+// It then iterates through the complain levels and if it matches
+// it calls the appropriate complain function using a pointer from complainPtr array.
 
 void    Harl::complain(std::string level)
 {

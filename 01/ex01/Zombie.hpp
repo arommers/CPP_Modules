@@ -6,7 +6,7 @@
 /*   By: adri <adri@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/09/21 10:24:34 by adri          #+#    #+#                 */
-/*   Updated: 2023/09/23 11:03:30 by adri          ########   odam.nl         */
+/*   Updated: 2023/09/27 11:33:36 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,11 @@ class Zombie
     
     public:
         Zombie();
-        Zombie(std::string name);
+        // Zombie(std::string name);
         ~Zombie();
         
         void    announce();
-        void    setName(std::string name, int index);   
+        void    setName(std::string name);   
 };
 
 Zombie* zombieHorde(int N, std::string name);

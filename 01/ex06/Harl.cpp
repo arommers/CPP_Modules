@@ -6,11 +6,13 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/09/27 10:25:32 by arommers      #+#    #+#                 */
-/*   Updated: 2023/09/27 10:45:58 by arommers      ########   odam.nl         */
+/*   Updated: 2023/09/27 10:58:26 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.hpp"
+
+// Constructor
 
 Harl::Harl()
 {
@@ -18,11 +20,16 @@ Harl::Harl()
     std::cout << std::endl;
 }
 
+//Deconstructor
+
 Harl::~Harl()
 {
     std::cout << std::endl;
     std::cout << "Bye Harl! Don't let the door hit your behind on your way out ~~~" << std::endl;
 }
+
+// Function to complain based on a given level
+// Uses a switch statement based on the first character of the input 'level'
 
 void    Harl::complain(std::string level) const
 {
@@ -46,6 +53,8 @@ void    Harl::complain(std::string level) const
             break ;
     }
 }
+
+// Function to check if a given level is valid
 
 bool checkLevel(std::string level)
 {
