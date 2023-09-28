@@ -6,7 +6,7 @@
 #    By: arommers <arommers@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/09/28 15:42:31 by arommers      #+#    #+#                  #
-#    Updated: 2023/09/28 15:48:21 by arommers      ########   odam.nl          #
+#    Updated: 2023/09/28 21:51:04 by adri          ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,13 +19,13 @@ OBJ			= $(SRC:.cpp=.o)
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(CPPFLAGS) $(OBJ) -o $(NAME)
+	@$(CC) $(CPPFLAGS) $(OBJ) -o $(NAME)
 
 clean:
-	rm -f $(OBJ)
+	@rm -f $(OBJ)
 
 fclean: clean
-	rm -rf$(NAME)
+	@rm -rf $(NAME)
 
 re: fclean all
 

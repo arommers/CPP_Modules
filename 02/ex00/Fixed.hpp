@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/09/28 15:42:52 by arommers      #+#    #+#                 */
-/*   Updated: 2023/09/28 15:57:37 by arommers      ########   odam.nl         */
+/*   Updated: 2023/09/28 21:46:45 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,23 +15,31 @@
 
 #include <iostream>
 
-class Fixed
+class Fixed 
 {
     private:
-        int                 _value;
-        const static int    _fracBits;
+        int _value;
+        static const int _fracBits = 8;
+
     public:
-        Fixed(int value);
+        // Default constructor
+        Fixed();
+
+        // Copy constructor
         Fixed(const Fixed& other);
-        Fixed&  operator=(const Fixed& rhs)
-        {
-            if (this == &rhs)
-                return (*this);
-            _value = rhs._value;
-            return (*this);
-            
-        }
+
+        // Copy assignment operator overload
+        Fixed& operator=(const Fixed& other);
+
+        // Destructor
         ~Fixed();
+
+        // Member function to get the raw bits
+        int getRawBits() const;
+
+        // Member function to set the raw bits
+        void setRawBits(int const raw);
 };
+
 
 #endif 
