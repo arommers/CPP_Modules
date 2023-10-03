@@ -1,48 +1,53 @@
-#include <iostream>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        ::::::::            */
+/*   main.cpp                                           :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: adri <adri@student.codam.nl>                 +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2023/10/02 22:27:49 by adri          #+#    #+#                 */
+/*   Updated: 2023/10/03 11:12:18 by adri          ########   odam.nl         */
+/*                                                                            */
+/* ************************************************************************** */
 
-using namespace std;
-
-class MenuItem
-{
-    public:
-        string  name;
-        double  calories;
-
-        void print()
-        {
-            cout << name << " [" << calories << " cal]" << endl;
-        }
-};
-
-class Drink: public MenuItem
-{
-    public:
-        double  ounces;
-
-        double  cal_per_ounce()
-        {
-            return (calories / ounces);
-        }
-};
-
+#include "ClapTrap.hpp"
 
 int main()
 {
-    MenuItem FrenchFries;
+    ClapTrap    claptrap("claptrap");
 
-    FrenchFries.name = "French Fries";
-    FrenchFries.calories = 400;
+    // Claptrap uses member functions
 
-    FrenchFries.print();
+    std::cout << std::endl;
+    claptrap.attack("training dummy");
+    claptrap.beRepaired(1);
+    claptrap.takeDamage(4);
+    std::cout <<std::endl;
+    std::cout << claptrap.getName() << "'s current energy is: "<< claptrap.getEnergy() << std::endl;
+    std::cout << claptrap.getName() << "'s current hitpoints are: " << claptrap.getHitpoints()<< std::endl;
+    std::cout <<std::endl;
 
-    Drink hot_choc;
+    //Claptrap repairs itself
+    claptrap.beRepaired(4);
+    std::cout << claptrap.getName() << "'s current hitpoints are: " << claptrap.getHitpoints()<< std::endl;
+    std::cout << std::endl;
 
-    hot_choc.name = "hot choc";
-    hot_choc.calories = 300;
-    hot_choc.ounces = 8;
 
-    hot_choc.print();
-    cout << "cal/ounce: " << hot_choc.cal_per_ounce() << endl; 
+    // // Claptrap tries to attack with 0 energy point
+    std::cout << RED << "Ow no! claptrap is suffering a bout of depression and all his energy has depleted!" << RESET << std::endl;
+    claptrap.setEnergy(0);
+    std::cout << claptrap.getName() << "'s current energy is: "<< claptrap.getEnergy() << std::endl;
+    claptrap.attack("training dummy");
+    std::cout <<std::endl;
+
+    // // Claptrap tries to repair with 0 energy points
+    claptrap.beRepaired(2);
+    std::cout <<std::endl;
     
-    return (1);
+    // Claptrap dies
+    claptrap.takeDamage(3147483647);
+    std::cout << claptrap.getName() << "'s current hitpoints are: " << claptrap.getHitpoints()<< std::endl;
+    std::cout <<std::endl;
+
+    return (0);
 }
