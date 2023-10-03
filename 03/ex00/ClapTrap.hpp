@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/02 15:00:21 by arommers      #+#    #+#                 */
-/*   Updated: 2023/10/03 11:02:42 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/03 16:36:28 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@
 #define RED "\x1b[31m"
 #define GREEN "\x1b[32m"
 #define CYAN "\x1b[36m"
+#define YELLOW "\x1b[33m"
+#define ORANGE "\033[38;2;255;165;0m"
 #define RESET "\x1b[0m"
 
 class ClapTrap

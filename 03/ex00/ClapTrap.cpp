@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/02 15:11:14 by arommers      #+#    #+#                 */
-/*   Updated: 2023/10/03 11:11:58 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/03 16:48:40 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,13 @@ void    ClapTrap::setHitpoints(int amount)
 // Member functions
 void    ClapTrap::attack(const std::string& target)
 {
-    if (this->getEnergy() == 0)
+    if (this->getHitpoints() == 0)
+    {
+        std::cout <<  YELLOW << "We ask " << this->_name;
+        std::cout << " to attack, but he doesn't react T_T" << RESET << std::endl;
+        return ;
+    }
+    else if (this->getEnergy() == 0)
     {
         std::cout << CYAN << this->_name;
         std::cout << " tries to attack, but doesn't have the energy to attack" << RESET << std::endl;
@@ -87,13 +93,19 @@ void    ClapTrap::takeDamage(unsigned int amount)
     if (this->_HitPoints <= 0 || amount >= static_cast<unsigned int>(2147483647 - this->_HitPoints))
     {
         this->_HitPoints = 0;
-        std::cout << this->_name << " fainted!" << std::endl;
+        std::cout << this->_name << " is mucho dead" << std::endl;
     }
 }
 
 void    ClapTrap::beRepaired(unsigned int amount)
 {
-    if (this->getEnergy() == 0)
+    if (this->getHitpoints() == 0)
+    {
+        std::cout <<  YELLOW << "We ask " << this->_name;
+        std::cout << " to repair, but he doesn't react T_T" << RESET << std::endl;
+        return ;
+    }
+    else if (this->getEnergy() == 0)
     {
         std::cout <<  GREEN << this->_name;
         std::cout << " tries to repair, but doesn't have enough energy to repair" << RESET << std::endl;
