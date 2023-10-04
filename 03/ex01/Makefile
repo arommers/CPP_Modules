@@ -6,13 +6,13 @@
 #    By: adri <adri@student.codam.nl>                 +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/10/02 22:34:54 by adri          #+#    #+#                  #
-#    Updated: 2023/10/03 20:44:55 by adri          ########   odam.nl          #
+#    Updated: 2023/10/04 15:29:56 by arommers      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= claptrap
+NAME		= mortal_kombat
 CC			= g++
-CPPFLAGS	= -Wall -Werror -Wextra -std=c++98
+CPPFLAGS	= -Wall -Werror -Wextra
 SRC			= ./main.cpp ./ClapTrap.cpp ./ScavTrap.cpp
 OBJ			= $(SRC:.cpp=.o)
 

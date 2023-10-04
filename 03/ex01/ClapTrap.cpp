@@ -6,30 +6,45 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/02 15:11:14 by arommers      #+#    #+#                 */
-/*   Updated: 2023/10/03 21:40:20 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/04 15:18:52 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap(): _name("default"), _HitPoints(100), _Energy(50), _AttackDamage(20)
+ClapTrap::ClapTrap():
+    _name("default"),
+    _HitPoints(10),
+    _Energy(10),
+    _AttackDamage(0),
+    _MaxHP(10)
 {
-    std::cout << "Custom constructor called" << std::endl;
+    std::cout << "Base Default constructor called" << std::endl;
 }
 
-ClapTrap::ClapTrap(std::string name): _name(name), _HitPoints(100), _Energy(50), _AttackDamage(20)
+ClapTrap::ClapTrap(std::string name):
+    _name(name),
+    _HitPoints(10),
+    _Energy(10),
+    _AttackDamage(0),
+    _MaxHP(10)
 {
-    std::cout << "A ClapTrap named: " << name <<" has been constructed" << std::endl;
+    std::cout << "Base custom constructor called" << std::endl;
 }
 
-ClapTrap::ClapTrap(const ClapTrap& copy): _name(copy._name),_HitPoints(copy._HitPoints), _Energy(copy._Energy), _AttackDamage(copy._AttackDamage)
+ClapTrap::ClapTrap(const ClapTrap& original):
+    _name(original._name),
+    _HitPoints(original._HitPoints),
+    _Energy(original._Energy),
+    _AttackDamage(original._AttackDamage),
+    _MaxHP(original._MaxHP)
 {
     std::cout << "Copy constructor called" << std::endl;
 }
 
 ClapTrap::~ClapTrap()
 {
-    std::cout << "A ClapTrap named: " << this->_name <<" has been destructed" << std::endl;
+    std::cout << "Base destructor called" << std::endl;
 }
 
 // Assignment overload operator
@@ -43,6 +58,7 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& rhs)
         this->_HitPoints = rhs._HitPoints;
         this->_Energy = rhs._Energy;
         this->_AttackDamage = rhs._AttackDamage;
+        this->_MaxHP = rhs._MaxHP;
     }
     return (*this);
 }
@@ -62,6 +78,12 @@ int  ClapTrap::getAttackDamage()
 int  ClapTrap::getHitpoints()
 {
     return (this->_HitPoints);
+}
+
+
+int ClapTrap::getMaxHP()
+{
+    return (this->_MaxHP);
 }
 
 int  ClapTrap::getEnergy()
@@ -85,6 +107,17 @@ void    ClapTrap::setHitpoints(int amount)
 {
     this->_HitPoints = amount;
 }
+
+void    ClapTrap::setMaxHP(int amount)
+{
+    this->_MaxHP = amount;
+}
+
+void    ClapTrap::setName(std::string name)
+{
+    this->_name = name;
+}
+
 
 // Member functions
 void    ClapTrap::attack(const std::string& target)
@@ -133,7 +166,7 @@ void    ClapTrap::beRepaired(unsigned int amount)
         std::cout << " tries to repair, but doesn't have enough energy to repair" << RESET << std::endl;
         return ;
     }
-    if (this->getHitpoints() == 10)
+    if (this->getHitpoints() >= this->_MaxHP)
     {
         std::cout << GREEN << this->_name;
         std::cout << " tries to repair, but is already at full health!" << RESET << std::endl;
@@ -143,8 +176,8 @@ void    ClapTrap::beRepaired(unsigned int amount)
     std::cout << " repairs itself for: " << amount;
     std::cout << " points of health" << RESET << std::endl;
     this->_HitPoints += amount;
-    if (this->_HitPoints > 10)
-        this->setHitpoints(10);
+    if (this->_HitPoints > this->_MaxHP)
+        this->setHitpoints(this->_MaxHP);
     this->_Energy--;
 }
 

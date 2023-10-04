@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/02 15:00:21 by arommers      #+#    #+#                 */
-/*   Updated: 2023/10/03 21:29:41 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/04 15:15:32 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 # define CLAPTRAP_HPP
 
 #include <iostream>
-#include <climits>
+#include <thread>
+#include <chrono>
 
 #define RED "\x1b[31m"
 #define GREEN "\x1b[32m"
@@ -25,11 +26,12 @@
 
 class ClapTrap
 {
-    private:
+    protected:
         std::string _name;
         int         _HitPoints;
         int         _Energy;
         int         _AttackDamage;
+        int         _MaxHP;
     public:
         ClapTrap();
         ClapTrap(std::string name);
@@ -40,11 +42,14 @@ class ClapTrap
         int             getHitpoints();
         int             getEnergy();
         int             getAttackDamage();
+        int             getMaxHP();;
         std::string     getName();
         
         void            setHitpoints(int amount);
         void            setEnergy(int amount);
         void            setAttackDamage(int amount);
+        void            setMaxHP(int amount);
+        void            setName(std::string name);
         
         void            attack(const std::string& target);
         void            takeDamage(unsigned int amount);
