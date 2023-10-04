@@ -6,7 +6,7 @@
 /*   By: adri <adri@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 20:45:12 by adri          #+#    #+#                 */
-/*   Updated: 2023/10/04 15:19:10 by arommers      ########   odam.nl         */
+/*   Updated: 2023/10/04 15:51:06 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,10 +56,28 @@ ScavTrap::~ScavTrap()
     std::cout << "Derived destructor called" << std::endl;
 }
 
+void    ScavTrap::attack(const std::string& target)
+{
+    if (this->getHitpoints() == 0)
+    {
+        std::cout <<  YELLOW << "We ask " << this->_name;
+        std::cout << " to attack, but he doesn't react T_T" << RESET << std::endl;
+        return ;
+    }
+    else if (this->getEnergy() == 0)
+    {
+        std::cout << CYAN << this->_name;
+        std::cout << " tries to attack, but doesn't have enough energy to attack" << RESET << std::endl;
+        return ;
+    }
+    std::cout <<  ORANGE << this->_name << " summons the fury of a thousand suns and blasts " << target << " for: ";
+    std::cout << this->getAttackDamage() << " damage" << RESET << std::endl;
+    this->_Energy--;
+}
+
 void    ScavTrap::guardGate()
 {
-    std::cout << "A ScavTrap named: " << this->getName();
-    std::cout << " is now in gate keeper mode." << std::endl;
+    std::cout << ORANGE << this->getName() << " enters gate keeper mode." << RESET << std::endl;
     this->_GuardMode = true;
 }
 

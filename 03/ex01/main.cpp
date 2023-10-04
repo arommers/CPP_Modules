@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/04 11:38:34 by arommers      #+#    #+#                 */
-/*   Updated: 2023/10/04 15:31:51 by arommers      ########   odam.nl         */
+/*   Updated: 2023/10/04 15:51:39 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,14 +23,14 @@ int main()
     std::cout << "- " << claptrap.getHitpoints() << " hit points," << std::endl;
     std::cout << "- " << claptrap.getEnergy() << " energy points," << std::endl;
     std::cout << "- " << claptrap.getAttackDamage() << " attack points. " << std::endl;
-    std::cout << "A murder crazed robot called: " << claptrap.getName() << "!!!!" << std::endl;
+    std::cout << "A murder crazed robot called: " << CYAN << "[ " << claptrap.getName() << " ] !!!!"<< RESET << std::endl;
     std::this_thread::sleep_for(std::chrono::seconds(3));
     std::cout << std::endl;
     std::cout << "In the opposite corner, fueled by: " << std::endl;
     std::cout << "- " << scavtrap.getHitpoints() << " hit points," << std::endl;
     std::cout << "- " << scavtrap.getEnergy() << " energy points," << std::endl;
     std::cout << "- " << scavtrap.getAttackDamage() << " attack points. " << std::endl;
-    std::cout << " and nothing but violent rage: " << scavtrap.getName() << "!!!!" << std::endl;
+    std::cout << " and nothing but violent rage: " << ORANGE << "[ " << scavtrap.getName() << " ] !!!!" << RESET << std::endl;
     std::this_thread::sleep_for(std::chrono::seconds(3));
     std::cout << std::endl;
     std::cout << "Ladies and gentleman.... It's time to get ready for: " << std::endl;
@@ -67,10 +67,9 @@ int main()
     std::cout <<std::endl;
     std::this_thread::sleep_for(std::chrono::seconds(1));
     
-    // Claptrap dies
-    std::cout << ORANGE << scavtrap.getName() << " retaliates and attacks " << claptrap.getName();
-    std::cout << " critically hitting him for: 3147483647 damage!!!" << RESET << std::endl;
-    claptrap.takeDamage(3147483647);
+    // ScavTrap attacks and Claptrap dies
+    scavtrap.attack(claptrap.getName());
+    claptrap.takeDamage(scavtrap.getAttackDamage());
     std::cout << claptrap.getName() << "'s current hitpoints are: " << claptrap.getHitpoints()<< std::endl;
     std::cout << std::endl;
     std::this_thread::sleep_for(std::chrono::seconds(1));
@@ -82,8 +81,8 @@ int main()
     std::this_thread::sleep_for(std::chrono::seconds(1));
 
     // Scavtrap struts in victory
-    std::cout << "Scavtrap looms over the limp body of " << claptrap.getName() << ". " << std::endl;
-    std::cout << "Standing victorious, with nothing to fear ";
+    std::cout << ORANGE << "Scavtrap looms over the limp body of " << claptrap.getName() << ". " << std::endl;
+    std::cout << "Standing victorious, with nothing to fear, " << RESET;
     scavtrap.guardGate();
     std::cout << std::endl;
 

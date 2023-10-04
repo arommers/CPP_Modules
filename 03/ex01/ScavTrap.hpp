@@ -6,7 +6,7 @@
 /*   By: adri <adri@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 20:45:30 by adri          #+#    #+#                 */
-/*   Updated: 2023/10/04 15:12:50 by arommers      ########   odam.nl         */
+/*   Updated: 2023/10/04 15:38:35 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ class ScavTrap: public ClapTrap
         ~ScavTrap();
 
         void    guardGate();
+        void    attack(const std::string& name);
 };
 
 #endif

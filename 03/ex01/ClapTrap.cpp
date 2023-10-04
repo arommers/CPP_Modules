@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/02 15:11:14 by arommers      #+#    #+#                 */
-/*   Updated: 2023/10/04 15:18:52 by arommers      ########   odam.nl         */
+/*   Updated: 2023/10/04 15:36:31 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -135,7 +135,7 @@ void    ClapTrap::attack(const std::string& target)
         return ;
     }
     std::cout <<  CYAN << this->_name;
-    std::cout << " attacks " << target << " for: ";
+    std::cout << " attacks " << target << " with a wet noodle for: ";
     std::cout << this->getAttackDamage() << " damage" << RESET << std::endl;
     this->_Energy--;
 }
