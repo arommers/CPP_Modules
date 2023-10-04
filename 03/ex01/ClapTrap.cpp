@@ -6,32 +6,25 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/02 15:11:14 by arommers      #+#    #+#                 */
-/*   Updated: 2023/10/03 21:32:46 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/03 21:40:20 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap(): _name("default"), _HitPoints(10), _Energy(10), _AttackDamage(0)
+ClapTrap::ClapTrap(): _name("default"), _HitPoints(100), _Energy(50), _AttackDamage(20)
 {
     std::cout << "Custom constructor called" << std::endl;
 }
 
-ClapTrap::ClapTrap(std::string name) : _name(name)
+ClapTrap::ClapTrap(std::string name): _name(name), _HitPoints(100), _Energy(50), _AttackDamage(20)
 {
     std::cout << "A ClapTrap named: " << name <<" has been constructed" << std::endl;
-    this->_AttackDamage = 0;
-    this->_HitPoints = 10;
-    this->_Energy = 10;
 }
 
-ClapTrap::ClapTrap(const ClapTrap& copy)
+ClapTrap::ClapTrap(const ClapTrap& copy): _name(copy._name),_HitPoints(copy._HitPoints), _Energy(copy._Energy), _AttackDamage(copy._AttackDamage)
 {
     std::cout << "Copy constructor called" << std::endl;
-    this->_name = copy._name;
-    this->_HitPoints = copy._HitPoints;
-    this->_Energy = copy._Energy;
-    this->_AttackDamage = copy._AttackDamage;
 }
 
 ClapTrap::~ClapTrap()
@@ -109,7 +102,7 @@ void    ClapTrap::attack(const std::string& target)
         return ;
     }
     std::cout <<  CYAN << this->_name;
-    std::cout << " slaps " << target << " with a wet noodle for: ";
+    std::cout << " attacks " << target << " for: ";
     std::cout << this->getAttackDamage() << " damage" << RESET << std::endl;
     this->_Energy--;
 }
