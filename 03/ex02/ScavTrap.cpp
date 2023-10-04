@@ -6,7 +6,7 @@
 /*   By: adri <adri@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 20:45:12 by adri          #+#    #+#                 */
-/*   Updated: 2023/10/04 22:11:29 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/04 22:19:48 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ ScavTrap::ScavTrap(): ClapTrap()
     this->_AttackDamage = 20;
     this->_MaxHP = 100;
     _GuardMode = false;
-    std::cout << "Derived Default constructor called" << std::endl;
+    std::cout << "ScavTrap default constructor called" << std::endl;
 }
 
 ScavTrap::ScavTrap(std::string name): ClapTrap(name)
@@ -31,13 +31,13 @@ ScavTrap::ScavTrap(std::string name): ClapTrap(name)
     this->_AttackDamage = 20;
     this->_MaxHP = 100;
     _GuardMode = false;
-    std::cout << "Derived custom constructor called" << std::endl;
+    std::cout << "ScavTrap custom constructor called" << std::endl;
 }
 
 ScavTrap::ScavTrap(const ScavTrap& original): ClapTrap(original)
 {
     this->_GuardMode = original._GuardMode;
-    std::cout << "Copy constructor called" << std::endl;
+    std::cout << "ScavTrap copy constructor called" << std::endl;
 }
 
 ScavTrap&   ScavTrap::operator=(const ScavTrap& rhs)
@@ -45,15 +45,19 @@ ScavTrap&   ScavTrap::operator=(const ScavTrap& rhs)
     std::cout << "Copy assignment operator called" << std::endl;
     if (this != &rhs)
     {
-        ClapTrap::operator=(rhs);
-        this->_GuardMode = rhs._GuardMode;
+        _name = rhs._name;
+        _HitPoints = rhs._HitPoints;
+        _Energy = rhs._Energy;
+        _AttackDamage = rhs._AttackDamage;
+        _MaxHP = rhs._MaxHP;
+        _GuardMode = rhs._GuardMode;
     }
     return (*this);
 }
 
 ScavTrap::~ScavTrap()
 {
-    std::cout << "Derived destructor called" << std::endl;
+    std::cout << "ScavTrap destructor called" << std::endl;
 }
 
 void    ScavTrap::attack(const std::string& target)
