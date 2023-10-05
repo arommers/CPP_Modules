@@ -6,14 +6,14 @@
 #    By: adri <adri@student.codam.nl>                 +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/10/02 22:34:54 by adri          #+#    #+#                  #
-#    Updated: 2023/10/04 21:47:08 by adri          ########   odam.nl          #
+#    Updated: 2023/10/05 10:35:18 by arommers      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		= a_new_challenger
 CC			= g++
 CPPFLAGS	= -Wall -Werror -Wextra
-SRC			= ./main.cpp ./ClapTrap.cpp ./ScavTrap.cpp
+SRC			= ./main.cpp ./ClapTrap.cpp ./ScavTrap.cpp ./FragTrap.cpp
 OBJ			= $(SRC:.cpp=.o)
 
 all: $(NAME)

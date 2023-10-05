@@ -6,7 +6,7 @@
 /*   By: adri <adri@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/04 21:36:55 by adri          #+#    #+#                 */
-/*   Updated: 2023/10/04 22:17:20 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/05 10:36:01 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ FragTrap::FragTrap(const FragTrap& original): ClapTrap(original)
     std::cout << "FragTrap copy constructor called" << std::endl;
 }
 
-Fragtrap&   FragTrap::operator=(const FragTrap& rhs)
+FragTrap&   FragTrap::operator=(const FragTrap& rhs)
 {
     if (this != &rhs)
     {
@@ -47,10 +47,15 @@ Fragtrap&   FragTrap::operator=(const FragTrap& rhs)
         _AttackDamage = rhs._AttackDamage;
         _MaxHP = rhs._MaxHP;
     }
-    return (*this)
+    return (*this);
 }
 
 FragTrap::~FragTrap()
 {
     std::cout << "FragTrap destructor called" << std::endl;
+}
+
+void    FragTrap::highFivesGuys()
+{
+    std::cout << CYAN << "Can I get some high fives!!!" << RESET << std::endl;
 }
