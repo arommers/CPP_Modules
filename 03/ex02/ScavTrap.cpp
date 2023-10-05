@@ -6,7 +6,7 @@
 /*   By: adri <adri@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 20:45:12 by adri          #+#    #+#                 */
-/*   Updated: 2023/10/04 22:19:48 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/05 10:52:29 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,12 @@ void    ScavTrap::attack(const std::string& target)
 
 void    ScavTrap::guardGate()
 {
-    std::cout << ORANGE << this->getName() << " enters gate keeper mode." << RESET << std::endl;
-    this->_GuardMode = true;
+    if (this->_GuardMode != true)
+    {
+        std::cout << ORANGE << this->getName() << " enters gate keeper mode." << RESET << std::endl;
+        this->_GuardMode = true;
+    }
+    else
+        std::cout << ORANGE << this->getName() << " is already gatekeeping." << RESET << std::endl;
 }
 
