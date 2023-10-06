@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/06 10:19:19 by arommers      #+#    #+#                 */
-/*   Updated: 2023/10/06 10:38:29 by arommers      ########   odam.nl         */
+/*   Updated: 2023/10/06 12:19:31 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,12 @@ class   Animal
         Animal();
         Animal(const Animal& original);
         Animal& operator=(const Animal& rhs);
-        ~Animal();
+        virtual ~Animal();
+
+        std::string getType() const;
+        void    setType(std::string type);
         
-        virtual void    makeSound();
+        virtual void    makeSound() const;
 };
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/06 10:24:10 by arommers      #+#    #+#                 */
-/*   Updated: 2023/10/06 11:00:54 by arommers      ########   odam.nl         */
+/*   Updated: 2023/10/06 12:05:27 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,17 @@ Animal::~Animal()
     std::cout << "Base destructor called." << std::endl;
 }
 
-void    Animal::makeSound()
+void    Animal::setType(std::string type)
+{
+    _type = type;
+}
+
+std::string Animal::getType() const
+{
+    return (_type);
+}
+
+void    Animal::makeSound() const
 {
     std::cout << "I'm unspecified. What do you expect me to say?" << std::endl;
 }

@@ -1,43 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   Dog.cpp                                            :+:    :+:            */
+/*   Cat.cpp                                            :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2023/10/06 10:55:02 by arommers      #+#    #+#                 */
-/*   Updated: 2023/10/06 12:06:02 by arommers      ########   odam.nl         */
+/*   Created: 2023/10/06 11:50:54 by arommers      #+#    #+#                 */
+/*   Updated: 2023/10/06 12:26:15 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Dog.hpp"
+#include "Cat.hpp"
 
-Dog::Dog(): Animal()
+Cat::Cat(): Animal()
 {
-    this->_type = "Dog";
-    std::cout << "Dog constructor called" << std::endl;
+    _type = "Cat";
+    std::cout << "Cat constructor called" << std::endl;
 }
 
-Dog::Dog(const Dog& original): Animal(original)
+Cat::Cat(const Cat& original): Animal(original)
 {
-    std::cout << "Dog copy constructor called" << std::endl;
+    std::cout << "Cat copy constructor called" << std::endl;
 }
 
-Dog&    Dog::operator=(const Dog& rhs)
+Cat&    Cat::operator=(const Cat& rhs)
 {
-    std::cout << "Dog assignment overload operator Called" << std::endl;
+    std::cout << "Cat assignment operator overload called" << std::endl;
     if (this == &rhs)
         return (*this);
     Animal::operator=(rhs);
-    return(*this);
+    return (*this);
 }
 
-Dog::~Dog()
+Cat::~Cat()
 {
-    std::cout << "Dog destructor called" << std::endl;
+    std::cout << "Cat destructor called" << std::endl;
 }
 
-void    Dog::makeSound() const
+void    Cat::makeSound() const
 {
-    std::cout << "WOOF" << std::endl;
+    std::cout << "MEOW" << std::endl;
 }
