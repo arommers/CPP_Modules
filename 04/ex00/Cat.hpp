@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/06 11:47:07 by arommers      #+#    #+#                 */
-/*   Updated: 2023/10/06 12:13:02 by arommers      ########   odam.nl         */
+/*   Updated: 2023/10/06 17:00:40 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,17 @@ class Cat: public Animal
 
         void    makeSound() const;
 };
+
+class WrongCat: public WrongAnimal
+{
+    public:
+        WrongCat();
+        WrongCat(const WrongCat& original);
+        WrongCat& operator=(const WrongCat& rhs);
+        ~WrongCat();
+
+        void    makeSound() const;
+};
+
 
 #endif

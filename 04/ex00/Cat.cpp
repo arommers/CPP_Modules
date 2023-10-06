@@ -6,11 +6,13 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/06 11:50:54 by arommers      #+#    #+#                 */
-/*   Updated: 2023/10/06 12:26:15 by arommers      ########   odam.nl         */
+/*   Updated: 2023/10/06 17:44:07 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.hpp"
+
+// Cat
 
 Cat::Cat(): Animal()
 {
@@ -40,4 +42,36 @@ Cat::~Cat()
 void    Cat::makeSound() const
 {
     std::cout << "MEOW" << std::endl;
+}
+
+// Wrong Cat
+
+WrongCat::WrongCat(): WrongAnimal()
+{
+    _type = "WrongCat";
+    std::cout << "Wrong Cat constructor called" << std::endl;
+}
+
+WrongCat::WrongCat(const WrongCat& original): WrongAnimal(original)
+{
+    std::cout << "WrongCat copy constructor called" << std::endl;
+}
+
+WrongCat&    WrongCat::operator=(const WrongCat& rhs)
+{
+    std::cout << "WrongCat assignment operator overload called" << std::endl;
+    if (this == &rhs)
+        return (*this);
+    WrongAnimal::operator=(rhs);
+    return (*this);
+}
+
+WrongCat::~WrongCat()
+{
+    std::cout << "WrongCat destructor called" << std::endl;
+}
+
+void    WrongCat::makeSound() const
+{
+    std::cout << "meow meow meow" << std::endl;
 }

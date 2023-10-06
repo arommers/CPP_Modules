@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/06 10:19:19 by arommers      #+#    #+#                 */
-/*   Updated: 2023/10/06 12:19:31 by arommers      ########   odam.nl         */
+/*   Updated: 2023/10/06 17:01:54 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 # define ANIMAL_HPP
 
 #include <iostream>
+
+#define RED "\x1b[31m"
+#define RESET "\x1b[0m"
 
 class   Animal
 {
@@ -29,6 +32,23 @@ class   Animal
         void    setType(std::string type);
         
         virtual void    makeSound() const;
+};
+
+
+class WrongAnimal
+{
+    protected:
+        std::string _type;
+    public:
+        WrongAnimal();
+        WrongAnimal(const WrongAnimal& original);
+        WrongAnimal& operator=(const WrongAnimal& rhs);
+        virtual ~WrongAnimal();
+
+        std::string getType() const;
+        void    setType(std::string type);
+        
+        void    makeSound() const; // This is not a virtual function
 };
 
 #endif
