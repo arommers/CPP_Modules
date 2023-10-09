@@ -6,7 +6,7 @@
 /*   By: adri <adri@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/08 10:59:45 by adri          #+#    #+#                 */
-/*   Updated: 2023/10/08 12:40:06 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/09 10:36:18 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,15 @@
 #include "Brain.hpp"
 #include "Dog.hpp"
 #include "Cat.hpp"
+
+int main()
+{
+    const Animal* j = new Dog();
+    const Animal* i = new Cat();
+    delete j;//should not create a leak
+    delete i;
+    return 0;
+}
 
 // int main()
 // {
@@ -34,7 +43,7 @@
 //         i++;
 //     }
 //     std::cout << std::endl;
-//     std::cout << GREEN << "PLEASE CHECK THAT THE ARRAY CONTAINS DIFFERENT ANIMALS" << RESET << std::endl;
+//     std::cout << GREEN << "CHECKING THAT THE ARRAY CONTAINS DIFFERENT ANIMALS" << RESET << std::endl;
 //     std::cout << std::endl;
 //     i = 0;
 //     while (i < 4)
@@ -48,36 +57,57 @@
 //     return (0);
 // }
 
-int main()
-{
-    Cat ogCat;
-    int i = 0;
+// int main()
+// {
+//     Cat ogCat;
+//     int i = 0;
     
-    // Filling the ideas array
-    while (i < 6)
-    {
-        if (i % 2 == 0)
-            ogCat.setIdea(i, "mmmm snacks");
-        else
-            ogCat.setIdea(i, "mmmm catnaps");
-        i++;
-    }
+//     // Filling the ideas array of ogcat
+//     while (i < 6)
+//     {
+//         if (i % 2 == 0)
+//             ogCat.setIdea(i, "mmmm snacks");
+//         else
+//             ogCat.setIdea(i, "mmmm catnaps");
+//         i++;
+//     }
     
-    // Making a deep copy
-    Cat cpyCat = ogCat;
-    for (int x = 0; x < 6; x++)
-        cpyCat.setIdea(x, "gotta go zooooommmm!!");
-    std::cout << std::endl;
-    std::cout << GREEN << "Example of a deep copy." << RESET << std::endl;
-    std::cout << std::endl;
 
-    for (int j = 0; j < 6; j++)
-        std::cout << "ogCat thinks: " << ogCat.getIdea(j) << std::endl;
-    std::cout << std::endl;
-    for (int k = 0; k < 6; k++)
-        std::cout << "cpyCat thinks: " << cpyCat.getIdea(k) << std::endl;
-    std::cout << std::endl;
+//     // Making a copy
+//     Cat cpyCat = ogCat;
     
-        
-    return (0);
-}
+//     std::cout << std::endl;
+//     std::cout << GREEN << " *** What are these cats thinking about? ***" << RESET << std::endl;
+//     std::cout << std::endl;
+    
+//     // printing their ideas
+//     for (int j = 0; j < 6; j++)
+//         std::cout << "ogCat thinks: " << ogCat.getIdea(j) << std::endl;
+//     std::cout << std::endl;
+//     for (int k = 0; k < 6; k++)
+//         std::cout << "cpyCat thinks: " << cpyCat.getIdea(k) << std::endl;
+//     std::cout << std::endl;
+
+//     std::cout << GREEN << " *** Brainwashing cpyCat *** " << RESET << std::endl;
+//     std::cout << std::endl;
+
+    
+//     for (int l = 0; l < 6; l++)
+//     while (l < 6)
+//     {
+//         if (l % 2 == 0)
+//             cpyCat.setIdea(l, "gotta go fast!");
+//         else
+//             cpyCat.setIdea(l, "zooom!");
+//         l++;
+//     }
+
+//     for (int j = 0; j < 6; j++)
+//         std::cout << "ogCat thinks: " << ogCat.getIdea(j) << std::endl;
+//     std::cout << std::endl;
+//     for (int k = 0; k < 6; k++)
+//         std::cout << "cpyCat thinks: " << cpyCat.getIdea(k) << std::endl;
+//     std::cout << std::endl;
+//     return (0);
+// }
+

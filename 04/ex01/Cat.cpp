@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/06 11:50:54 by arommers      #+#    #+#                 */
-/*   Updated: 2023/10/08 12:42:58 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/09 10:33:44 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,13 @@ Cat::Cat(): Animal(), _brain(new Brain)
 
 Cat::Cat(const Cat& original): Animal(original), _brain(new Brain(*(original._brain)))
 {
-    std::cout << "Cat Deep copy constructor called" << std::endl;
+    std::cout << "Cat copy constructor called (deep copy)" << std::endl;
 }
 
-Cat::Cat(const Cat& original): Animal(original), _brain(original._brain)
-{
-    std::cout << "Cat Shallow copy constructor called" << std::endl;
-}
+// Cat::Cat(const Cat& original): Animal(original), _brain(original._brain)
+// {
+//     std::cout << "Cat copy constructor called (shallow copy)" << std::endl;
+// }
 
 Cat&    Cat::operator=(const Cat& rhs)
 {
@@ -36,10 +36,11 @@ Cat&    Cat::operator=(const Cat& rhs)
         return (*this);
     Animal::operator=(rhs);
     delete _brain;
-    _brain = new Brain;
-    std::cout << "Cat assignment operator overload called" << std::endl;
+    _brain = new Brain(*rhs._brain);
+    std::cout << "Cat assignment operator overload called (deep copy)" << std::endl;
     return (*this);
 }
+
 
 Cat::~Cat()
 {

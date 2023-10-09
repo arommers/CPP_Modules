@@ -6,7 +6,7 @@
 /*   By: adri <adri@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/07 12:31:57 by adri          #+#    #+#                 */
-/*   Updated: 2023/10/08 12:21:32 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/09 10:16:39 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ Brain&  Brain::operator=(const Brain& rhs)
 {
     if (this == &rhs)
         return (*this);
+    for(int i = 0; i < 100; i++)
+        _ideas[i] = rhs._ideas[i];
     return (*this);
     std::cout << "Brain assignment overload operator called." << std::endl;
 }
