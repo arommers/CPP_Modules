@@ -6,7 +6,7 @@
 /*   By: adri <adri@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/07 12:31:57 by adri          #+#    #+#                 */
-/*   Updated: 2023/10/07 12:40:00 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/08 12:21:32 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ Brain::Brain()
 
 Brain::Brain(const Brain& original)
 {
+    for(int i = 0; i < 100; i++)
+        _ideas[i] = original._ideas[i];
     std::cout << "Brain copy constructor called." << std::endl;
 }
 
@@ -33,4 +35,21 @@ Brain&  Brain::operator=(const Brain& rhs)
 Brain::~Brain()
 {
     std::cout << "Brain destructor called." << std::endl;
+}
+
+void    Brain::setIdea(int index, const std::string idea)
+{
+    if (index >= 0 && index <= 100)
+        _ideas[index] = idea;
+    else
+        std::cout << "Please enter an index from 0 to 100." << std::endl;
+}
+
+std::string Brain::getIdea(int index) const
+{
+    if (index >= 0 && index <= 100)
+        return (_ideas[index]);
+    else
+        std::cout << "Please enter an index from 0 to 100." << std::endl;
+    return "";
 }

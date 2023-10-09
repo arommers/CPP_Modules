@@ -6,7 +6,7 @@
 /*   By: adri <adri@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/07 12:29:03 by adri          #+#    #+#                 */
-/*   Updated: 2023/10/07 12:31:47 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/08 12:10:22 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,15 @@
 class   Brain
 {
     private:
-        std::string ideas[100];
+        std::string _ideas[100];
     public:
         Brain();
         Brain(const Brain& orginal);
         Brain&  operator=(const Brain& rhs);
         ~Brain();
+
+        std::string getIdea(int index) const;
+        void        setIdea(int index, std::string idea);
 };
 
 #endif

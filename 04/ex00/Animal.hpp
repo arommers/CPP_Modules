@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/06 10:19:19 by arommers      #+#    #+#                 */
-/*   Updated: 2023/10/06 17:01:54 by arommers      ########   odam.nl         */
+/*   Updated: 2023/10/08 11:46:43 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include <iostream>
 
-#define RED "\x1b[31m"
+#define GREEN "\x1b[32m"
 #define RESET "\x1b[0m"
 
 class   Animal

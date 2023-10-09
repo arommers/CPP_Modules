@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/06 11:57:51 by arommers      #+#    #+#                 */
-/*   Updated: 2023/10/06 17:35:13 by arommers      ########   odam.nl         */
+/*   Updated: 2023/10/08 11:47:06 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 int main()
 {
     // Test proper derived polymorpism
-    std::cout << RED << "PLEASE CHECK THAT THE BASE CLASS AND DERIVED CLASSES HAVE ACCURATE TYPES AND SOUNDS!" << RESET << std::endl;
+    std::cout << GREEN << "PLEASE CHECK THAT THE BASE CLASS AND DERIVED CLASSES HAVE ACCURATE TYPES AND SOUNDS!" << RESET << std::endl;
     std::cout << std::endl;
     const Animal* base = new Animal();
     std::cout << "Type: ";
@@ -41,7 +41,7 @@ int main()
     std::cout << std::endl;
     
     // Testing an array of Animals to make sure they pick the correct function
-    std::cout << RED << "SAME THING BUT THIS TIME FROM AN ARRAY" << RESET << std::endl;
+    std::cout << GREEN << "SAME THING BUT THIS TIME FROM AN ARRAY" << RESET << std::endl;
     
     const Animal  *animals[] =
     {
@@ -63,7 +63,7 @@ int main()
     std::cout << std::endl;
 
     // Test a derived class with improper polymorphism
-    std::cout << RED << "PLEASE CHECK THAT THE BASE CLASS AND DERIVED CLASS MAKE THE SAME SOUNDS!" << RESET << std::endl;
+    std::cout << GREEN << "PLEASE CHECK THAT THE BASE CLASS AND DERIVED CLASS MAKE THE SAME SOUNDS!" << RESET << std::endl;
     std::cout << std::endl;
 
     const WrongAnimal* wronganimal = new WrongAnimal();

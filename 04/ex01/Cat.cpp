@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/06 11:50:54 by arommers      #+#    #+#                 */
-/*   Updated: 2023/10/07 12:45:05 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/08 12:42:58 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,14 @@ Cat::Cat(): Animal(), _brain(new Brain)
     std::cout << "Cat constructor called" << std::endl;
 }
 
-Cat::Cat(const Cat& original): Animal(original), _brain(new Brain)
+Cat::Cat(const Cat& original): Animal(original), _brain(new Brain(*(original._brain)))
 {
-    std::cout << "Cat copy constructor called" << std::endl;
+    std::cout << "Cat Deep copy constructor called" << std::endl;
+}
+
+Cat::Cat(const Cat& original): Animal(original), _brain(original._brain)
+{
+    std::cout << "Cat Shallow copy constructor called" << std::endl;
 }
 
 Cat&    Cat::operator=(const Cat& rhs)
@@ -45,4 +50,21 @@ Cat::~Cat()
 void    Cat::makeSound() const
 {
     std::cout << "MEOW" << std::endl;
+}
+
+void    Cat::setIdea(int index, const std::string& idea)
+{
+    if (index >= 0 && index <= 100)
+        _brain->setIdea(index, idea);
+    else
+        std::cout << "Please enter an index from 0 to 100." << std::endl;
+}
+
+std::string Cat::getIdea(int index) const
+{
+    if (index >= 0 && index <= 100)
+        return (_brain->getIdea(index));
+    else
+        std::cout << "Please enter an index from 0 to 100." << std::endl;
+    return "";
 }
