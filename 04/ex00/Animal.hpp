@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/06 10:19:19 by arommers      #+#    #+#                 */
-/*   Updated: 2023/10/08 11:46:43 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/09 12:04:18 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ class   Animal
         std::string getType() const;
         void    setType(std::string type);
         
-        virtual void    makeSound() const;
+        virtual void    makeSound() const; // this function can be overridden by derived classes
 };
 
 
