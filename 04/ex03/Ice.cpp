@@ -6,11 +6,12 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/09 15:33:35 by arommers      #+#    #+#                 */
-/*   Updated: 2023/10/09 16:27:51 by arommers      ########   odam.nl         */
+/*   Updated: 2023/10/10 21:46:51 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Ice.hpp"
+#include "Character.hpp"
 
 Ice::Ice(): AMateria("ice")
 {
@@ -38,7 +39,9 @@ Ice::~Ice()
 
 Ice* Ice::clone() const
 {
-    new Ice(*this);
+    
+    Ice *cpy = new Ice(*this);
+    return (cpy);
 }
 
 void Ice::use(ICharacter& target)
