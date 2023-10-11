@@ -1,7 +1,7 @@
 <img src="https://i.imgur.com/HG66CCx.png?raw=true" alt="CODAM" style="max-width: 50%;">
 
 # CPP_Modules
-A collection of C++ projects that form a comprehensive set of programming exercises designed to develop proficiency in C++. 
+A collection of projects that form a comprehensive set of programming exercises designed to develop proficiency in C++. 
 These modules cover a wide range of topics, from basic syntax to advanced data structures and algorithms.
 ## Key Concepts
 - **Hands-On Learning:** Each module is structured around practical exercises that focus on one or more C++ concepts.
