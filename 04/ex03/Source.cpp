@@ -6,7 +6,7 @@
 /*   By: adri <adri@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/11 14:18:40 by adri          #+#    #+#                 */
-/*   Updated: 2023/10/11 14:57:52 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/11 15:20:52 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,30 @@ MateriaSource::MateriaSource(): _shelf(0)
         _cupboard[i] = NULL;
 }
 
-MateriaSource::MateriaSource(const MateriaSource& orginal)
+MateriaSource::MateriaSource(const MateriaSource& original): _shelf(original._shelf)
 {
-    
+    for (int i = 0; i < 4; i++)
+    {
+        if (original._cupboard[i])
+            _cupboard[i] = original._cupboard[i]->clone();
+        else
+            _cupboard[i] = NULL;
+    }
+}
+
+MateriaSource&  MateriaSource::operator=(const MateriaSource& rhs):
+{
+    if (this == &rhs)
+        return(*this);
+    _shelf = rhs._shelf;
+    for (int i = 0; i < 4; i++)
+    {
+        delete _cupboard[i];
+        _cupboard[i] = rhs._cupboard[i];
+        if (_cupboard[i])
+            _cupboard[i] = rhs._cupboard[i]->clone();
+    }
+    return (*this);
 }
 
 MateriaSource::~MateriaSource()

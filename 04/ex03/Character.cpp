@@ -6,7 +6,7 @@
 /*   By: adri <adri@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/10 14:16:35 by adri          #+#    #+#                 */
-/*   Updated: 2023/10/11 14:41:45 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/11 15:20:33 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ Character& Character::operator=(const Character& rhs)
         if (_inventory[i])
             _inventory[i] = rhs._inventory[i]->clone();
     }
+    return (*this);
 }
 
 // AMateria* originalPtr = new DerivedAMateria();
