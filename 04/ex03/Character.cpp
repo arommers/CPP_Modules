@@ -6,11 +6,14 @@
 /*   By: adri <adri@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/10 14:16:35 by adri          #+#    #+#                 */
-/*   Updated: 2023/10/10 22:24:51 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/11 14:41:45 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Character.hpp"
+
+AMateria* Character::_floor[100] = {NULL};
+int Character::_index = 0;
 
 Character::Character(std::string name): _name(name), _items(0)
 {
@@ -82,11 +85,20 @@ void Character::unequip(int idx)
 {
     if (_inventory[idx] || idx >= 0 && idx < _items)
     {
+        _floor[_index] = _inventory[idx];
         _inventory[idx] = NULL;
         for (int i = idx; idx < _items -1; i++)
             _inventory[i] = _inventory[i + 1];
         _inventory[_items - 1] = NULL;
         _items--;
+        _index++;
     }
     return ;
+}
+
+void    Character::use(int idx, ICharacter& target)
+{
+    if (!_inventory[idx] || idx < 0 || idx >= _items)
+        return ;
+    _inventory[idx]->use(target);
 }

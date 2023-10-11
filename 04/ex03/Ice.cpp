@@ -6,21 +6,20 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/09 15:33:35 by arommers      #+#    #+#                 */
-/*   Updated: 2023/10/10 21:46:51 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/11 13:51:05 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Ice.hpp"
-#include "Character.hpp"
 
 Ice::Ice(): AMateria("ice")
 {
-    std::cout << "Ice constructor called" << std::endl;
+    // std::cout << "Ice constructor called" << std::endl;
 }
 
 Ice::Ice(const Ice& original): AMateria(original)
 {
-    std::cout << "Ice copy constructor called" << std::endl;
+    // std::cout << "Ice copy constructor called" << std::endl;
 }
 
 Ice&    Ice::operator=(const Ice& rhs)
@@ -28,13 +27,13 @@ Ice&    Ice::operator=(const Ice& rhs)
     if (this == &rhs)
         return (*this);
     AMateria::operator=(rhs);
-    std::cout << "Assignment overload operator called" << std::endl;
+    // std::cout << "Assignment overload operator called" << std::endl;
     return (*this);
 }
 
 Ice::~Ice()
 {
-    std::cout << "Ice destructor called" << std::endl;
+    // std::cout << "Ice destructor called" << std::endl;
 }
 
 Ice* Ice::clone() const
@@ -46,5 +45,5 @@ Ice* Ice::clone() const
 
 void Ice::use(ICharacter& target)
 {
-    std::cout << "* shoots an ice bolt at *" << target.getname() << std::endl;
+    std::cout << "* shoots an ice bolt at *" << target.getName() << std::endl;
 }

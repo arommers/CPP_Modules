@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/09 14:11:12 by arommers      #+#    #+#                 */
-/*   Updated: 2023/10/09 14:52:30 by arommers      ########   odam.nl         */
+/*   Updated: 2023/10/11 13:51:39 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define AMateria_HPP
 
 #include <iostream>
+#include "Character.hpp"
 
 class AMateria
 {

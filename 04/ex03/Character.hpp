@@ -6,7 +6,7 @@
 /*   By: adri <adri@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/09 23:45:42 by adri          #+#    #+#                 */
-/*   Updated: 2023/10/10 21:23:58 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/11 14:06:00 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,13 @@ public:
 class Character: public ICharacter
 {
     private:
-        AMateria    *_inventory[4];
+        static int      _index;
+        static AMateria *_floor[100];
+        
         std::string _name;
         int         _items;
+        AMateria    *_inventory[4];
+
     public:
         Character(std::string name);
         Character(const Character& original);
@@ -45,9 +49,6 @@ class Character: public ICharacter
         void equip(AMateria* m);
         void unequip(int idx);
         void use(int idx, ICharacter& target);
-
-        
-        
 };
 
 #endif
