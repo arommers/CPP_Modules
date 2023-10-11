@@ -6,7 +6,7 @@
 /*   By: adri <adri@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/10 14:16:35 by adri          #+#    #+#                 */
-/*   Updated: 2023/10/11 15:20:33 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/11 23:50:04 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ Character::Character(const Character& original): _name(original._name), _items(o
 {
     for (int i = 0; i < 4; i++)
     {
-        if (original._inventory)
+        if (original._inventory[i])
             _inventory[i] = original._inventory[i]->clone();
         else
             _inventory[i] = NULL;
@@ -84,7 +84,7 @@ void Character::equip(AMateria* m)
 
 void Character::unequip(int idx)
 {
-    if (_inventory[idx] || idx >= 0 && idx < _items)
+    if (_inventory[idx] || (idx >= 0 && idx < _items))
     {
         _floor[_index] = _inventory[idx];
         _inventory[idx] = NULL;
@@ -99,7 +99,7 @@ void Character::unequip(int idx)
 
 void    Character::use(int idx, ICharacter& target)
 {
-    if (!_inventory[idx] || idx < 0 || idx >= _items)
+    if (idx < 0 || idx >= _items || _inventory[idx])
         return ;
     _inventory[idx]->use(target);
 }

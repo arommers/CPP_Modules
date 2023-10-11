@@ -6,12 +6,11 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/09 14:11:21 by arommers      #+#    #+#                 */
-/*   Updated: 2023/10/11 13:44:34 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/11 22:45:01 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "AMateria.hpp"
-#include "Character.hpp"
 
 AMateria::AMateria(std::string const & type): _type(type)
 {

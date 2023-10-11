@@ -6,14 +6,15 @@
 #    By: arommers <arommers@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/10/06 12:06:52 by arommers      #+#    #+#                  #
-#    Updated: 2023/10/09 13:01:44 by arommers      ########   odam.nl          #
+#    Updated: 2023/10/11 22:24:58 by adri          ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		= interface
 CC			= g++
 CPPFLAGS	= -Wall -Werror -Wextra -std=c++98
-SRC			= ./main.cpp 
+SRC			=	./main.cpp ./AMateria.cpp ./Ice.cpp			\
+				./Cure.cpp ./Source.cpp ./Character.cpp
 OBJ			= $(SRC:.cpp=.o)
 
 all: $(NAME)

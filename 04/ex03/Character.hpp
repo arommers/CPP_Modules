@@ -6,16 +6,16 @@
 /*   By: adri <adri@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/09 23:45:42 by adri          #+#    #+#                 */
-/*   Updated: 2023/10/11 14:06:00 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/11 23:28:58 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CHARACTER_HPP
 # define CHARACTER_HPP
 
+class ICharacter; // Forward declaration
 #include "AMateria.hpp"
-#include "Ice.hpp"
-#include "Cure.hpp"
+#include <iostream>
 
 class ICharacter
 {
@@ -31,14 +31,13 @@ public:
 class Character: public ICharacter
 {
     private:
-        static int      _index;
-        static AMateria *_floor[100];
-        
         std::string _name;
         int         _items;
         AMateria    *_inventory[4];
-
     public:
+        static int      _index;
+        static AMateria *_floor[100];
+        
         Character(std::string name);
         Character(const Character& original);
         Character& operator=(const Character& rhs);
