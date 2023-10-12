@@ -6,7 +6,7 @@
 /*   By: adri <adri@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/11 14:18:40 by adri          #+#    #+#                 */
-/*   Updated: 2023/10/11 23:54:22 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/12 11:20:32 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,9 +53,11 @@ MateriaSource::~MateriaSource()
 
 void    MateriaSource::learnMateria(AMateria* m)
 {
-    if (!m || _shelf == 4)
+    if (!m)
         return ;
-    _cupboard[_shelf] = m->clone();
+    if  (_shelf == 4)
+        std::cout << "* The cupboard is currently already full *" << std::endl;
+    _cupboard[_shelf] = m;
     _shelf++;
 }
 
@@ -66,5 +68,6 @@ AMateria*   MateriaSource::createMateria(const std::string& type)
         if (_cupboard[i]->getType() == type)
             return (_cupboard[i]->clone());
     }
+    std::cout << "* There is no materia named: " << type << " in the cupboard *" << std::endl;
     return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: adri <adri@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/10 14:16:35 by adri          #+#    #+#                 */
-/*   Updated: 2023/10/12 00:05:12 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/12 11:16:47 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,8 +77,13 @@ const std::string& Character::getName() const
 
 void Character::equip(AMateria* m)
 {
-    if (!m ||_items > 3)
+    if (!m)
         return;
+    if ( _items > 3)
+    {
+        std::cout << "* inventory is full *" << std::endl;
+        return ;
+    }
     _inventory[_items] = m;
     _items++;
 }
@@ -89,7 +94,7 @@ void Character::unequip(int idx)
     {
         _floor[_index] = _inventory[idx];
         _inventory[idx] = NULL;
-        for (int i = idx; idx < _items -1; i++)
+        for (int i = idx; i < _items -1; i++)
             _inventory[i] = _inventory[i + 1];
         _inventory[_items - 1] = NULL;
         _items--;
@@ -100,7 +105,11 @@ void Character::unequip(int idx)
 
 void    Character::use(int idx, ICharacter& target)
 {
-    if (idx < 0 || idx >= _items || !_inventory[idx])
+    if (idx < 0 || idx >= _items) 
+    if (!_inventory[idx])
+    {
+        std::cout << "* No Materia to use at slot: " << idx << " *" << std::endl;
         return ;
+    }
     _inventory[idx]->use(target);
 }
