@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/09 15:33:35 by arommers      #+#    #+#                 */
-/*   Updated: 2023/10/11 13:51:05 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/12 00:06:29 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,5 +45,5 @@ Ice* Ice::clone() const
 
 void Ice::use(ICharacter& target)
 {
-    std::cout << "* shoots an ice bolt at *" << target.getName() << std::endl;
+    std::cout << "* shoots an ice bolt at  " << target.getName() << " *" << std::endl;
 }

@@ -6,11 +6,12 @@
 /*   By: adri <adri@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/10 14:16:35 by adri          #+#    #+#                 */
-/*   Updated: 2023/10/11 23:50:04 by adri          ########   odam.nl         */
+/*   Updated: 2023/10/12 00:05:12 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Character.hpp"
+#include <stdio.h>
 
 AMateria* Character::_floor[100] = {NULL};
 int Character::_index = 0;
@@ -99,7 +100,7 @@ void Character::unequip(int idx)
 
 void    Character::use(int idx, ICharacter& target)
 {
-    if (idx < 0 || idx >= _items || _inventory[idx])
+    if (idx < 0 || idx >= _items || !_inventory[idx])
         return ;
     _inventory[idx]->use(target);
 }
