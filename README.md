@@ -1,5 +1,7 @@
 <img src="https://i.imgur.com/HG66CCx.png?raw=true" alt="CODAM" style="max-width: 50%;">
 
+# ** README AND MODULES ARE A WORK IN PROGRESS **
+
 # CPP_Modules
 A collection of projects that form a comprehensive set of programming exercises designed to develop proficiency in C++. 
 These modules cover a wide range of topics, from basic syntax to advanced data structures and algorithms.
