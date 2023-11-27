@@ -1,6 +1,9 @@
-# My Awesome Phonebook
+## My Awesome Phonebook
 A project where we create a program that emulates an 80's-style "crappy" phonebook.  
-The program will use two main classes: Contact and Phonebook to realize our little 80's gem..  
+The program will use two main classes: Contact and Phonebook to realize our little 80's gem.
+
+This project very much has us hitting the ground running, as it combines a lot of C++ concepts at once.
+
 
 `Contact Class`:  
 - The Contact class will hold essential information about our entries such as first name, last name, phone number etc.
@@ -18,13 +21,15 @@ The program only accepts ADD, SEARCH and EXIT.
 
 I added two extra commands, ("FILL" and "PRINT") for testing convenience.
 
-Below is an example of our PhoneBook class' in action.
-***
+Below is an example of our PhoneBook in action.
+
+---
+
 <img src="https://i.imgur.com/dXzmbvd.png" alt="ERROR" style="max-width: 50%;">
 
-***
+---
 
-## Key Concepts
+### Key Concepts
 #### Classes
 A class is a user-defined data type that serves as a blueprint for creating objects and usually is a digital representation of a real life concept.
 In our case for example, a person entry in a phonebook. Classes combine variables/data (attributes) and operations (methods/functions) that can be performed on that data.
@@ -49,6 +54,8 @@ Some important concepts associated with classes:
 Our phonebook class:
 
 <img src="https://i.imgur.com/NH3uiMQ.png" alt="ERROR" style="max-width: 50%;">
+
+---
 
 #### Encapsulation
 Encapsulation is one of the four fundamental Object-Oriented Programming (OOP) principles, (along with inheritance, polymorphism, and abstraction).
@@ -83,3 +90,4 @@ An example of a class with public members:
 An example of a class with public and private members:
 
 <img src="https://i.imgur.com/jUBFDDX.png" alt="ERROR" style="max-width: 50%;">
+
