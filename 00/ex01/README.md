@@ -1,15 +1,19 @@
+<div align="center">
+  <img src="https://i.imgur.com/9RRWFs4.png">
+</div>
+
 ## My Awesome Phonebook
 A project where we create a program that emulates an 80's-style "crappy" phonebook.  
-The program will use two main classes: Contact and Phonebook to realize our little 80's gem.
+This project very much has us hitting the ground running, as it combines a lot of C++ concepts at once. 
+The two most important ones are `classes` and an introduction to encapsulation.  
 
-This project very much has us hitting the ground running, as it combines a lot of C++ concepts at once.
-
+Our program will use two main classes: Contact and Phonebook to realize our little 80's gem.
 
 `Contact Class`:  
 - The Contact class will hold essential information about our entries such as first name, last name, phone number etc.
 
 `Phonebook Class`:  
-- The Phonebook class will manage our collection of contacts. It will have a maximum capacity of 8 contacts.
+- The Phonebook class will manage our collection of contacts. It will have an array of instances of our contant class an have a maximum capacity of 8 contacts.
 
 On program start-up, the phonebook is empty and the user is prompted to enter one
 of three commands.  
@@ -90,4 +94,20 @@ An example of a class with public members:
 An example of a class with public and private members:
 
 <img src="https://i.imgur.com/jUBFDDX.png" alt="ERROR" style="max-width: 50%;">
+
+---
+
+### Quick Links  
+
+#### [Home](https://github.com/arommers/CPP_Modules)
+#### [Module 00](https://github.com/arommers/CPP_Modules/tree/master/00)
+
+#### [Module 01](https://github.com/arommers/CPP_Modules/tree/master/01)
+
+#### [Module 02](https://github.com/arommers/CPP_Modules/tree/master/02)
+
+#### [Module 03](https://github.com/arommers/CPP_Modules/tree/master/03)
+
+#### [Module 04](https://github.com/arommers/CPP_Modules/tree/master/04)
+
 
