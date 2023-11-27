@@ -18,4 +18,6 @@ These modules cover a wide range of topics, from basic syntax to advanced data s
 - [The Job of Your Dreams](https://github.com/arommers/CPP_Modules/tree/master/00/ex02) (*Static data, vectors*)
 ## Sources
 - https://cplusplus.com/
-- https://www.youtube.com/watch?v=_bYFu9mBnr4&t=32398s
+- [The Cherno C++ playlist](https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb)
+- [Portfolio Course's C++ tutorials](https://www.youtube.com/watch?v=qWPlRubVQ38&list=PLA1FTfKBAEX6BdpNaWp2uw-YspHwY7qwW)
+- [Caleb Curry's all in one C++ tutorial](https://www.youtube.com/watch?v=_bYFu9mBnr4&t=32398s)
