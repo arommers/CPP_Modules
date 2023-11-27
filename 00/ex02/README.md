@@ -33,7 +33,24 @@ Members of a class that are shared among all instances (objects) of that class r
 </div>
 
 ### Vectors: 
-Utilize vectors for dynamic storage. This exercise involves understanding how vectors are employed in the original code.
+A vector is a dynamic array that can grow or shrink in size, providing a flexible and efficient way to store and manipulate collections of elements. 
+Vectors are part of the Standard Template Library (STL) and are defined in the <vector> header. 
+
+#### Attributes:
+- **Dynamic Array:** Vectors in C++ are dynamic arrays that can grow or shrink in size during runtime.
+- **Automatic Memory Management:** Vectors handle memory allocation and deallocation automatically, making manual memory management unnecessary.
+- **Standard Template Library (STL):** Vectors are part of the Standard Template Library (STL) and are defined in the <vector> header.
+- **Declaration and Initialization:** Declare a vector using the std::vector template, specifying the type.
+  Vectors can be initialized with an existing array or with an initializer list.
+
+  An example:
+
+  ```
+  #include <vector>
+
+  std::vector<int> myVector;                   // Declaration of a vector of integers
+  std::vector<int> numbers = {1, 2, 3, 4, 5};  // Initialization from an initializer list
+  ```
 
 ---
 
