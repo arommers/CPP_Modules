@@ -10,7 +10,7 @@ Each module contains several exercises that are selfcontained and respectively d
 
 ---
 
-## Key Concepts
+### Key Concepts
 - **Hands-On Learning:** Each module is structured around practical exercises that focus on one or more C++ concepts.
 - **Progressive Difficulty:** The modules are organized in a progressive manner, starting with fundamental concepts and gradually building up to more complex topics.
 - **Diverse Topics:** Topics include data types, loops, arrays, pointers, classes, inheritance, polymorphism, templates, standard library functions, and more.
@@ -19,20 +19,20 @@ Each module contains several exercises that are selfcontained and respectively d
 
 ---
 
-## Table of contents  
+### Table of contents  
 
-### [Module 00](https://github.com/arommers/CPP_Modules/tree/master/00)
+#### [Module 00](https://github.com/arommers/CPP_Modules/tree/master/00)
 - [Megaphone](https://github.com/arommers/CPP_Modules/blob/master/00/ex00/README.md) (*Namespaces, Standard output stream.*)
 - [My Awesome Phonebook](https://github.com/arommers/CPP_Modules/tree/master/00/ex01) (*Encapsulation, Initialization, String library*)
 - [The Job of Your Dreams](https://github.com/arommers/CPP_Modules/tree/master/00/ex02) (*Static data, vectors*)
 
-### [Module 01](https://github.com/arommers/CPP_Modules/tree/master/01)
+#### [Module 01](https://github.com/arommers/CPP_Modules/tree/master/01)
 
-### [Module 02](https://github.com/arommers/CPP_Modules/tree/master/02)
+#### [Module 02](https://github.com/arommers/CPP_Modules/tree/master/02)
 
-### [Module 03](https://github.com/arommers/CPP_Modules/tree/master/03)
+#### [Module 03](https://github.com/arommers/CPP_Modules/tree/master/03)
 
-### [Module 04](https://github.com/arommers/CPP_Modules/tree/master/04)
+#### [Module 04](https://github.com/arommers/CPP_Modules/tree/master/04)
 
 ---
 
