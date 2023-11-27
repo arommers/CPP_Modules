@@ -1,4 +1,4 @@
-<img src="https://i.imgur.com/HG66CCx.png?raw=true" alt="CODAM" style="max-width: 50%;">
+<img src="https://i.imgur.com/aYhd4En.png?raw=true" alt="CODAM" style="max-width: 50%;">
 
 # ** README AND MODULES ARE A WORK IN PROGRESS **
 
