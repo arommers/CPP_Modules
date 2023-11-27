@@ -2,7 +2,7 @@
 
 # ** README AND MODULES ARE A WORK IN PROGRESS **
 
-# CPP_Modules
+## CPP_Modules
 A collection of projects that form a comprehensive set of programming exercises designed to develop proficiency in C++. 
 These modules cover a wide range of topics, from basic syntax to advanced data structures and algorithms.
 
@@ -37,7 +37,7 @@ Each module contains several exercises that are selfcontained and respectively d
 ---
 
 
-## Sources
+### Sources
 - https://cplusplus.com/
 - [The Cherno C++ playlist](https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb)
 - [Portfolio Course's C++ tutorials](https://www.youtube.com/watch?v=qWPlRubVQ38&list=PLA1FTfKBAEX6BdpNaWp2uw-YspHwY7qwW)
