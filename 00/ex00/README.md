@@ -7,7 +7,11 @@ The purpose of this assignment is to write a program that would take any number 
 
 ![ERROR](https://i.imgur.com/XmbVgb2.png)
 
+
 Meaning that the program is basically a glorified "[toupper](https://cplusplus.com/reference/cctype/toupper/?kw=toupper)" function.
+
+---
+
 ### Key concepts
 This project is my  introduction and limits the amount of C++'ness to a minimum.
 It focuses on namespaces, the use of the scope resolution operator and the standard output stream.
@@ -25,3 +29,18 @@ and is used to shows entities (variables, functions, or classes) in a namespace,
 - The `<<` operator is called the insertion operator. It is used to insert data into the output.
 - Multiple items can be chained together using the `<<` operator as we saw in our hello world example.
 - `std::endl` is used to insert a newline character and flush the output buffer.
+
+---
+
+### Quick Links  
+
+#### [Home](https://github.com/arommers/CPP_Modules)
+#### [Module 00](https://github.com/arommers/CPP_Modules/tree/master/00)
+
+#### [Module 01](https://github.com/arommers/CPP_Modules/tree/master/01)
+
+#### [Module 02](https://github.com/arommers/CPP_Modules/tree/master/02)
+
+#### [Module 03](https://github.com/arommers/CPP_Modules/tree/master/03)
+
+#### [Module 04](https://github.com/arommers/CPP_Modules/tree/master/04)
