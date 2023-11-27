@@ -15,7 +15,7 @@ Armed with this information we have to reverse engineer the lost definition file
 
 ### Key Concepts
 #### Static Members: 
-Keep an eye out for static members, as they play a crucial role in the implementation.
+Members of a class that are shared among all instances (objects) of that class rather than being specific to each object. These members exist at the class level, and there is only one copy of them, regardless of how many instances of the class are created.
 
 #### Vectors: 
 Utilize vectors for dynamic storage. This exercise involves understanding how vectors are employed in the original code.
