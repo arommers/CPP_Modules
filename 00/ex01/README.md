@@ -97,7 +97,7 @@ An example of a class with public and private members:
 
 ---
 
-### Quick Links  
+## Quick Links  
 
 #### [Home](https://github.com/arommers/CPP_Modules)
 #### [Module 00](https://github.com/arommers/CPP_Modules/tree/master/00)
@@ -109,5 +109,3 @@ An example of a class with public and private members:
 #### [Module 03](https://github.com/arommers/CPP_Modules/tree/master/03)
 
 #### [Module 04](https://github.com/arommers/CPP_Modules/tree/master/04)
-
-
