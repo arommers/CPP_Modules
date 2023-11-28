@@ -4,7 +4,7 @@
 
 # The Job of Your Dreams
 Well, we finally made it. Our first job as a software engineer. The orginization however is an absolute mess that is only outdone by their data management.
-Files are missing left and right. Particularly, a function definition file of some accounts. Befitting of our position, we have to fix this. Probably because no one else wants to.
+Files are missing left and right. Particularly, a function definition file of some financial accounts. Befitting of our position, we have to fix this. Probably because no one else wants to.
 
 Our objective is to resurrect a missing file using available resources: The surviving header file, Account.hpp, and a detailed log file.
 The header file contains the declarations for all our functions and the log file what these files will output.  
@@ -49,11 +49,18 @@ Vectors are part of the Standard Template Library (STL) and are defined in the <
   #include <vector>
 
   std::vector<int> myVector;                   // Declaration of a vector of integers
-  std::vector<int> numbers = {1, 2, 3, 4, 5};  // Initialization from an initializer list
+  std::vector<int> numbers = {1, 2, 3, 4, 5};  // Initialization from an initialization list
   ```
 
 ---
 
+To reverse engineer our Account.cpp file we use the log file to keep track of when what specific function is called. They're either constructors/destructors, withdraw/deposit or display functions. The trick is to write the function definitions in such a way, that our output matches the log file exaclty(not including the timestamp).
+
+<div align=center>
+  <img src="https://i.imgur.com/7RodFpK.png">
+</div>
+
+---
 ### Quick Links  
 
 #### [Home](https://github.com/arommers/CPP_Modules)
