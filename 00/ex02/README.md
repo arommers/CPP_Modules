@@ -54,11 +54,15 @@ Vectors are part of the Standard Template Library (STL) and are defined in the <
 
 ---
 
-To reverse engineer our Account.cpp file we use the log file to keep track of when what specific function is called. They're either constructors/destructors, withdraw/deposit or display functions. The trick is to write the function definitions in such a way, that our output matches the log file exaclty(not including the timestamp).
+### Reverse Engineering
+
+To construct our Account.cpp file we use the log file to keep track of when what specific function is called. The tests.cpp file roughly tells us how are instances of account classes are initialized and altered. The lines of output in the log file are either constructors/destructors, withdrawals/deposits or display functions. The trick is to write the function definitions in such a way, that our output matches the log file exaclty(not including the timestamp).
 
 <div align=center>
   <img src="https://i.imgur.com/7RodFpK.png">
 </div>
+
+**This snippet of the log file shows the output of eight accounts being constructed, followed by a line displaying their shared data and    some lines containing deposit actions.*
 
 ---
 ### Quick Links  
