@@ -16,9 +16,44 @@ Here's a breakdown of the components:
 - old: The pattern expression to search for.
 - new: The string to replace the matched pattern .
 - example.txt: The file on which the sed command operates.
+- g: 'global', replacing all occurrences of the pattern on each line:
 
 This being an assignment in the 42 curriculum naturally means we are not allowed to use `Sed` and we have to do it ourselves.
 
+To do this we can slice our little program into three different parts. 
+- Opening a file to read.
+- opening a file to write to.
+- Make a loop that reads our file line by line.
+
+#### File Input
+ifstream is a class in C++ that stands for "input file stream." It is part of the C++ Standard Library and is defined in the <fstream> header. We use an instance of the ifstream class to read data from files.
+
+```
+std::ifstream inFile(filename);
+if(!inFile)
+{
+    std::cerr << "Something went wrong with trying to open " << filename << "\n";
+    return ;
+}
+```
+
+Here we use the constructor to make an instance of ifstream and simultaneously open a file that the instream is associated with. We also do our due diligence and check if opening the file was succesful.
+Alternatively, we could have declared an instance of ifstream and used the `inFile.open` method to open the file.
+
+#### File output
+
+std::ofstream outFile(filename + ".replace");
+if(!outFile)
+{
+    std::cerr << "Something went wrong with trying to write to " << filename << ".replace\n";
+    return ;
+}
+
+Similar to our ifstream, we declare and intialize an output stream and associate a file to write to. Here too we could have done the declaration and opening separate.
+
+#### Reading Lines
+
+To actually read the dat from a stream, alter it and output to a different stream we use `getline`.
 
 
 **for the record, I don't think `SED` is for losers*
