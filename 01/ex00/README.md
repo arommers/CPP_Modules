@@ -10,7 +10,7 @@ When we create a zombie on the stack it is bound to the scope and scope chain it
 ```
 void randomChump(std::string name)
 {
-    Zombie chump = Zombie(name);
+    Zombie chump = Zombie(name); 🧟
     
     chump.announce();
 }
@@ -33,7 +33,7 @@ For our 'new' and improved zombie:
 ```
 Zombie* newZombie(std::string name)
 {
-    Zombie* newzombie = new Zombie(name);
+    Zombie* newzombie = new Zombie(name); 🧟
 
     return (newzombie);
 }
@@ -49,7 +49,7 @@ For a single allocated piece of data like our newZombie it would be as easy as:
 
 `delete newZombie`
 
-Now we have long lasting zombies that don't leave a mess or memory leaks when they're doing clamoring for brains.
+Now we have long lasting zombies that don't leave a mess or memory leaks when they're doing clamoring for brains. 🧟
 
 ---
 
