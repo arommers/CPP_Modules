@@ -31,8 +31,16 @@ The first thing that you might have noticed, remembering that references cannot 
 
 HumanA simply cannot be initialized or constructed without a reference to a weapon. HumanB however wil be unarmed by default.
 
-Inversely, HumanA is able to
+Inversely, HumanB is able to 'pick up or equip' different weapons by making the pointer point to a different instance of the weapon class:
 
+```
+void    HumanB::setWeapon(Weapon& weapon)
+{
+    this->_weaponPtr = &weapon;
+}
+```
+
+HumanA can't pick up a different weapon but has some C+ magic to help him circumvent this small annoyance. He can simply change the weapon he is holding by provding a string describing his weapon to the setter function.
 
 ```
 void    Weapon::setType(const std::string& type)
