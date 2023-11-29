@@ -64,7 +64,8 @@ To actually read the dat from a stream, alter it and output to a different strea
 - input is a string where the read line is stored.
 - A third parameter can also be specified as a delimiter. By default this is the newline character.
 
-We enter a loop where we read our input file one line at a time. When we encounter an occurence that we want to replace we use methods from the string class to do so and update our iterators accordingly. This continues until one line at a time until we reach the end of the file.
+We enter a loop where we read our input file one line at a time. When we encounter an occurence that we want to replace we use methods from the string class to do so and update our iterators accordingly. This continues until one line at a time until we reach the end of the file.  
+
 Getline successfully reads a line from the file, it returns the input stream, and the input stream evaluates to true in a boolean context.
 However, if getline encounters the end of the file or an error, it returns the input stream, but the input stream evaluates to false in a boolean context.
 
