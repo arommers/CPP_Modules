@@ -3,7 +3,11 @@
 </div>
 
 ## Sed is for Losers
-The Stream Editor, commonly known as sed, is a powerful text processing tool in Unix and Unix-like operating systems. It is used to perform basic text transformations on an input stream (a file or input from a pipeline) and produce an output stream to standard output or redirect it to a file.
+So,we have to create a program that takes three parameters in the following order: a filename and two strings, s1 and s2.
+The programm will open the file <filename> and copies its content into a new file <filename>.replace, replacing every occurrence of s1 with s2.  
+
+An easy way to accomplish this is using the Stream Editor, commonly known as `Sed`. A powerful text processing tool in Unix and Unix-like operating systems. It is used to perform basic text transformations on an input stream (a file or input from a pipeline) and produce an output stream to standard output or redirect it to a file.
+This being an assignment in the 42 curriculum naturally means we are not allowed to use `Sed` (for the record, I don't think `SED` is for losers). 
 
 ---
 ### Quick Links  
