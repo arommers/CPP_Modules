@@ -25,6 +25,8 @@ To do this we can slice our little program into three different parts.
 - opening a file to write to.
 - Make a loop that reads our file line by line.
 
+---
+
 #### File Input
 ifstream is a class in C++ that stands for "input file stream." It is part of the C++ Standard Library and is defined in the <fstream> header. We use an instance of the ifstream class to read data from files.
 
@@ -54,6 +56,26 @@ Similar to our ifstream, we declare and intialize an output stream and associate
 #### Reading Lines
 
 To actually read the dat from a stream, alter it and output to a different stream we use `getline`.
+
+`std::getline(inFile, input)`
+- Infile is the stream that getline read from.
+- input is a string where the read line is stored.
+- A third parameter can also be specified as a delimiter. By default this is the newline character.
+
+We enter a loop where we read our input file one line at a time. When we encounter an occurence that we want to replace we use methods from the string class to do so and update our iterators accordingly. This continues until one line at a time until we reach the end of the file.
+Getline successfully reads a line from the file, it returns the input stream, and the input stream evaluates to true in a boolean context.
+However, if getline encounters the end of the file or an error, it returns the input stream, but the input stream evaluates to false in a boolean context.
+
+An alternative way to check if getline is done reading is by using the `eof` method of the ifstream.
+
+```    
+if (inFile.eof())
+{
+  std::cout << "End of file reached.\n";
+}
+```
+
+The input and output files are automatically closed when their respective ifstream and ofstream objects go out of scope.
 
 
 **for the record, I don't think `SED` is for losers*
