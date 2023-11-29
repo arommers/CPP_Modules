@@ -22,13 +22,13 @@ Each module contains several exercises that are selfcontained and respectively d
 ### Table of contents  
 
 #### [Module 00](https://github.com/arommers/CPP_Modules/tree/master/00)
-- [Megaphone](https://github.com/arommers/CPP_Modules/blob/master/00/ex00/README.md) (*Namespaces, Standard output stream*)
-- [My Awesome Phonebook](https://github.com/arommers/CPP_Modules/tree/master/00/ex01) (*Encapsulation, Initialization, String library*)
-- [The Job of Your Dreams](https://github.com/arommers/CPP_Modules/tree/master/00/ex02) (*Static data, vectors*)
+- [Megaphone](https://github.com/arommers/CPP_Modules/blob/master/00/ex00/README.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*Namespaces, Standard output stream*)
+- [My Awesome Phonebook](https://github.com/arommers/CPP_Modules/tree/master/00/ex01)&nbsp;&nbsp;&nbsp;(*Encapsulation, Initialization, String library*)
+- [The Job of Your Dreams](https://github.com/arommers/CPP_Modules/tree/master/00/ex02)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*Static data, vectors*)
 
 #### [Module 01](https://github.com/arommers/CPP_Modules/tree/master/01)
-- [BraiiiiiiinnnzzzZ](https://github.com/arommers/CPP_Modules/tree/master/01/ex00)(*Heap vs Stack*)
-- [Moar brainz!]()(*Array members on the heap*)
+- [BraiiiiiiinnnzzzZ](https://github.com/arommers/CPP_Modules/tree/master/01/ex00)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*Heap vs Stack*)
+- [Moar brainz!]()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*Array members on the heap*)
 - [HI THIS IS BRAIN]()(*String vs References*)
 - [Unnecessary violence]()(*String vs References, Getters & Setters*)
 - [Sed is for losers]()(*File manipulation*)
