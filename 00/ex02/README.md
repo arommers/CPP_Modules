@@ -52,6 +52,14 @@ Vectors are part of the Standard Template Library (STL) and are defined in the <
   std::vector<int> numbers = {1, 2, 3, 4, 5};  // Initialization from an initialization list
   ```
 
+In this assignment we work with the vectors that are given to us in the tests.cpp file:
+
+```
+typedef std::vector<Account::t>						                  accounts_t;
+typedef std::vector<int>								                    ints_t;
+typedef std::pair<accounts_t::iterator, ints_t::iterator>   acc_int_t
+```
+
 ---
 
 ### Reverse Engineering
