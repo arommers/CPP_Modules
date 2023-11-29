@@ -4,7 +4,7 @@
 
 ## Unnecessary violence 
 This exercise will further exemplify the different application of references and pointers that we talked about in the previous assignment.
-We will also talk about `getters` and `setters` in this context to further our understanding of encapsulation in c++.
+We will also talk a bit about and `setters` in this context to further our understanding of encapsulation in c++.
 
 To this end we employ two classes(HumanA and HumanB) that will engage in an old fashioned, testosterone fueled showdown.  
 Each welding either a pointer or a reference to a weapon class.
