@@ -44,14 +44,16 @@ Alternatively, we could have declared an instance of ifstream and used the `inFi
 
 #### File output
 
+```
 std::ofstream outFile(filename + ".replace");
 if(!outFile)
 {
     std::cerr << "Something went wrong with trying to write to " << filename << ".replace\n";
     return ;
 }
+```
 
-Similar to our ifstream, we declare and intialize an output stream and associate a file to write to. Here too we could have done the declaration and opening separate.
+Similar to our ifstream, we declare and intialize an output stream and associate a file to write to. Here too we could have done the declaration and opening separate, `outFile.open`.
 
 #### Reading Lines
 
