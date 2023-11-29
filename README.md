@@ -28,7 +28,7 @@ Each module contains several exercises that are selfcontained and respectively d
 
 #### [Module 01](https://github.com/arommers/CPP_Modules/tree/master/01)
 - [BraiiiiiiinnnzzzZ](https://github.com/arommers/CPP_Modules/tree/master/01/ex00)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*Heap vs Stack*)
-- [Moar brainz!](https://github.com/arommers/CPP_Modules/tree/master/01/ex01)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*Array members on the heap*)
+- [Moar brainz!](https://github.com/arommers/CPP_Modules/tree/master/01/ex01)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*Arrays and the heap*)
 - [HI THIS IS BRAIN](https://github.com/arommers/CPP_Modules/tree/master/01/ex02)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*String vs References*)
 - [Unnecessary violence](https://github.com/arommers/CPP_Modules/tree/master/01/ex03)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*String vs References, Getters & Setters*)
 - [Sed is for losers](https://github.com/arommers/CPP_Modules/tree/master/01/ex04)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*File manipulation*)
