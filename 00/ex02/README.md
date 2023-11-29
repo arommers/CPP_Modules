@@ -72,6 +72,32 @@ To construct our Account.cpp file we use the log file to keep track of when what
 
 **This snippet of the log file shows the output of eight accounts being constructed, followed by a line displaying their shared data and    some lines containing deposit actions.*
 
+To get the exact output we constructed our function in such a way that they aligned with the for loops that are executed in the main/tests.cpp file:
+
+```
+void	Account::makeDeposit(int deposit)
+{
+  _nbDeposits++;
+  _displayTimestamp();
+  std::cout << " index:" << this->_accountIndex << ";p_amount:" << this->_amount;
+  std::cout << ";deposit:" << deposit << ";amount:" << this->_amount + deposit;
+  std::cout << ";nb_deposits:" << this->_nbDeposits << std::endl;
+  this->_amount += deposit;
+  _totalAmount += deposit;
+  _totalNbDeposits++;
+}
+```
+
+This function will be called to make deposits for the current account, signified by the first parameter of the pair. The amount is signified by the second.
+
+```
+	for ( acc_int_t it( acc_begin, dep_begin );
+		  it.first != acc_end && it.second != dep_end;
+		  ++(it.first), ++(it.second) ) {
+
+		(*(it.first)).makeDeposit( *(it.second) ); <<< The actual function
+```
+
 ---
 ### Quick Links  
 
