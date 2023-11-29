@@ -40,7 +40,8 @@ void    HumanB::setWeapon(Weapon& weapon)
 }
 ```
 
-HumanA can't pick up a different weapon but has some C+ magic to help him circumvent this small annoyance. He can simply change the weapon he is holding by provding a string describing his weapon to the setter function.
+HumanA can't pick up a different weapon but has some C+ magic to help him circumvent this small annoyance.  
+He can simply change the weapon he is holding by providing a string describing his weapon to the setter function.
 
 ```
 void    Weapon::setType(const std::string& type)
@@ -48,6 +49,8 @@ void    Weapon::setType(const std::string& type)
     this->_type = type;
 }
 ```
+
+It doesn't seem like a fair fight, but I guess all is fair in love and pointers vs references.
 
 ---
 
