@@ -27,12 +27,13 @@ There are multiple applications for references in C++, a few of them:
 
 #### References vs pointers
 
-I can already here you thinking: "So references are just pointers with a different symbol?".  
-Well, no. Similar but references have some limitations.
+I can already hear you thinking: "So references are just pointers with a different symbol?".  
+Well, no. Similar, they point to a certain data type, but references have some limitations.
 
-- References always need to point to something. A valid instances or object of a class. They cannot be set to NULL, whereas pointers can point to NULL.
-- References are immutable. Meaning
+- References always need to point to something. Whereas pointers can point to NULL, references cannot. A reference needs to point to a valid instances or object of a class.
+- References are immutable. Meaning, a reference, once initialized, that points to a specific instance of a class can't be changed to point to a different one. Pointers do provide this functionality.
 
+You can run the small program to showcase the values and addresses associated with the data type itself, a pointer pointing to it and a references referring to it.
 
 ---
 
