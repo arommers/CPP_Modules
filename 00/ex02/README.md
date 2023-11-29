@@ -98,6 +98,8 @@ This function will be called to make deposits for the current account, signified
 		(*(it.first)).makeDeposit( *(it.second) ); <<< The actual function
 ```
 
+Our handling of the withdrawal and display functions are similar and that Is how we resurrect the missing file from the dead. Making it exactly formatted to the example file is secondary to make sure the right amounts get adjusted for the right accounts.
+
 ---
 ### Quick Links  
 
