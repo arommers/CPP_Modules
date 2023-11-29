@@ -39,8 +39,8 @@ Zombie* newZombie(std::string name)
 }
 ```
 
-We now have a minion that can looks for brains beyond it's otherwise limited scope.
-However, if not properly taken care of before or when our program ends we do need to take care of it.
+We now have a minion that can hunt for brains beyond it's otherwise limited scope.
+However, if not properly taken care of when our program ends, our zombie will 'leak' and we do need to take care of it.
 
 ### Delete
 
