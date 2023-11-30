@@ -15,7 +15,9 @@ The levels of messages it produces are:
 - **ERROR** level: These messages indicate an unrecoverable error has occurred.
   This is usually a critical issue that requires manual intervention.
 
-To make the assignment even more confusing 'Harl' seems to be slurring about bacon. Luckily, the contents of the error messages are actually irrelevant. They each display a different message when invoked. What is important to us is, how they are invoked.
+To make the assignment even more confusing 'Harl' seems to be slurring about bacon or something random. Luckily, the contents of the error messages are actually irrelevant. They each display a different message when invoked.  
+
+What is important to us is, how they are invoked, through pointers.
 
 
 ---
