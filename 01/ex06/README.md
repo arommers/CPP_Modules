@@ -47,7 +47,7 @@ This also means that the default evalution will be true and that block of code w
 As you can see in our revised complain function below, we did include a break at the last case.
 
 <div align="center">
-  <img src="https://i.imgur.com/WOExIIP.png">
+  <img src="https://i.imgur.com/w0Hum2X.png">
 </div>
 
 **The reason why we only check the first character of each level instead of the whole string, is because the switch statement in C++ is designed to work with integral(whole numbers) or enumerated types. We could have made an enumeration of our levels, but using just the first character is safe since we use a different function to properly check the input.*  
