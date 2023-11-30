@@ -19,7 +19,9 @@ To make the assignment even more confusing 'Harl' seems to be slurring about bac
 
 ---
 
-### Pointer to Member Functions
+### Function Pointers
+
+In C++, 
 
 ---
 ### Quick Links  
