@@ -44,7 +44,11 @@ switch (expression) {         <<< in our case the provided level string. e.g."IN
 For our assignment however we don't want Harl to stop after one message. We do want the code to cascade further and execute every case from that point on beyond. We just need to give Harl a starting point to start rambling.
 This also means that the default evalution will be true and that block of code would also be executed.
   
-As you can see in our revised complain function below, we did include a break at the last case. We did not include a default case to catch anything that didn't match any of the cases, which I admit, is a bit sloppy.
+As you can see in our revised complain function below, we did include a break at the last case.
+
+<div align="center">
+  <img src="https://i.imgur.com/WOExIIP.png">
+</div>
 
 ---
 ### Quick Links  
