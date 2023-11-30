@@ -17,11 +17,36 @@ The levels of messages it produces are:
 
 To make the assignment even more confusing 'Harl' seems to be slurring about bacon. Luckily, the contents of the error messages are actually irrelevant. They each display a different message when invoked. What is important to us is, how they are invoked.
 
+
 ---
 
 ### Function Pointers
 
-In C++, 
+In C++, just like pointers to variables, pointers to function allow us to store the address of a function in a variable, and later use that variable to invoke the function.  
+
+A function is  not a data type in the same sense as an int, float, or other primitive data types. However, functions do have addresses in memory, just like variables. The address of a function is essentially the location in memory where the machine code for that function is stored when it is declared.
+
+When we declare a function in C++, the compiler translates that function into machine code and allocates memory for it. The address of the function is the starting point of this allocated memory. We can think of the address of a function as the entry point to the sequence of machine code instructions that make up that function.
+
+When we declare a pointer to a variable we declare it as this:  
+
+`data_type *var_name`
+
+As you probably know, dataype is the pointer that stores the memory address for the variable var_name.
+
+A function pointer declaration differs a little bit in it's syntax declaration:  
+
+`return_type (*FunctionPtr)() = &randomFunction`
+
+In this example, FunctionPtr is a pointer to a function that takes no arguments and returns 'return type', which can be an int, string, void etc. The &randomFunction part assigns the address of randomFunction to functionPtr.  Now functionPtr "points to" or "holds the address of" myFunction. Later we can then use this pointer to call the function:
+
+`functionPtr()`
+
+#### Harl's messages
+
+In our code we have four different functions, one for each message and we store their addresses in an array. The functions themselves have been declared beforehand.
+We then use a for loop in our complain function to call the corresponding function through a pointer. 
+
 
 ---
 ### Quick Links  
