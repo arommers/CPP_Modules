@@ -53,6 +53,7 @@ We then use a for loop in our complain function to call the corresponding functi
   <img src="https://i.imgur.com/TTOTXTk.png">
 </div>
 
+**We use the array of level strings to make sure that we get the correct message function. Also pay attention to the fact that we have to dereference the pointer to get the correct value (the address), since we are using an array*
 
 ---
 ### Quick Links  
