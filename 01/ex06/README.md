@@ -52,7 +52,7 @@ As you can see in our revised complain function below, we did include a break at
 
 **The reason why we only check the first character of each level instead of the whole string, is because the switch statement in C++ is designed to work with integral(whole numbers) or enumerated types. We could have made an enumeration of our levels, but using just the first character is safe since we use a different function to properly check the input.*  
 
-**If we want to work with whole strings we would have to go back to our beloved if-else statements.*
+*If we want to work with whole strings we would have to go back to our beloved if-else statements.*
 
 ---
 ### Quick Links  
