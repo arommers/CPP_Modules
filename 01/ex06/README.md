@@ -3,7 +3,7 @@
 </div>
 
 ## Harl Filter
-So were back it with Harl and his barrage of nonsense messages. This time around though we are requested to give Harl a certain message level and have him shout out each one in ascending order starting from the level provided.
+So were back at it with Harl and his barrage of nonsense messages. This time around though we are requested to give Harl a certain message level and have him shout out each one in ascending order starting from the level we provided.
 A quick reminder for the level messages:
 - DEBUG
 - INFO
@@ -23,7 +23,7 @@ The switch statement in C++ is a powerful tool that allows us to control the flo
 The syntax is straightforward:
 
 ```
-switch (expression) { <<< in our case the provided level string
+switch (expression) {         <<< in our case the provided level string. e.g."INFO".
     case value1:
         // Code to be executed if expression matches value1
         break;
@@ -39,6 +39,12 @@ switch (expression) { <<< in our case the provided level string
 - The switch statement evaluates the expression and compares it with the values specified in each case.
 - If a match is found, the corresponding block of code is executed.
 - The default case is optional and is executed when none of the specified case values matches the expression.
+- The break statement is crucial to exit the switch block and prevent fall-through to subsequent cases.
+
+For our assignment however we don't want Harl to stop after one message. We do want the code to cascade further and execute every case from that point on beyond. We just need to give Harl a starting point to start rambling.
+This also means that the default evalution will be true and that block of code would also be executed.
+  
+As you can see in our revised complain function below, we did include a break at the last case. We did not include a default case to catch anything that didn't match any of the cases, which I admit, is a bit sloppy.
 
 ---
 ### Quick Links  
