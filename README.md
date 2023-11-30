@@ -23,7 +23,7 @@ Each module contains several exercises that are selfcontained and respectively d
 
 #### [Module 00](https://github.com/arommers/CPP_Modules/tree/master/00)
 - [Megaphone](https://github.com/arommers/CPP_Modules/blob/master/00/ex00/README.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*Namespaces, Standard output stream*)
-- [My Awesome Phonebook](https://github.com/arommers/CPP_Modules/tree/master/00/ex01)&nbsp;&nbsp;&nbsp;(*Encapsulation, Initialization, String library*)
+- [My Awesome Phonebook](https://github.com/arommers/CPP_Modules/tree/master/00/ex01)&nbsp;&nbsp;&nbsp;&nbsp;(*Encapsulation, Initialization, String library*)
 - [The Job of Your Dreams](https://github.com/arommers/CPP_Modules/tree/master/00/ex02)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*Static data, vectors*)
 
 #### [Module 01](https://github.com/arommers/CPP_Modules/tree/master/01)
@@ -31,9 +31,9 @@ Each module contains several exercises that are selfcontained and respectively d
 - [Moar brainz!](https://github.com/arommers/CPP_Modules/tree/master/01/ex01)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*Arrays and the heap*)
 - [HI THIS IS BRAIN](https://github.com/arommers/CPP_Modules/tree/master/01/ex02)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*String vs References*)
 - [Unnecessary violence](https://github.com/arommers/CPP_Modules/tree/master/01/ex03)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*String vs References, Getters & Setters*)
-- [Sed is for losers](https://github.com/arommers/CPP_Modules/tree/master/01/ex04)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*File manipulation*)
+- [Sed is for losers](https://github.com/arommers/CPP_Modules/tree/master/01/ex04)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*File manipulation*)
 - [Harl 2.0](https://github.com/arommers/CPP_Modules/tree/master/01/ex05)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*Pointers to member functions*)
-- [Harl Filter](https://github.com/arommers/CPP_Modules/tree/master/01/ex06)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*(Switch Statements*)
+- [Harl Filter](https://github.com/arommers/CPP_Modules/tree/master/01/ex06)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*(Switch Statements*)
 
 #### [Module 02](https://github.com/arommers/CPP_Modules/tree/master/02)
 
