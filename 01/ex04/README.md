@@ -22,7 +22,7 @@ This being an assignment in the 42 curriculum naturally means we are not allowed
 
 To do this we can slice our little program into three different parts. 
 - Opening a file to read.
-- opening a file to write to.
+- Opening a file to write to.
 - Make a loop that reads our file line by line.
 
 ---
