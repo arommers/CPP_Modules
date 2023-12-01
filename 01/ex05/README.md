@@ -3,7 +3,7 @@
 </div>
 
 ## Harl 2.0
-So I'll have to be honest and admit that I have no idea what the titular 'Harl' int this assignment is or should represent. My best guess is that it is some off brand reference to the semi-sentient software 'Hal' from the movie 2001: A space oddity. A piece of software that spouts different levels of warning errors based on the state of things, I guess....  
+So I'll have to be honest and admit that I have no idea what the titular 'Harl' in this assignment is or should represent. My best guess is that it is some off brand reference to the semi-sentient software 'Hal' from the movie 2001: A space oddity. A piece of software that spouts different levels of warning errors based on the state of things, I guess....  
 
 The levels of messages it produces are:
 - **DEBUG** level: Debug messages contain contextual information. They are mostly
