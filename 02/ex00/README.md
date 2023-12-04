@@ -43,11 +43,34 @@ class example
 {
    public:
       example();
-      example(const example &original);
       ~example();
+      example(const example &original);
       Example &operator = (const example &original);
 };
 ```
+
+### Fixed point number
+Since our class needs to represent a fixed point number I'll provide a very brief description.  
+
+A fixed-point number is a representation of a real number with a fixed number of digits after the decimal point (or binary point in the case of binary fixed-point numbers). Unlike floating-point numbers, which have a variable number of digits in the fractional part, fixed-point numbers have a predetermined and fixed precision, show in ourclass by the private member fractional bits.  
+
+In a fixed-point representation, a certain number of bits are reserved for the integer part and a certain number for the fractional part. The position of the binary (or decimal) point is fixed and known in advance.
+
+For example, in a 16-bit fixed-point representation with 8 bits for the integer part and 8 bits for the fractional part, the binary point is fixed after the first 8 bits. So, the number 10101111.11001010 in this representation would mean 10101111 in the integer part and .11001010 in the fractional part.
+
+So why are these numbers important and what are their practical applications. I'll limit this to our assignments where I can show the benefits of a fixed pointer number in comparison with integers and floatd.
+- **Integers**  
+  They represent whole numbers and as such are very accurate. A '1' is a '1' not some approximation of the value. However it is not very precise. When a number would actually be '1.00012345', as an int, it would evaluate to 1.
+
+  If we were to turn this into a fixed point number with 8 fractional bit's we would actually have a more precise assesment of our value.
+- **Floats**  
+  Numeric values that are the opposite in this aspect, where they represent precision a lot better, but lack in accuracy.
+
+  Consider the number 1/3. No finite decimal digit representation (e.g. 0.333333) can ever be equal to 1/3; we can never have enough 3's. Thus it is more than likely that the computed result you need cannot be represented accurately by a finite floating point variable.
+
+  Turning a float into a fixed point number gives has it's limited uses when we value speed over precision. It's faster to tun a float like 5.4259742576443578743543 into a fixed point number with 3 fractional bits to make a calculation. We only evaluate two fractional bits opposed to the multitude of them in the orignal floats.
+
+There is a lot to it then my, more than likely flawed explanation, but I would advise to not dive to deep into fixed point numbers during these modules. Focus on the C++ side.
 
 ---
 ### Quick Links  
