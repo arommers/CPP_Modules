@@ -36,6 +36,19 @@ The big four refers to the minimal inclusion of the following four members:
 - **Copy Assignment Operator (ClassName& operator=(const ClassName&)):**  
   Assigns the values of one object to another. Like the copy constructor, it should perform a deep copy of the object's resources.
 
+An example of a class abiding these standards will look similar to the below example. I would like to point out that the Orthodox Canonical Form is by no means enforced. It is more a convention than anything else.
+
+```
+class example
+{
+   public:
+      example();
+      example(const example &original);
+      ~example();
+      Example &operator = (const example &original);
+};
+```
+
 ---
 ### Quick Links  
 
