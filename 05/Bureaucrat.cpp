@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/04 13:44:10 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/04 16:26:45 by arommers      ########   odam.nl         */
+/*   Updated: 2023/12/04 16:38:11 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ Bureaucrat::Bureaucrat(const std::string name, int grade): _name(name), _grade(g
         throw GradeTooHighException();
     if (grade > 150)
         throw GradeTooLowException();
-    std::cout << "Constructor called" << _name << std::endl;
+    std::cout << "Bureaucrat named " << _name << " was created" << std::endl;
 }
 
 Bureaucrat::Bureaucrat(const Bureaucrat& original):_name(original._name), _grade(original._grade)
@@ -37,7 +37,7 @@ Bureaucrat& Bureaucrat::operator=(const Bureaucrat& rhs)
 
 Bureaucrat::~Bureaucrat()
 {
-    std::cout << "Destructor called" << _name << std::endl;
+    std::cout << "Bureaucrat named " << _name << " was rightfully murdered" << std::endl;
 }
 
 std::string Bureaucrat::getName() const

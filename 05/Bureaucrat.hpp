@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/04 13:44:13 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/04 16:26:33 by arommers      ########   odam.nl         */
+/*   Updated: 2023/12/04 16:32:01 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ class Bureaucrat
     class GradeTooHighException: public std::exception
     {
       public:
-        const char* what() const noexcept
+        const char* what() const noexcept override
         {
           return ("Grade is too high");
         }
@@ -40,11 +40,9 @@ class Bureaucrat
     class GradeTooLowException: public std::exception
     {
       public:
-        const char* what() const noexcept
+        const char* what() const noexcept override
         {
           return ("Grade is too low");
         }
     };
-
-    
 };
