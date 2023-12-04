@@ -37,7 +37,7 @@ Each module contains several exercises that are selfcontained and respectively d
 
 #### [Module 02](https://github.com/arommers/CPP_Modules/tree/master/02)
 - [My First Class in Orthodox Canonical Form](https://github.com/arommers/CPP_Modules/tree/master/02/ex00)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Orthodox Canonical Form, Fixed Point Numbers*
-- [Towards a more useful fixed-point number class](https://github.com/arommers/CPP_Modules/tree/master/02/ex01)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Overload of the Insertion («) Operator*
+- [Towards a more useful fixed-point number class](https://github.com/arommers/CPP_Modules/tree/master/02/ex01)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Overload of the Insertion Operator*
 - [Now We're Talking](https://github.com/arommers/CPP_Modules/tree/master/02/ex02)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Comparison, Arithmetic, modify operators*
 
 #### [Module 03](https://github.com/arommers/CPP_Modules/tree/master/03)
