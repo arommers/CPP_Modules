@@ -23,15 +23,18 @@ We are tasked with creating a class in the Orthodox Canonical Form that represen
 
 ### The Orthodox Canonical Form
 
-The Orthodox Canonical Form typically refers to a set of standard methods that are defined for a class in C++. For us this is means the minimal inclusion of "The Big Four" since we are working in accordance with the C++98 standard.
+The Orthodox Canonical Form typically refers to a set of standard methods that are defined for a class in C++.  
+For us this is means the minimal inclusion of "The Big Four" since we are working in accordance with the C++98 standard.
+The big four refers to the minimal inclusion of the following four members:
 
-Constructor (ClassName(parameters)): Responsible for initializing an object. It is called when an object is created. Constructors can have parameters to initialize the object with specific values. Constructors can also be overloaded to provide different ways of initializing objects.
-
-Destructor (~ClassName()): Responsible for releasing any resources acquired by an object. It is called when the object goes out of scope or is explicitly deleted.
-
-Copy Constructor (ClassName(const ClassName&)): Creates a new object by copying an existing object. It should perform a deep copy of the object's resources.
-
-Copy Assignment Operator (ClassName& operator=(const ClassName&)): Assigns the values of one object to another. Like the copy constructor, it should perform a deep copy of the object's resources.
+- **A Constructor (ClassName(parameters)):**  
+  Responsible for initializing an object. It is called when an object is created. Constructors can have parameters to initialize the object with specific values. Constructors can also be overloaded to provide different ways of initializing objects.
+- **A Destructor (~ClassName()):**  
+  Responsible for releasing any resources acquired by an object. It is called when the object goes out of scope or is explicitly deleted.
+- **A Copy Constructor (ClassName(const ClassName&)):**  
+  Creates a new object by copying an existing object. It should perform a deep copy of the object's resources, but that's someting we'll get into later.
+- **Copy Assignment Operator (ClassName& operator=(const ClassName&)):**  
+  Assigns the values of one object to another. Like the copy constructor, it should perform a deep copy of the object's resources.
 
 ---
 ### Quick Links  
