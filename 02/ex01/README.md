@@ -23,8 +23,8 @@ Person::Person(std::string name) : _name(name)
 #### The insertion operator overload is something new however
 The insertion operator overload is an overload of the output stream insertion operator (<<) for our class Fixed. This function is responsible for defining how objects of the Fixed type should be formatted when they are output to an output stream, like std::cout.  
 
-The way I like to think about operator overloading is by seeing it as customizing. We adjust the normal value of the operator to tell the compiler how to work with our user defined data types, like our fixed class.
-We defined this data so if we want to output them to an output stream, we have to specify how to handle our defined data. The compiler understands a primitive data type inherently, but not something we made up.
+The way I like to think about operator overloading is by seeing it as customization. We adjust the default value of the operator to tell the compiler how to work with user defined data types, like our fixed class.
+We defined this data type, so if we want to output them to an output stream, we have to specify how the compiler should handle this user defined data. The compiler understands a primitive data type inherently, but not something we made up.
 
 ```
 std::ostream& operator<<(std::ostream& os, const Fixed& object)
