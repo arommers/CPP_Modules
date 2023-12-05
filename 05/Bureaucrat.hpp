@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/04 13:44:13 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/04 16:32:01 by arommers      ########   odam.nl         */
+/*   Updated: 2023/12/05 13:16:02 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,9 @@ class Bureaucrat
 
     std::string  getName() const;
     int          getGrade() const;
+
+    void  incrementGrade();
+    void  decrementGrade();
     
     class GradeTooHighException: public std::exception
     {

@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/04 13:44:10 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/04 16:38:11 by arommers      ########   odam.nl         */
+/*   Updated: 2023/12/05 15:48:29 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,4 +48,24 @@ std::string Bureaucrat::getName() const
 int Bureaucrat::getGrade() const
 {
     return(_grade);
+}
+
+void    Bureaucrat::incrementGrade()
+{
+    if (_grade - 1 < 1)
+        throw GradeTooHighException();
+    _grade--;
+}
+
+void    Bureaucrat::decrementGrade()
+{
+    if (_grade + 1 > 150)
+        throw GradeTooLowException();
+    _grade++;
+}
+
+std::ostream&   operator<<(std::ostream& os, const Bureaucrat& object)
+{
+    os << object.getName() <<  " bureaucrat grade: " << object.getGrade() << ".";
+    return (os);
 }
