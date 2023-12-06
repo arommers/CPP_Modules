@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/04 13:44:10 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/05 15:48:29 by adri          ########   odam.nl         */
+/*   Updated: 2023/12/06 12:27:18 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,10 +50,16 @@ int Bureaucrat::getGrade() const
     return(_grade);
 }
 
+void    Bureaucrat::setGrade(int grade)
+{
+    _grade = grade;
+}
+
 void    Bureaucrat::incrementGrade()
 {
     if (_grade - 1 < 1)
         throw GradeTooHighException();
+    std::cout << _name << " was promoted!" << std::endl;
     _grade--;
 }
 
@@ -61,6 +67,7 @@ void    Bureaucrat::decrementGrade()
 {
     if (_grade + 1 > 150)
         throw GradeTooLowException();
+    std::cout << _name << " was demoted!" << std::endl;
     _grade++;
 }
 
