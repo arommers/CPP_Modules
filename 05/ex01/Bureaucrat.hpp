@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/04 13:44:13 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/06 13:43:39 by arommers      ########   odam.nl         */
+/*   Updated: 2023/12/06 15:56:32 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 #include <iostream>
 #include <exception>
+class Form;
 
 class Bureaucrat
 {
@@ -50,6 +51,8 @@ class Bureaucrat
           return ("Grade is too low");
         }
     };
+
+    void  signForm(Form& form);
 };
 
 std::ostream& operator<<(std::ostream& os, const Bureaucrat& object);

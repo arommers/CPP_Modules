@@ -6,11 +6,12 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/04 13:44:10 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/06 12:27:18 by arommers      ########   odam.nl         */
+/*   Updated: 2023/12/06 16:02:24 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Bureaucrat.hpp"
+#include "Form.hpp"
 
 Bureaucrat::Bureaucrat(const std::string name, int grade): _name(name), _grade(grade)
 {
@@ -69,6 +70,17 @@ void    Bureaucrat::decrementGrade()
         throw GradeTooLowException();
     std::cout << _name << " was demoted!" << std::endl;
     _grade++;
+}
+
+void    Bureaucrat::signForm(Form& form)
+{
+    if (_grade > form.getGradeSign())
+        std::cerr << _name << " does not have the clearance to sign of on form " << form.getName() << std::endl;
+    else
+    {
+        std::cout << _name << " signed form " << form.getName() << std::endl;
+        form.beSigned(*this);
+    }
 }
 
 std::ostream&   operator<<(std::ostream& os, const Bureaucrat& object)
