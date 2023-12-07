@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/06 13:42:44 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/07 11:16:50 by arommers      ########   odam.nl         */
+/*   Updated: 2023/12/07 15:31:00 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,6 +78,6 @@ std::ostream&   operator<<(std::ostream& os, const AForm& object)
     os << "Form: " << object.getName() << 
     ", requires grade " << object.getGradeSign() << 
     " to sign and grade " << object.getGradeExecute() << 
-    " to execute. It's currently " << (object.getSigned() ? "signed" : "unsigned") << std::endl;
+    " to execute. It's currently " << (object.getSigned() ? "signed" : "unsigned");
     return (os);
 }

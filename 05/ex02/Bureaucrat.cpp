@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/04 13:44:10 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/07 13:52:32 by arommers      ########   odam.nl         */
+/*   Updated: 2023/12/07 15:33:06 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ void    Bureaucrat::signForm(AForm& form)
     try
     {
         form.beSigned(*this);
-        std::cout << _name << " signed form: " << form.getName() << std::endl;
+        std::cout << _name << " signed form: " << form.getName();
     }
     catch(const std::exception& e)
     {

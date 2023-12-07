@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/07 13:58:43 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/07 14:29:55 by arommers      ########   odam.nl         */
+/*   Updated: 2023/12/07 16:11:46 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <cstdlib>
 #include <ctime>
 
-RobotRequestForm::RobotRequestForm(std::string target): AForm("RobotRequestForm", 72, 45), _target(target) {}
+RobotRequestForm::RobotRequestForm(const std::string& target): AForm("RobotRequestForm", 72, 45), _target(target) {}
 
 RobotRequestForm::~RobotRequestForm() {}
 
@@ -38,5 +38,5 @@ void    RobotRequestForm::execute(const Bureaucrat& executor) const
     if (i % 2 == 0)
         std::cout << _target << "has been robotomized successfully!" << std::endl;
     else
-        std::cout << "Robotomy of " << _target << "failed..." << std::endl;
+        std::cout << "Robotomy of " << _target << " failed..." << std::endl;
 }

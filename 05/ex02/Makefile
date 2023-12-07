@@ -6,7 +6,7 @@
 #    By: arommers <arommers@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/12/07 10:21:16 by arommers      #+#    #+#                  #
-#    Updated: 2023/12/07 14:24:22 by arommers      ########   odam.nl          #
+#    Updated: 2023/12/07 16:23:34 by arommers      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,8 @@ CPPFLAGS	= -Wall -Werror -Wextra -std=c++98
 SRC			= 	./main.cpp ./AForm.cpp 		\
 				./Bureaucrat.cpp 			\
 				./ShrubberyCreationForm.cpp	\
-				./RobotomyRequestForm.cpp
+				./RobotomyRequestForm.cpp	\
+				./PresidentialPardonForm.cpp
 OBJ			= $(SRC:.cpp=.o)
 
 all:$(NAME)
