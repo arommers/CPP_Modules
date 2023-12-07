@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/04 13:44:10 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/07 15:33:06 by arommers      ########   odam.nl         */
+/*   Updated: 2023/12/07 21:14:04 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,7 @@ void    Bureaucrat::executeForm(const AForm& form )
     }
     catch(const std::exception& e)
     {
-        std::cerr << _name << " does not have clearance, "<<e.what() << std::endl;
+        std::cerr << _name << " does not have clearance, " << e.what() << std::endl;
     }
 }
 

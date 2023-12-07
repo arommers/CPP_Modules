@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/04 13:44:10 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/06 16:02:24 by arommers      ########   odam.nl         */
+/*   Updated: 2023/12/07 21:25:11 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,12 +74,15 @@ void    Bureaucrat::decrementGrade()
 
 void    Bureaucrat::signForm(Form& form)
 {
-    if (_grade > form.getGradeSign())
-        std::cerr << _name << " does not have the clearance to sign of on form " << form.getName() << std::endl;
-    else
+    try
     {
-        std::cout << _name << " signed form " << form.getName() << std::endl;
         form.beSigned(*this);
+        std::cout << _name << " signed form " << form.getName() << std::endl;  
+    }
+    catch(const std::exception& e)
+    {
+        std::cerr << _name << " does not have the clearance to sign of on form " << 
+        form.getName()<< ", " << e.what() << std::endl;   
     }
 }
 

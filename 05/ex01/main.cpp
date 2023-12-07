@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/06 14:54:40 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/06 16:43:43 by arommers      ########   odam.nl         */
+/*   Updated: 2023/12/07 21:22:05 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int main()
     std::cout << "*** let's try and make more some illegal forms: ***" << std::endl;
     try
     {
-        Form        wrongForm("too low", 200, 0);
+        Form        wrongForm("too low", 200, 200);
     }
     catch (std::exception& e)
     {
@@ -55,7 +55,8 @@ int main()
     std::cout << std::endl;
 
     // We give bob clearance and try again, sign form calls beSigned
-    try{
+    try
+    {
         for (int i = 0; i < 100; i++)
             bob.incrementGrade();
     }
