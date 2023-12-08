@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/06 13:38:21 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/07 13:08:40 by arommers      ########   odam.nl         */
+/*   Updated: 2023/12/08 12:50:32 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ class AForm
         AForm(std::string name, int sign, int execute);
         AForm(const AForm& original);
         AForm& operator=(const AForm& rhs);
-        ~AForm();
+        virtual ~AForm();
 
         std::string getName() const;
         bool        getSigned() const;

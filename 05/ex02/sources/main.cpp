@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/07 12:38:46 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/07 16:30:58 by arommers      ########   odam.nl         */
+/*   Updated: 2023/12/08 12:21:48 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ int main()
     std::cout << sorry << std::endl;
     std::cout << std::endl;
 
-
     // Let's sign the form
     std::cout << "*** Let's have Bob sign a form: ***" << std::endl;
     bob.signForm(shrub);
@@ -44,14 +43,6 @@ int main()
     // Let's have bob execute the form
     std::cout << "*** Let's have Bob execute the form: ***" << std::endl;
     bob.executeForm(shrub);
-    std::cout << std::endl;
-
-    // Lets demote bob and have him try it again
-    std::cout << "*** Let's demote Bob and let him try again: ***" << std::endl;
-    bob.setGrade(150);
-    bob.executeForm(shrub);
-    std::cout << std::endl;
-    bob.setGrade(10);
 
     // Robot time, we can comment out the siging to test for executing unsigned forms
     std::cout << "*** Let's have Bob sign a form: ***" << std::endl;
@@ -77,7 +68,6 @@ int main()
     bob.setGrade(1);
     bob.executeForm(sorry);
     std::cout << std::endl;
-
 
     //  Destructors being called
     std::cout << "*** Destructors being called: ***" << std::endl;

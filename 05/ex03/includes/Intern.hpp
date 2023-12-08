@@ -1,22 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   main.cpp                                           :+:    :+:            */
+/*   Intern.hpp                                         :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2023/12/07 12:38:46 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/08 11:08:03 by arommers      ########   odam.nl         */
+/*   Created: 2023/12/08 11:08:44 by arommers      #+#    #+#                 */
+/*   Updated: 2023/12/08 12:48:31 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Bureaucrat.hpp"
-#include "AForm.hpp"
-#include "ShrubberyCreationForm.hpp"
-#include "RobotomyRequestForm.hpp"
-#include "PresidentialPardonForm.hpp"
+#pragma once
 
-int main()
+#include <iostream>
+#include "AForm.hpp"
+
+
+class Intern
 {
-   return (0);
-}
+    public:
+        Intern();
+        Intern(const Intern& original);
+        Intern& operator=(const Intern& rhs);
+        ~Intern();
+        
+        AForm *makeForm(std::string name, std::string target);
+};
