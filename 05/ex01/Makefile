@@ -6,12 +6,12 @@
 #    By: arommers <arommers@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/12/06 16:29:56 by arommers      #+#    #+#                  #
-#    Updated: 2023/12/06 16:37:35 by arommers      ########   odam.nl          #
+#    Updated: 2023/12/08 11:06:23 by arommers      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 NAME 		= form
-CC 			= g++
+CC 			= c++
 CPPFLAGS	= -Wall -Werror -Wextra -std=c++98
 SRC			= ./main.cpp ./Bureaucrat.cpp ./Form.cpp
 OBJ			= $(SRC:.cpp=.o)

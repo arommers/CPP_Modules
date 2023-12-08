@@ -6,12 +6,12 @@
 #    By: arommers <arommers@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/12/06 13:19:08 by arommers      #+#    #+#                  #
-#    Updated: 2023/12/06 13:35:02 by arommers      ########   odam.nl          #
+#    Updated: 2023/12/08 11:06:18 by arommers      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 NAME 		= bureaucrat
-CC			= g++
+CC			= c++
 CPPFLAGS	= -Wall -Werror -Wextra -std=c++98
 SRC 		= ./main.cpp ./Bureaucrat.cpp
 OBJ			= $(SRC:.cpp=.o)
