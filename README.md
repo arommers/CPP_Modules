@@ -44,6 +44,11 @@ Each module contains several exercises that are selfcontained and respectively d
 
 #### [Module 04](https://github.com/arommers/CPP_Modules/tree/master/04)
 
+#### [Module 05](https://github.com/arommers/CPP_Modules/tree/master/05)
+- [Mommy, when I grow up, I want to be a bureaucrat!](https://github.com/arommers/CPP_Modules/tree/master/05/ex00)&nbsp;&nbsp;&nbsp;&nbsp;*Exceptions*
+- []()
+- []()
+- []()
 ---
 
 
