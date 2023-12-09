@@ -46,9 +46,9 @@ Each module contains several exercises that are selfcontained and respectively d
 
 #### [Module 05](https://github.com/arommers/CPP_Modules/tree/master/05)
 - [Mommy, when I grow up, I want to be a bureaucrat!](https://github.com/arommers/CPP_Modules/tree/master/05/ex00)&nbsp;&nbsp;&nbsp;&nbsp;*Exceptions*
-- []()
-- []()
-- []()
+- [Form up, maggots!](https://github.com/arommers/CPP_Modules/tree/master/05/ex01)&nbsp;&nbsp;&nbsp;&nbsp;*Derived Exceptions*
+- [ No, you need form 28B, not 28C...](https://github.com/arommers/CPP_Modules/tree/master/05/ex02) **
+- [At least this beats coffee-making](https://github.com/arommers/CPP_Modules/tree/master/05/ex03)
 ---
 
 
