@@ -36,9 +36,9 @@ Each module contains several exercises that are selfcontained and respectively d
 - [Harl Filter](https://github.com/arommers/CPP_Modules/tree/master/01/ex06)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Switch Statements*
 
 #### [Module 02](https://github.com/arommers/CPP_Modules/tree/master/02)
-- [My First Class in Orthodox Canonical Form](https://github.com/arommers/CPP_Modules/tree/master/02/ex00)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Orthodox Canonical Form, Fixed Point Numbers*
+- [My First Class in Orthodox Canonical Form](https://github.com/arommers/CPP_Modules/tree/master/02/ex00)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Orthodox Canonical Form, Fixed Point Numbers*
 - [Towards a more useful fixed-point number class](https://github.com/arommers/CPP_Modules/tree/master/02/ex01)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Overload of the Insertion Operator*
-- [Now We're Talking](https://github.com/arommers/CPP_Modules/tree/master/02/ex02)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Comparison, Arithmetic, modify operators*
+- [Now We're Talking](https://github.com/arommers/CPP_Modules/tree/master/02/ex02)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Comparison, Arithmetic, modify operators*
 
 #### [Module 03](https://github.com/arommers/CPP_Modules/tree/master/03)
 
@@ -46,9 +46,10 @@ Each module contains several exercises that are selfcontained and respectively d
 
 #### [Module 05](https://github.com/arommers/CPP_Modules/tree/master/05)
 - [Mommy, when I grow up, I want to be a bureaucrat!](https://github.com/arommers/CPP_Modules/tree/master/05/ex00)&nbsp;&nbsp;&nbsp;&nbsp;*Exceptions*
-- [Form up, maggots!](https://github.com/arommers/CPP_Modules/tree/master/05/ex01)&nbsp;&nbsp;&nbsp;&nbsp;*Derived Exceptions*
-- [ No, you need form 28B, not 28C...](https://github.com/arommers/CPP_Modules/tree/master/05/ex02) **
-- [At least this beats coffee-making](https://github.com/arommers/CPP_Modules/tree/master/05/ex03)
+- [Form up, maggots!](https://github.com/arommers/CPP_Modules/tree/master/05/ex01)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Nested Exceptions*
+- [ No, you need form 28B, not 28C...](https://github.com/arommers/CPP_Modules/tree/master/05/ex02)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Derived Exeptions*
+- [At least this beats coffee-making](https://github.com/arommers/CPP_Modules/tree/master/05/ex03)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Repetition*
+- 
 ---
 
 
