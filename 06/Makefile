@@ -6,11 +6,11 @@
 #    By: arommers <arommers@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/12/11 14:03:15 by arommers      #+#    #+#                  #
-#    Updated: 2023/12/11 16:28:10 by arommers      ########   odam.nl          #
+#    Updated: 2023/12/13 15:07:45 by arommers      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
-NAME 		= scalar
+NAME 		= convert
 CC			= c++
 CPPFLAGS	= -Wall -Werror -Wextra
 INCLUDE		= -I./includes
@@ -23,7 +23,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	@$(CC) $(CPPFLAGS) -o $(NAME)
 
-$(OBJ_DIR)/%/.o: ./sources/%.cpp
+$(OBJ_DIR)/%.o: ./sources/%.cpp
 	@mkdir -p $(OBJ_DIR)
 	@$(CC) $(CPPFLAGS) $(INCLUDE) -c $< -o @<
 
