@@ -1,3 +1,10 @@
+<div align="center">
+  <img src="https://i.imgur.com/9RRWFs4.png">
+</div>
+
+## Mommy, when I grow up, I want to be a bureaucrat!
+---
+
 ### Quick Links  
 
 #### [Home](https://github.com/arommers/CPP_Modules)

@@ -2,7 +2,7 @@
   <img src="https://i.imgur.com/9RRWFs4.png">
 </div>
 
-# Megaphone
+## Megaphone
 The purpose of this assignment is to write a program that would take any number of strings as input and handles them in a manner as shown in the example below:
 
 ![ERROR](https://i.imgur.com/XmbVgb2.png)

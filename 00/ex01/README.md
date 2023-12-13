@@ -2,7 +2,7 @@
   <img src="https://i.imgur.com/9RRWFs4.png">
 </div>
 
-# My Awesome Phonebook
+## My Awesome Phonebook
 A project where we create a program that emulates an 80's-style "crappy" phonebook.  
 This project very much has us hitting the ground running, as it combines a lot of C++ concepts at once. 
 The two most important ones are `classes` and an introduction to encapsulation.  
