@@ -6,7 +6,7 @@
 #    By: arommers <arommers@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/12/11 14:03:15 by arommers      #+#    #+#                  #
-#    Updated: 2023/12/13 15:07:45 by arommers      ########   odam.nl          #
+#    Updated: 2023/12/13 16:32:47 by arommers      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,17 +15,17 @@ CC			= c++
 CPPFLAGS	= -Wall -Werror -Wextra
 INCLUDE		= -I./includes
 SRC			= ./sources/Scalar.cpp ./sources/main.cpp
-OBJ			= $(addprefix $(OBJ_DIR)/,$(notdir $(SRC:.cpp=.o)))
+OBJ			= $(addprefix $(OBJ_DIR)/, $(notdir $(SRC:.cpp=.o)))
 OBJ_DIR		= objects
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@$(CC) $(CPPFLAGS) -o $(NAME)
+	@$(CC) $(CPPFLAGS) $(OBJ) -o $(NAME)
 
 $(OBJ_DIR)/%.o: ./sources/%.cpp
 	@mkdir -p $(OBJ_DIR)
-	@$(CC) $(CPPFLAGS) $(INCLUDE) -c $< -o @<
+	@$(CC) $(CPPFLAGS) $(INCLUDE) -c $< -o $@
 
 clean:
 	@rm -rf $(OBJ_DIR)

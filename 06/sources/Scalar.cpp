@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/11 14:03:00 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/13 15:02:29 by arommers      ########   odam.nl         */
+/*   Updated: 2023/12/13 16:33:32 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,12 @@ ScalarConverter& ScalarConverter::operator=(const ScalarConverter& rhs)
 
 ScalarConverter::~ScalarConverter() {}
 
-void    ScalarConverter::convert(const std::string input) 
+void    ScalarConverter::convert(const std::string& input) 
 {
     std::string charValue = "";
-    int         intValue = 0;
-    int         floatValue = 0;
-    int         doubleValue = 0;
+    // int         intValue = 0;
+    // int         floatValue = 0;
+    // int         doubleValue = 0;
 
     if (input.size() == 1 && !isdigit(input[0]) && isprint(input[0]))
     {
