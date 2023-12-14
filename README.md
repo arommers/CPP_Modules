@@ -22,30 +22,34 @@ Each module contains several exercises that are selfcontained and respectively d
 ## Table of contents  
 
 ## [Module 00](https://github.com/arommers/CPP_Modules/tree/master/00)
-- [Megaphone](https://github.com/arommers/CPP_Modules/blob/master/00/ex00/README.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Namespaces, Standard output stream*
-- [My Awesome Phonebook](https://github.com/arommers/CPP_Modules/tree/master/00/ex01)&nbsp;&nbsp;&nbsp;&nbsp;*Encapsulation, Initialization, String library*
-- [The Job of Your Dreams](https://github.com/arommers/CPP_Modules/tree/master/00/ex02)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Static data, Vectors*
+- [EX00: Megaphone](https://github.com/arommers/CPP_Modules/blob/master/00/ex00/README.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Namespaces, Standard output stream*
+- [EX01: My Awesome Phonebook](https://github.com/arommers/CPP_Modules/tree/master/00/ex01)&nbsp;&nbsp;&nbsp;&nbsp;*Encapsulation, Initialization, String library*
+- [EX02: The Job of Your Dreams](https://github.com/arommers/CPP_Modules/tree/master/00/ex02)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Static data, Vectors*
 
 ## [Module 01](https://github.com/arommers/CPP_Modules/tree/master/01)
-- [BraiiiiiiinnnzzzZ](https://github.com/arommers/CPP_Modules/tree/master/01/ex00)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Heap vs Stack*
-- [Moar brainz!](https://github.com/arommers/CPP_Modules/tree/master/01/ex01)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Arrays and the Heap*
-- [HI THIS IS BRAIN](https://github.com/arommers/CPP_Modules/tree/master/01/ex02)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*String vs References*
-- [Unnecessary violence](https://github.com/arommers/CPP_Modules/tree/master/01/ex03)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*String vs References, Getters & Setters*
-- [Sed is for losers](https://github.com/arommers/CPP_Modules/tree/master/01/ex04)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*File manipulation*
-- [Harl 2.0](https://github.com/arommers/CPP_Modules/tree/master/01/ex05)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Pointers to member functions*
-- [Harl Filter](https://github.com/arommers/CPP_Modules/tree/master/01/ex06)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Switch Statements*
+- [EX00: BraiiiiiiinnnzzzZ](https://github.com/arommers/CPP_Modules/tree/master/01/ex00)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Heap vs Stack*
+- [EX01: Moar brainz!](https://github.com/arommers/CPP_Modules/tree/master/01/ex01)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Arrays and the Heap*
+- [EX02: HI THIS IS BRAIN](https://github.com/arommers/CPP_Modules/tree/master/01/ex02)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*String vs References*
+- [EX03: Unnecessary violence](https://github.com/arommers/CPP_Modules/tree/master/01/ex03)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*String vs References, Getters & Setters*
+- [EX04: Sed is for losers](https://github.com/arommers/CPP_Modules/tree/master/01/ex04)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*File manipulation*
+- [EX05: Harl 2.0](https://github.com/arommers/CPP_Modules/tree/master/01/ex05)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Pointers to member functions*
+- [EX06: Harl Filter](https://github.com/arommers/CPP_Modules/tree/master/01/ex06)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Switch Statements*
 
 ## [Module 02](https://github.com/arommers/CPP_Modules/tree/master/02)
-- [My First Class in Orthodox Canonical Form](https://github.com/arommers/CPP_Modules/tree/master/02/ex00)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Orthodox Canonical Form, Fixed Point Numbers*
-- [Towards a more useful fixed-point number class](https://github.com/arommers/CPP_Modules/tree/master/02/ex01)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Overload of the Insertion Operator*
-- [Now We're Talking](https://github.com/arommers/CPP_Modules/tree/master/02/ex02)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Comparison, Arithmetic, modify operators*
+- [EX00: My First Class in Orthodox Canonical Form](https://github.com/arommers/CPP_Modules/tree/master/02/ex00)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Orthodox Canonical Form, Fixed Point Numbers*
+- [EX01: Towards a more useful fixed-point number class](https://github.com/arommers/CPP_Modules/tree/master/02/ex01)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Overload of the Insertion Operator*
+- [EX02: Now We're Talking](https://github.com/arommers/CPP_Modules/tree/master/02/ex02)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Comparison, Arithmetic, modify operators*
 
 ## [Module 03](https://github.com/arommers/CPP_Modules/tree/master/03)
-- [ex00: Aaaaand... OPEN!](https://github.com/arommers/CPP_Modules/tree/master/03/ex00)
-- [ex01: Serena, my love!](https://github.com/arommers/CPP_Modules/tree/master/03/ex01)
-- [ex02: Repetitive work](https://github.com/arommers/CPP_Modules/tree/master/03/ex02)
+- [EX00: Aaaaand... OPEN!](https://github.com/arommers/CPP_Modules/tree/master/03/ex00)
+- [EX01: Serena, my love!](https://github.com/arommers/CPP_Modules/tree/master/03/ex01)
+- [EX02: Repetitive work](https://github.com/arommers/CPP_Modules/tree/master/03/ex02)
 
 ## [Module 04](https://github.com/arommers/CPP_Modules/tree/master/04)
+- [EX00: Polymorphism](https://github.com/arommers/CPP_Modules/tree/master/04/ex00#readme)
+- [EX01: I don’t want to set the world on fire]()
+- [EX02: Abstract class]()
+- [EX03: Interface & recap]()
 
 ## [Module 05](https://github.com/arommers/CPP_Modules/tree/master/05)
 - [Mommy, when I grow up, I want to be a bureaucrat!](https://github.com/arommers/CPP_Modules/tree/master/05/ex00)&nbsp;&nbsp;&nbsp;&nbsp;*Exceptions*
