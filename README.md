@@ -19,14 +19,14 @@ Each module contains several exercises that are selfcontained and respectively d
 
 ---
 
-### Table of contents  
+## Table of contents  
 
-#### [Module 00](https://github.com/arommers/CPP_Modules/tree/master/00)
+## [Module 00](https://github.com/arommers/CPP_Modules/tree/master/00)
 - [Megaphone](https://github.com/arommers/CPP_Modules/blob/master/00/ex00/README.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Namespaces, Standard output stream*
 - [My Awesome Phonebook](https://github.com/arommers/CPP_Modules/tree/master/00/ex01)&nbsp;&nbsp;&nbsp;&nbsp;*Encapsulation, Initialization, String library*
 - [The Job of Your Dreams](https://github.com/arommers/CPP_Modules/tree/master/00/ex02)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Static data, Vectors*
 
-#### [Module 01](https://github.com/arommers/CPP_Modules/tree/master/01)
+## [Module 01](https://github.com/arommers/CPP_Modules/tree/master/01)
 - [BraiiiiiiinnnzzzZ](https://github.com/arommers/CPP_Modules/tree/master/01/ex00)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Heap vs Stack*
 - [Moar brainz!](https://github.com/arommers/CPP_Modules/tree/master/01/ex01)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Arrays and the Heap*
 - [HI THIS IS BRAIN](https://github.com/arommers/CPP_Modules/tree/master/01/ex02)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*String vs References*
@@ -35,16 +35,19 @@ Each module contains several exercises that are selfcontained and respectively d
 - [Harl 2.0](https://github.com/arommers/CPP_Modules/tree/master/01/ex05)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Pointers to member functions*
 - [Harl Filter](https://github.com/arommers/CPP_Modules/tree/master/01/ex06)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Switch Statements*
 
-#### [Module 02](https://github.com/arommers/CPP_Modules/tree/master/02)
+## [Module 02](https://github.com/arommers/CPP_Modules/tree/master/02)
 - [My First Class in Orthodox Canonical Form](https://github.com/arommers/CPP_Modules/tree/master/02/ex00)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Orthodox Canonical Form, Fixed Point Numbers*
 - [Towards a more useful fixed-point number class](https://github.com/arommers/CPP_Modules/tree/master/02/ex01)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Overload of the Insertion Operator*
 - [Now We're Talking](https://github.com/arommers/CPP_Modules/tree/master/02/ex02)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Comparison, Arithmetic, modify operators*
 
-#### [Module 03](https://github.com/arommers/CPP_Modules/tree/master/03)
+## [Module 03](https://github.com/arommers/CPP_Modules/tree/master/03)
+- [ex00: Aaaaand... OPEN!](https://github.com/arommers/CPP_Modules/tree/master/03/ex00)
+- [ex01: Serena, my love!](https://github.com/arommers/CPP_Modules/tree/master/03/ex01)
+- [ex02: Repetitive work](https://github.com/arommers/CPP_Modules/tree/master/03/ex02)
 
-#### [Module 04](https://github.com/arommers/CPP_Modules/tree/master/04)
+## [Module 04](https://github.com/arommers/CPP_Modules/tree/master/04)
 
-#### [Module 05](https://github.com/arommers/CPP_Modules/tree/master/05)
+## [Module 05](https://github.com/arommers/CPP_Modules/tree/master/05)
 - [Mommy, when I grow up, I want to be a bureaucrat!](https://github.com/arommers/CPP_Modules/tree/master/05/ex00)&nbsp;&nbsp;&nbsp;&nbsp;*Exceptions*
 - [Form up, maggots!](https://github.com/arommers/CPP_Modules/tree/master/05/ex01)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Nested Exceptions*
 - [ No, you need form 28B, not 28C...](https://github.com/arommers/CPP_Modules/tree/master/05/ex02)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Derived Exeptions*
