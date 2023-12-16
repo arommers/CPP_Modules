@@ -22,6 +22,8 @@ Each module contains several exercises that are selfcontained and respectively d
 ## Table of contents  
 
 ## [Module 00](https://github.com/arommers/CPP_Modules/tree/master/00)
+
+In this introductary module, we're diving into the basics of Object-Oriented Programming. We'll be tackling key concepts like building classes, working with namespaces, handling encapsulation, and applying initialization. The goal is to get comfortable with these core elements and build a strong foundation in Object-Oriented Programming principles.
 - [EX00: Megaphone](https://github.com/arommers/CPP_Modules/blob/master/00/ex00/README.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Namespaces, Standard output stream*
 - [EX01: My Awesome Phonebook](https://github.com/arommers/CPP_Modules/tree/master/00/ex01)&nbsp;&nbsp;&nbsp;&nbsp;*Encapsulation, Initialization, String library*
 - [EX02: The Job of Your Dreams](https://github.com/arommers/CPP_Modules/tree/master/00/ex02)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Static data, Vectors*
