@@ -22,43 +22,64 @@ Each module contains several exercises that are selfcontained and respectively d
 ## Table of contents  
 
 ## [Module 00](https://github.com/arommers/CPP_Modules/tree/master/00)
-- [EX00: Megaphone](https://github.com/arommers/CPP_Modules/blob/master/00/ex00/README.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Namespaces, Standard output stream*
-- [EX01: My Awesome Phonebook](https://github.com/arommers/CPP_Modules/tree/master/00/ex01)&nbsp;&nbsp;&nbsp;&nbsp;*Encapsulation, Initialization, String library*
-- [EX02: The Job of Your Dreams](https://github.com/arommers/CPP_Modules/tree/master/00/ex02)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Static data, Vectors*
+
+In this introductary module, we're diving into the basics of Object-Oriented Programming. We'll be tackling key concepts like building classes, working with namespaces, handling encapsulation, and applying initialization. The goal is to get comfortable with these core elements and build a strong foundation in Object-Oriented Programming principles.
+
+| Exercise                                       | Concepts                                |
+| -----------------------------------------------| ------------------------------------------ |
+| [EX00: Megaphone](https://github.com/arommers/CPP_Modules/blob/master/00/ex00/README.md) | *Namespaces, Standard output stream* |
+| [EX01: My Awesome Phonebook](https://github.com/arommers/CPP_Modules/tree/master/00/ex01) | *Encapsulation, Initialization, String library* |
+| [EX02: The Job of Your Dreams](https://github.com/arommers/CPP_Modules/tree/master/00/ex02) | *Static data, Vectors* |
 
 ## [Module 01](https://github.com/arommers/CPP_Modules/tree/master/01)
-- [EX00: BraiiiiiiinnnzzzZ](https://github.com/arommers/CPP_Modules/tree/master/01/ex00)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Heap vs Stack*
-- [EX01: Moar brainz!](https://github.com/arommers/CPP_Modules/tree/master/01/ex01)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Arrays and the Heap*
-- [EX02: HI THIS IS BRAIN](https://github.com/arommers/CPP_Modules/tree/master/01/ex02)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*String vs References*
-- [EX03: Unnecessary violence](https://github.com/arommers/CPP_Modules/tree/master/01/ex03)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*String vs References, Getters & Setters*
-- [EX04: Sed is for losers](https://github.com/arommers/CPP_Modules/tree/master/01/ex04)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*File manipulation*
-- [EX05: Harl 2.0](https://github.com/arommers/CPP_Modules/tree/master/01/ex05)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Pointers to member functions*
-- [EX06: Harl Filter](https://github.com/arommers/CPP_Modules/tree/master/01/ex06)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Switch Statements*
+
+| Exercise                                       | Concepts                                       |
+| -----------------------------------------------| ------------------------------------------------- |
+| [EX00: BraiiiiiiinnnzzzZ](https://github.com/arommers/CPP_Modules/tree/master/01/ex00) | *Heap vs Stack* |
+| [EX01: Moar brainz!](https://github.com/arommers/CPP_Modules/tree/master/01/ex01) | *Arrays and the Heap* |
+| [EX02: HI THIS IS BRAIN](https://github.com/arommers/CPP_Modules/tree/master/01/ex02) | *String vs References* |
+| [EX03: Unnecessary violence](https://github.com/arommers/CPP_Modules/tree/master/01/ex03) | *String vs References, Getters & Setters* |
+| [EX04: Sed is for losers](https://github.com/arommers/CPP_Modules/tree/master/01/ex04) | *File manipulation* |
+| [EX05: Harl 2.0](https://github.com/arommers/CPP_Modules/tree/master/01/ex05) | *Pointers to member functions* |
+| [EX06: Harl Filter](https://github.com/arommers/CPP_Modules/tree/master/01/ex06) | *Switch Statements* |
 
 ## [Module 02](https://github.com/arommers/CPP_Modules/tree/master/02)
-- [EX00: My First Class in Orthodox Canonical Form](https://github.com/arommers/CPP_Modules/tree/master/02/ex00)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Orthodox Canonical Form, Fixed Point Numbers*
-- [EX01: Towards a more useful fixed-point number class](https://github.com/arommers/CPP_Modules/tree/master/02/ex01)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Overload of the Insertion Operator*
-- [EX02: Now We're Talking](https://github.com/arommers/CPP_Modules/tree/master/02/ex02)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Comparison, Arithmetic, modify operators*
+
+| Exercise                                      | Concepts                               |
+| ----------------------------------------------| ------------------------------------------ |
+| [EX00: My First Class in Orthodox Canonical Form](https://github.com/arommers/CPP_Modules/tree/master/02/ex00) | *Orthodox Canonical Form, Fixed Point Numbers* |
+| [EX01: Towards a more useful fixed-point number class](https://github.com/arommers/CPP_Modules/tree/master/02/ex01) | *Overload of the Insertion Operator* |
+| [EX02: Now We're Talking](https://github.com/arommers/CPP_Modules/tree/master/02/ex02) | *Comparison, Arithmetic and other operators* |
+
 
 ## [Module 03](https://github.com/arommers/CPP_Modules/tree/master/03)
-- [EX00: Aaaaand... OPEN!](https://github.com/arommers/CPP_Modules/tree/master/03/ex00)
-- [EX01: Serena, my love!](https://github.com/arommers/CPP_Modules/tree/master/03/ex01)
-- [EX02: Repetitive work](https://github.com/arommers/CPP_Modules/tree/master/03/ex02)
+
+| Exercise                                       | Concepts                                               |
+| -----------------------------------------------| ------------------------------------------------------ |
+| [EX00: Aaaaand... OPEN!](https://github.com/arommers/CPP_Modules/tree/master/03/ex00) | *Concepts: File Streams, Error Handling* |
+| [EX01: Serena, my love!](https://github.com/arommers/CPP_Modules/tree/master/03/ex01) | *Concepts: Formatted Output, String Manipulation* |
+| [EX02: Repetitive work](https://github.com/arommers/CPP_Modules/tree/master/03/ex02) | *Concepts: Iterators, Algorithms* |
+
 
 ## [Module 04](https://github.com/arommers/CPP_Modules/tree/master/04)
-- [EX00: Polymorphism](https://github.com/arommers/CPP_Modules/tree/master/04/ex00#readme)
-- [EX01: I don’t want to set the world on fire]()
-- [EX02: Abstract class]()
-- [EX03: Interface & recap]()
+
+| Exercise                                       | Concepts                                    |
+| -----------------------------------------------| ------------------------------------------- |
+| [EX00: Polymorphism](https://github.com/arommers/CPP_Modules/tree/master/04/ex00#readme) | *Concepts: Polymorphism* |
+| [EX01: I don’t want to set the world on fire]() | *Concepts: TBD* |
+| [EX02: Abstract class]() | *Concepts: Abstract Classes* |
+| [EX03: Interface & recap]() | *Concepts: Interfaces, Review* |
+
 
 ## [Module 05](https://github.com/arommers/CPP_Modules/tree/master/05)
-- [Mommy, when I grow up, I want to be a bureaucrat!](https://github.com/arommers/CPP_Modules/tree/master/05/ex00)&nbsp;&nbsp;&nbsp;&nbsp;*Exceptions*
-- [Form up, maggots!](https://github.com/arommers/CPP_Modules/tree/master/05/ex01)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Nested Exceptions*
-- [ No, you need form 28B, not 28C...](https://github.com/arommers/CPP_Modules/tree/master/05/ex02)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Derived Exeptions*
-- [At least this beats coffee-making](https://github.com/arommers/CPP_Modules/tree/master/05/ex03)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Repetition*
+| Exercise                                       | Concepts                       |
+| -----------------------------------------------| ------------------------------- |
+| [Mommy, when I grow up, I want to be a bureaucrat!](https://github.com/arommers/CPP_Modules/tree/master/05/ex00) | *Concepts: Exceptions* |
+| [Form up, maggots!](https://github.com/arommers/CPP_Modules/tree/master/05/ex01) | *Concepts: Nested Exceptions* |
+| [No, you need form 28B, not 28C...](https://github.com/arommers/CPP_Modules/tree/master/05/ex02) | *Concepts: Derived Exceptions* |
+| [At least this beats coffee-making](https://github.com/arommers/CPP_Modules/tree/master/05/ex03) | *Concepts: Repetition* |
 
 ---
-
 
 ### Sources
 - https://cplusplus.com/
