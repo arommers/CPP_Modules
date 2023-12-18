@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/11 14:03:00 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/15 14:30:08 by arommers      ########   odam.nl         */
+/*   Updated: 2023/12/18 15:31:19 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -149,27 +149,54 @@ ScalarConverter::~ScalarConverter() {}
 //     std::cout << "Error: Not a valid character, integer, float, or double." << std::endl;
 // }
 
-
 void    ScalarConverter::convert(const std::string& input)
 {
     std::string charValue = "";
     int         intValue = 0;
-    int         floatValue = 0;
-    int         doubleValue = 0;
+    float       floatValue = 0;
+    double      doubleValue = 0;
     
-    if (input.size() == 1 && !isdigit(input[0]) && isprint(input[0]))
+    // Try to convert the input to char and then convert "explicitly" to the other types and print
+    if (input.length() == 1 && !isdigit(input[0]) && isprint(input[0]))
     {
         charValue = input[0];
         std::cout << "char: " << charValue << std::endl;
         std::cout << "int: " << static_cast<int>(charValue[0]) << std::endl; //  treat the binary representation of the char as if it were an int
-        std::cout << "float: " << static_cast<float>(charValue[0]) << std::endl; // convert the ASCII value of the character to its corresponding floating-point representation
-        std::cout << "double: " << static_cast<double>(charValue[0]) << std::endl; // conver the ASCII value of the character to its corresponding floating-point representation.
+        std::cout << "float: " << static_cast<float>(charValue[0]) << ".0f" <<  std::endl; // convert the ASCII value of the character to its corresponding floating-point representation
+        std::cout << "double: " << static_cast<double>(charValue[0]) << ".0" <<std::endl; // conver the ASCII value of the character to its corresponding floating-point representation.
         return ;
     }
 
+    // convert input to int, float and double and then "explicitly" convert them to the other values
     intValue = std::atoi(input.c_str());
-    floatValue = std::stof(input);
-    doubleValue = std::stod(input);
+    if (input.length() -1 == 'f' || input.length() -1 == 'F')
+    {
+        floatValue = std::stof(input);
+        doubleValue = static_cast<double>(floatValue);
+        intValue = static_cast<int>(floatValue);
+    }
+    else
+    {
+        doubleValue = std::stod(input);
+        floatValue = static_cast<float>(doubleValue);
+        intValue = static_cast<int>(doubleValue);
+    }
+
+    // Check the input for funny business
+    std::string others[] = {
+        "-inf",
+        "+inf",
+        "-inff",
+        "+inff",
+        "nan",
+    };
+    for (const std::string& value : others)
+    {
+        if (value == input)
+            charValue = "impossible";
+    }
+    
+    // Check and set char to non displayable or a convertable value and print
     if (charValue == "" && std::isprint(intValue))
     {
         charValue += "'";
@@ -178,17 +205,32 @@ void    ScalarConverter::convert(const std::string& input)
     }
     else if (charValue == "")
         charValue = "non displayable";
-    
     std::cout << "char: " << charValue << std::endl;
-    if (floatValue == 0)
-    {
-        std::cout << "float: " << floatValue << ".0f" << std::endl;
-        std::cout << "double: " << doubleValue << ".0" << std::endl;
-    }
+    
+    // Check and set Int to impossible or a convertable value and print
+    if (charValue == "impossible")
+        std::cout << "int: impossible" << std::endl;
     else
+        std::cout << "int: " << intValue << std::endl;
+
+    // Print out funny business for floats and doubles and check and print the float and double
+    if (charValue == "impossible" && floatValue == 0)
     {
-        std::cout << "float: " << floatValue << "f" << std::endl;
-        std::cout << "double: " << doubleValue << std::endl;
-    }  
+        std::cout << "float: impossible"<< std::endl;
+        std::cout << "double: impossible"<< std::endl;
+    }
+    else 
+    {
+        if(charValue != "impossible" && input.find('.' != std::string::npos))
+        {
+            std::cout << "float: " << floatValue << ".0f" << std::endl;
+            std::cout << "double: " << doubleValue << ".0" << std::endl;
+        }
+        else
+        {
+            std::cout << "float: " << floatValue << "f" << std::endl;
+            std::cout << "double: " << doubleValue << std::endl;
+        } 
+    }
 }
 
