@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/11 14:03:00 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/18 15:31:19 by arommers      ########   odam.nl         */
+/*   Updated: 2023/12/18 16:40:20 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -168,43 +168,56 @@ void    ScalarConverter::convert(const std::string& input)
     }
 
     // convert input to int, float and double and then "explicitly" convert them to the other values
-    intValue = std::atoi(input.c_str());
-    if (input.length() -1 == 'f' || input.length() -1 == 'F')
-    {
-        floatValue = std::stof(input);
-        doubleValue = static_cast<double>(floatValue);
-        intValue = static_cast<int>(floatValue);
-    }
-    else
-    {
-        doubleValue = std::stod(input);
-        floatValue = static_cast<float>(doubleValue);
-        intValue = static_cast<int>(doubleValue);
-    }
+    try {
+        intValue = std::atoi(input.c_str());
+        if (input.length() -1 == 'f' || input.length() -1 == 'F')
+        {
+            floatValue = std::stof(input);
+            doubleValue = static_cast<double>(floatValue);
+            // intValue = static_cast<int>(floatValue);
+        }
+        else
+        {
+            doubleValue = std::stod(input);
+            floatValue = static_cast<float>(doubleValue);
+            // intValue = static_cast<int>(doubleValue);
+        }
 
-    // Check the input for funny business
-    std::string others[] = {
-        "-inf",
-        "+inf",
-        "-inff",
-        "+inff",
-        "nan",
-    };
-    for (const std::string& value : others)
-    {
-        if (value == input)
-            charValue = "impossible";
+        // Check the input for funny business
+        std::string others[] = {
+            "-inf",
+            "+inf",
+            "-inff",
+            "+inff",
+            "nan",
+        };
+        for (const std::string& value : others)
+        {
+            if (value == input)
+                charValue = "impossible";
+        }
+        // Check and set char to non displayable or a convertable value and print
+        if (charValue == "" &&  intValue >= 0 && intValue <= 127 && std::isprint(intValue))
+        {
+            charValue += "'";
+            charValue += static_cast<char>(intValue);
+            charValue += "'";
+        }
+        else if (charValue == "")
+            charValue = "non displayable";
     }
-    
-    // Check and set char to non displayable or a convertable value and print
-    if (charValue == "" && std::isprint(intValue))
-    {
-        charValue += "'";
-        charValue += static_cast<char>(intValue);
-        charValue += "'";
+    catch (const std::out_of_range& e) {
+        std::cerr << "Error: out of range - " << e.what() << std::endl;
+        return ;
+    }    
+    catch (const std::invalid_argument& e) {
+        std::cerr << "Error: Invalid argument - " << e.what() << std::endl;
+        return ;
+    }   
+    catch (...) {
+        std::cerr << "somethin went wrong" << std::endl;
+        return ;
     }
-    else if (charValue == "")
-        charValue = "non displayable";
     std::cout << "char: " << charValue << std::endl;
     
     // Check and set Int to impossible or a convertable value and print
