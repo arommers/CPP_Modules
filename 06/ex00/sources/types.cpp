@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/19 11:11:51 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/19 15:07:09 by arommers      ########   odam.nl         */
+/*   Updated: 2023/12/19 15:18:17 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,7 +95,7 @@ bool    doubleCheck(const std::string& input)
         return (false);
     for (size_t i = 0; i < input.size(); i++)
     {
-        if (!isdigit(input[i]) && input[i] != '.' && input[i] != '+' && input[i] != '-')
+        if (!isdigit(input[i]) && input[i] != '.' && input[i] != '+' && input[i] != '-' && input[i] != 'e')
             return false;
     }
     return (true);
@@ -199,7 +199,10 @@ void    convertDouble(const std::string& input)
 
     str >> d;
     if (str.fail())
+    {
+        std::cerr << "overflow" << std::endl;
         return ; // error check handle needed
+    }
     if (isprint(static_cast<int>(d)))
         std::cout << "char: " << static_cast<char>(d) << std::endl;
     else if (d < 0 || d > 127)
