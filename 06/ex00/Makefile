@@ -6,7 +6,7 @@
 #    By: arommers <arommers@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/12/11 14:03:15 by arommers      #+#    #+#                  #
-#    Updated: 2023/12/13 16:32:47 by arommers      ########   odam.nl          #
+#    Updated: 2023/12/19 11:32:03 by arommers      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME 		= convert
 CC			= c++
 CPPFLAGS	= -Wall -Werror -Wextra
 INCLUDE		= -I./includes
-SRC			= ./sources/Scalar.cpp ./sources/main.cpp
+SRC			= ./sources/Scalar.cpp ./sources/main.cpp ./sources/types.cpp
 OBJ			= $(addprefix $(OBJ_DIR)/, $(notdir $(SRC:.cpp=.o)))
 OBJ_DIR		= objects
 
