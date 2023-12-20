@@ -33,6 +33,8 @@ In this introductary module, we're diving into the basics of Object-Oriented Pro
 
 ## [Module 01](https://github.com/arommers/CPP_Modules/tree/master/01)
 
+The fundamental aspects of memory allocation, emphasizing the distinctions between stack and heap allocation. We take look at the nuances of pointers and references in managing memory and efficient data manipulation. Additionally, we apply this to function pointers, examining their utility in providing flexibility and dynamic behavior within programs. Lastly, the switch statement, showcasing its practical applications in conditional branching and why you sometimes want this over a forest of if/else statements.
+
 | Exercise                                       | Concepts                                       |
 | -----------------------------------------------| ------------------------------------------------- |
 | [EX00: BraiiiiiiinnnzzzZ](https://github.com/arommers/CPP_Modules/tree/master/01/ex00) | *Heap vs Stack* |
