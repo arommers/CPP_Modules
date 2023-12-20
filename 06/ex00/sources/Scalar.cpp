@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/11 14:03:00 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/19 15:08:12 by arommers      ########   odam.nl         */
+/*   Updated: 2023/12/20 11:25:06 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -156,9 +156,7 @@ ScalarConverter::~ScalarConverter() {}
 
 void    ScalarConverter::convert(const std::string& input)
 {
-    if (pseudoCheck(input))
-        printPseudo(input);
-    else if (charCheck(input))
+    if (charCheck(input))
         convertChar(input);
     else if (intCheck(input))
         convertInt(input);
@@ -166,6 +164,8 @@ void    ScalarConverter::convert(const std::string& input)
         convertFloat(input);
     else if (doubleCheck(input))
         convertDouble(input);
+    else if (pseudoCheck(input))
+        printPseudo(input);
     else
         std::cout << "Error: " << input << " is not a valid argument."<< std::endl;
 }

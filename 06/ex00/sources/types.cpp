@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/19 11:11:51 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/19 15:18:17 by arommers      ########   odam.nl         */
+/*   Updated: 2023/12/20 11:30:42 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ bool    charCheck(const std::string& input)
 {
     int i = static_cast<int>(input[0]);
 
-    std::cout << "TEST 1" << std::endl;
-
+    if (input.empty())
+        return (false);
     if (input.size() != 1 || isdigit(input[0]))
         return (false);
     if (i < 0 || i > 127)
@@ -41,9 +41,6 @@ bool    charCheck(const std::string& input)
 
 bool    intCheck(const std::string& input)
 {
-    std::cout << "TEST 2" << std::endl;
-    
-    
     if (input.size() == 0)
         return (false);
     if (input[0] != '+' && input[0] != '-' && !isdigit(input[0]))
@@ -59,9 +56,7 @@ bool    intCheck(const std::string& input)
 bool    floatCheck(const std::string& input)
 {
     size_t dotPosition;
-    
-    std::cout << "TEST 3" << std::endl;
-
+    size_t count = 0;
     
     if (input.size() == 0)
         return (false);
@@ -74,17 +69,20 @@ bool    floatCheck(const std::string& input)
         return (false);
     for (size_t i = 0; i < input.size() - 1; i++)
     {
+        if (input[i] == '.')
+            count++;
         if (!isdigit(input[i]) && input[i] != '.' && input[i] != '+' && input[i] != '-')
             return false;
     }
+    if (count != 1)
+        return (false);
     return (true);     
 }
 
 bool    doubleCheck(const std::string& input)
 {
     size_t dotPosition;
-    
-    std::cout << "TEST 4" << std::endl;
+    size_t count = 0;
     
     if (input.size() == 0)
         return (false);
@@ -95,9 +93,13 @@ bool    doubleCheck(const std::string& input)
         return (false);
     for (size_t i = 0; i < input.size(); i++)
     {
+        if (input[i] == '.')
+            count++;
         if (!isdigit(input[i]) && input[i] != '.' && input[i] != '+' && input[i] != '-' && input[i] != 'e')
             return false;
     }
+    if (count != 1)
+        return false;
     return (true);
 }
 
@@ -148,9 +150,12 @@ void convertInt(const std::string& input)
     int                 i;
     std::stringstream   str(input);
 
-    str >> i; // error check handle needed
-    // if(str.fail())
-    //     return ;
+    str >> i;
+    if(str.fail())
+    {
+        std::cout << "Error: " << input << " is not a valid argument."<< std::endl;
+        return ;
+    }
     if (i < 0 || i > 127)
         std::cout << "char: impossible" << std::endl;
     else if (!isprint(static_cast<char>(i)))
@@ -167,9 +172,12 @@ void    convertFloat(const std::string& input)
     float               f;
     std::stringstream   str(input);
 
-    str >> f; // error check handle needed
+    str >> f;
     if(str.fail())
+    {
+        std::cout << "Error: " << input << " is not a valid argument."<< std::endl;
         return ;
+    }
     if (isprint(static_cast<int>(f)))
         std::cout << "char: " << static_cast<char>(f) << std::endl;
     else if (f < 0 || f > 127)
@@ -200,13 +208,16 @@ void    convertDouble(const std::string& input)
     str >> d;
     if (str.fail())
     {
-        std::cerr << "overflow" << std::endl;
-        return ; // error check handle needed
+        std::cout << "Error: " << input << " is not a valid argument."<< std::endl;
+        return ; 
     }
-    if (isprint(static_cast<int>(d)))
-        std::cout << "char: " << static_cast<char>(d) << std::endl;
-    else if (d < 0 || d > 127)
-        std::cout << "char: impossible" << std::endl;
+    if (d >= std::numeric_limits<char>::min() && d <= std::numeric_limits<char>::max())
+    {
+        if (isprint(static_cast<int>(d)))
+            std::cout << "char: " << static_cast<char>(d) << std::endl;
+        else if (d < 0 || d > 127)
+            std::cout << "char: impossible" << std::endl;
+    }
     else
         std::cout << "char: non displayable" << std::endl;
     if (d > static_cast<double>(std::numeric_limits<int>::max()) || d < static_cast<double>(std::numeric_limits<int>::min()))
