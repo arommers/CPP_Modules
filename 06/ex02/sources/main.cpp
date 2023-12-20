@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/20 15:24:13 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/20 16:24:54 by arommers      ########   odam.nl         */
+/*   Updated: 2023/12/20 21:12:07 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,17 @@ int main()
     std::cout << "Press enter if you want to identify some classes through references" << std::endl;
     std::cin.get();
 
+    std::cout << std::endl;
+    for (int i = 0; i < 5; i++)
+    {
+        Base *ptr = generate();
+        if (ptr)
+        {
+            identify(*ptr);
+            delete ptr;
+        }
+    }
+    std::cout << std::endl;
 
     return (0);
 }

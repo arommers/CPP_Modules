@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/20 14:41:33 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/20 15:32:08 by arommers      ########   odam.nl         */
+/*   Updated: 2023/12/20 21:11:37 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,5 @@ class C: public Base{};
 
 Base    *generate(void);
 void    identify(Base* p);
+void    identify(Base& p);
 
