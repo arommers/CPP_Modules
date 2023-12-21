@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/11 14:03:00 by arommers      #+#    #+#                 */
-/*   Updated: 2023/12/20 11:25:06 by arommers      ########   odam.nl         */
+/*   Updated: 2023/12/21 10:47:58 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,21 @@ ScalarConverter& ScalarConverter::operator=(const ScalarConverter& rhs)
 
 ScalarConverter::~ScalarConverter() {}
 
-
+void    ScalarConverter::convert(const std::string& input)
+{
+    if (charCheck(input))
+        convertChar(input);
+    else if (intCheck(input))
+        convertInt(input);
+    else if (floatCheck(input))
+        convertFloat(input);
+    else if (doubleCheck(input))
+        convertDouble(input);
+    else if (pseudoCheck(input))
+        printPseudo(input);
+    else
+        std::cout << "Error: " << input << " is not a valid argument."<< std::endl;
+}
 
 // static int ConvertChar(const std::string& input, std::string& charValue)
 // {
@@ -154,21 +168,6 @@ ScalarConverter::~ScalarConverter() {}
 
 
 
-void    ScalarConverter::convert(const std::string& input)
-{
-    if (charCheck(input))
-        convertChar(input);
-    else if (intCheck(input))
-        convertInt(input);
-    else if (floatCheck(input))
-        convertFloat(input);
-    else if (doubleCheck(input))
-        convertDouble(input);
-    else if (pseudoCheck(input))
-        printPseudo(input);
-    else
-        std::cout << "Error: " << input << " is not a valid argument."<< std::endl;
-}
 
 
 // void    ScalarConverter::convert(const std::string& input)
