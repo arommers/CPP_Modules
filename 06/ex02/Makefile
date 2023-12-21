@@ -6,11 +6,11 @@
 #    By: arommers <arommers@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/12/20 14:39:04 by arommers      #+#    #+#                  #
-#    Updated: 2023/12/20 15:31:09 by arommers      ########   odam.nl          #
+#    Updated: 2023/12/21 11:33:25 by arommers      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
-NAME 		= real
+NAME 		= dynamic
 CC			= c++
 CPPFLAGS	= -Wall -Werror -Wextra -pedantic -fsanitize=address
 INCLUDE		= -I./includes
