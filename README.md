@@ -81,6 +81,9 @@ The fundamental aspects of memory allocation, emphasizing the distinctions betwe
 | [EX03: At least this beats coffee-making](https://github.com/arommers/CPP_Modules/tree/master/05/ex03) | *Concepts: Repetition* |
 
 ## [Module 06](https://github.com/arommers/CPP_Modules/tree/master/06)
+
+Almost everything about casting in cpp. Specifically static, dynamic and reinterpret casting. No const casting.
+
 | Exercise                                       | Concepts                       |
 | -----------------------------------------------| ------------------------------- |
 | [EX00: Conversion of scalar types](https://github.com/arommers/CPP_Modules/blob/master/06/ex00/README.md) | *Static Casting* |
