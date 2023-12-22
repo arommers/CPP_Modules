@@ -72,14 +72,20 @@ The fundamental aspects of memory allocation, emphasizing the distinctions betwe
 | [EX02: Abstract class]() | *Concepts: Abstract Classes* |
 | [EX03: Interface & recap]() | *Concepts: Interfaces, Review* |
 
-
 ## [Module 05](https://github.com/arommers/CPP_Modules/tree/master/05)
 | Exercise                                       | Concepts                       |
 | -----------------------------------------------| ------------------------------- |
-| [Mommy, when I grow up, I want to be a bureaucrat!](https://github.com/arommers/CPP_Modules/tree/master/05/ex00) | *Concepts: Exceptions* |
-| [Form up, maggots!](https://github.com/arommers/CPP_Modules/tree/master/05/ex01) | *Concepts: Nested Exceptions* |
-| [No, you need form 28B, not 28C...](https://github.com/arommers/CPP_Modules/tree/master/05/ex02) | *Concepts: Derived Exceptions* |
-| [At least this beats coffee-making](https://github.com/arommers/CPP_Modules/tree/master/05/ex03) | *Concepts: Repetition* |
+| [EX00: Mommy, when I grow up, I want to be a bureaucrat!](https://github.com/arommers/CPP_Modules/tree/master/05/ex00) | *Concepts: Exceptions* |
+| [EX01: Form up, maggots!](https://github.com/arommers/CPP_Modules/tree/master/05/ex01) | *Concepts: Nested Exceptions* |
+| [EX02: No, you need form 28B, not 28C...](https://github.com/arommers/CPP_Modules/tree/master/05/ex02) | *Concepts: Derived Exceptions* |
+| [EX03: At least this beats coffee-making](https://github.com/arommers/CPP_Modules/tree/master/05/ex03) | *Concepts: Repetition* |
+
+## [Module 06](https://github.com/arommers/CPP_Modules/tree/master/06)
+| Exercise                                       | Concepts                       |
+| -----------------------------------------------| ------------------------------- |
+| [EX00: Conversion of scalar types](https://github.com/arommers/CPP_Modules/blob/master/06/ex00/README.md) | *Static Casting* |
+| [EX01: Serialization](https://github.com/arommers/CPP_Modules/blob/master/06/ex01/README.md)) | *Reinterpret Casting* |
+| [EX02: Identify real type](https://github.com/arommers/CPP_Modules/blob/master/06/ex02/README.md) | *Dynamic Casting* |
 
 ---
 
