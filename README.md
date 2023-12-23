@@ -23,7 +23,7 @@ Each module contains several exercises that are selfcontained and respectively d
 
 ## [Module 00](https://github.com/arommers/CPP_Modules/tree/master/00)
 
-In this introductary module, we're diving into the basics of Object-Oriented Programming. We'll be tackling key concepts like building classes, working with namespaces, handling encapsulation, and applying initialization. The goal is to get comfortable with these core elements and build a strong foundation in Object-Oriented Programming principles.
+In this introductory module, we'll cover fundamental Object-Oriented Programming (OOP) concepts, including creating classes, managing namespaces, implementing encapsulation, and applying initialization. The aim is to establish a solid foundation in OOP principles.
 
 | Exercise                                       | Concepts                                |
 | -----------------------------------------------| ------------------------------------------ |
