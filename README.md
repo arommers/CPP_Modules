@@ -47,6 +47,8 @@ This module covers memory allocation (stack vs. heap), pointers, references, and
 
 ## [Module 02](https://github.com/arommers/CPP_Modules/tree/master/02)
 
+Introducing the Canonical Orthodox form and the intracacies of overloading operators
+
 | Exercise                                      | Concepts                               |
 | ----------------------------------------------| ------------------------------------------ |
 | [EX00: My First Class in Orthodox Canonical Form](https://github.com/arommers/CPP_Modules/tree/master/02/ex00) | *Orthodox Canonical Form, Fixed Point Numbers* |
