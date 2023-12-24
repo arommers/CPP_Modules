@@ -58,6 +58,8 @@ Introducing the Canonical Orthodox form and the intracacies of overloading opera
 
 ## [Module 03](https://github.com/arommers/CPP_Modules/tree/master/03)
 
+The fundamentals of inheritance in object orientated programming, featuring proper construction/destruction chaining
+
 | Exercise                                       | Concepts                                               |
 | -----------------------------------------------| ------------------------------------------------------ |
 | [EX00: Aaaaand... OPEN!](https://github.com/arommers/CPP_Modules/tree/master/03/ex00) | *Concepts: File Streams, Error Handling* |
