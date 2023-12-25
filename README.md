@@ -42,7 +42,7 @@ This module covers memory allocation (stack vs. heap), pointers, references, and
 | [EX02: HI THIS IS BRAIN](https://github.com/arommers/CPP_Modules/tree/master/01/ex02) | *String vs References* |
 | [EX03: Unnecessary violence](https://github.com/arommers/CPP_Modules/tree/master/01/ex03) | *String vs References, Getters & Setters* |
 | [EX04: Sed is for losers](https://github.com/arommers/CPP_Modules/tree/master/01/ex04) | *File manipulation* |
-| [EX05: Harl 2.0](https://github.com/arommers/CPP_Modules/tree/master/01/ex05) | *Pointers to member functions* |
+| [EX05: Harl 2.0](https://github.com/arommers/CPP_Modules/tree/master/01/ex05) | *Function Pointers* |
 | [EX06: Harl Filter](https://github.com/arommers/CPP_Modules/tree/master/01/ex06) | *Switch Statements* |
 
 ## [Module 02](https://github.com/arommers/CPP_Modules/tree/master/02)
@@ -62,9 +62,9 @@ The fundamentals of inheritance in object orientated programming, featuring prop
 
 | Exercise                                       | Concepts                                               |
 | -----------------------------------------------| ------------------------------------------------------ |
-| [EX00: Aaaaand... OPEN!](https://github.com/arommers/CPP_Modules/tree/master/03/ex00) | *Concepts: File Streams, Error Handling* |
-| [EX01: Serena, my love!](https://github.com/arommers/CPP_Modules/tree/master/03/ex01) | *Concepts: Formatted Output, String Manipulation* |
-| [EX02: Repetitive work](https://github.com/arommers/CPP_Modules/tree/master/03/ex02) | *Concepts: Iterators, Algorithms* |
+| [EX00: Aaaaand... OPEN!](https://github.com/arommers/CPP_Modules/tree/master/03/ex00) | *Class Implementation* |
+| [EX01: Serena, my love!](https://github.com/arommers/CPP_Modules/tree/master/03/ex01) | *Inheritance, Constructor/Destructor Chaining* |
+| [EX02: Repetitive work](https://github.com/arommers/CPP_Modules/tree/master/03/ex02) | *Inheritance Practice* |
 
 
 ## [Module 04](https://github.com/arommers/CPP_Modules/tree/master/04)
@@ -73,8 +73,8 @@ The fundamentals of inheritance in object orientated programming, featuring prop
 | -----------------------------------------------| ------------------------------------------- |
 | [EX00: Polymorphism](https://github.com/arommers/CPP_Modules/tree/master/04/ex00#readme) | *Concepts: Polymorphism* |
 | [EX01: I don’t want to set the world on fire]() | *Concepts: TBD* |
-| [EX02: Abstract class]() | *Concepts: Abstract Classes* |
-| [EX03: Interface & recap]() | *Concepts: Interfaces, Review* |
+| [EX02: Abstract class]() | *Abstract Classes* |
+| [EX03: Interface & recap]() | *Interfaces* |
 
 ## [Module 05](https://github.com/arommers/CPP_Modules/tree/master/05)
 | Exercise                                       | Concepts                       |
