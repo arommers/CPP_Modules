@@ -71,8 +71,8 @@ The fundamentals of inheritance in object orientated programming, featuring prop
 
 | Exercise                                       | Concepts                                    |
 | -----------------------------------------------| ------------------------------------------- |
-| [EX00: Polymorphism](https://github.com/arommers/CPP_Modules/tree/master/04/ex00#readme) | *Concepts: Polymorphism* |
-| [EX01: I don’t want to set the world on fire]() | *Concepts: TBD* |
+| [EX00: Polymorphism](https://github.com/arommers/CPP_Modules/tree/master/04/ex00#readme) | *Polymorphism* |
+| [EX01: I don’t want to set the world on fire]() | *TBD* |
 | [EX02: Abstract class]() | *Abstract Classes* |
 | [EX03: Interface & recap]() | *Interfaces* |
 
