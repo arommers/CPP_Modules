@@ -79,10 +79,10 @@ The fundamentals of inheritance in object orientated programming, featuring prop
 ## [Module 05](https://github.com/arommers/CPP_Modules/tree/master/05)
 | Exercise                                       | Concepts                       |
 | -----------------------------------------------| ------------------------------- |
-| [EX00: Mommy, when I grow up, I want to be a bureaucrat!](https://github.com/arommers/CPP_Modules/tree/master/05/ex00) | *Concepts: Exceptions* |
+| [EX00: Mommy, when I grow up, I want to be a bureaucrat!](https://github.com/arommers/CPP_Modules/tree/master/05/ex00) | *Exceptions* |
 | [EX01: Form up, maggots!](https://github.com/arommers/CPP_Modules/tree/master/05/ex01) | *Concepts: Nested Exceptions* |
-| [EX02: No, you need form 28B, not 28C...](https://github.com/arommers/CPP_Modules/tree/master/05/ex02) | *Concepts: Derived Exceptions* |
-| [EX03: At least this beats coffee-making](https://github.com/arommers/CPP_Modules/tree/master/05/ex03) | *Concepts: Repetition* |
+| [EX02: No, you need form 28B, not 28C...](https://github.com/arommers/CPP_Modules/tree/master/05/ex02) | *Derived Exceptions* |
+| [EX03: At least this beats coffee-making](https://github.com/arommers/CPP_Modules/tree/master/05/ex03) | *Repetition* |
 
 ## [Module 06](https://github.com/arommers/CPP_Modules/tree/master/06)
 
