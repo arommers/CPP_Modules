@@ -77,10 +77,13 @@ The fundamentals of inheritance in object orientated programming, featuring prop
 | [EX03: Interface & recap]() | *Interfaces* |
 
 ## [Module 05](https://github.com/arommers/CPP_Modules/tree/master/05)
+
+Exceptions and try/catch blocks
+
 | Exercise                                       | Concepts                       |
 | -----------------------------------------------| ------------------------------- |
 | [EX00: Mommy, when I grow up, I want to be a bureaucrat!](https://github.com/arommers/CPP_Modules/tree/master/05/ex00) | *Exceptions* |
-| [EX01: Form up, maggots!](https://github.com/arommers/CPP_Modules/tree/master/05/ex01) | *Concepts: Nested Exceptions* |
+| [EX01: Form up, maggots!](https://github.com/arommers/CPP_Modules/tree/master/05/ex01) | *Nested Exceptions* |
 | [EX02: No, you need form 28B, not 28C...](https://github.com/arommers/CPP_Modules/tree/master/05/ex02) | *Derived Exceptions* |
 | [EX03: At least this beats coffee-making](https://github.com/arommers/CPP_Modules/tree/master/05/ex03) | *Repetition* |
 
@@ -93,6 +96,16 @@ Almost everything about casting in cpp. Specifically static, dynamic and reinter
 | [EX00: Conversion of scalar types](https://github.com/arommers/CPP_Modules/blob/master/06/ex00/README.md) | *Static Casting* |
 | [EX01: Serialization](https://github.com/arommers/CPP_Modules/blob/master/06/ex01/README.md)) | *Reinterpret Casting* |
 | [EX02: Identify real type](https://github.com/arommers/CPP_Modules/blob/master/06/ex02/README.md) | *Dynamic Casting* |
+
+## [Module 07](https://github.com/arommers/CPP_Modules/tree/master/07)
+
+Class and function templates
+
+| Exercise                                       | Concepts                       |
+| -----------------------------------------------| ------------------------------- |
+| [EX00: Start with a few functions](https://github.com/arommers/CPP_Modules/blob/master/07/ex00/README.md) | *Function Templates* |
+| [EX01: Iter](https://github.com/arommers/CPP_Modules/blob/master/07/ex01/README.md) | *More Function Templates* |
+| [EX02: Array](https://github.com/arommers/CPP_Modules/blob/master/07/ex02/README.md) | *Class Templates* |
 
 ---
 
