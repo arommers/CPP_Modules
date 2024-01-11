@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/01/11 15:24:04 by arommers      #+#    #+#                 */
-/*   Updated: 2024/01/11 16:23:44 by arommers      ########   odam.nl         */
+/*   Updated: 2024/01/11 16:30:17 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <iterator>
 
 class Span
 {
@@ -31,6 +30,8 @@ class Span
         const Span& operator=(const Span& rhs);
 
         void    addNumber(int n);
+        size_t  shortestSpan();
+        size_t  longestSpan();
 
         class atCapException: public std::exception
         {

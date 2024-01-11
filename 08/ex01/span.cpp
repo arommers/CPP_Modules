@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/01/11 15:23:49 by arommers      #+#    #+#                 */
-/*   Updated: 2024/01/11 16:24:28 by arommers      ########   odam.nl         */
+/*   Updated: 2024/01/11 16:28:43 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,16 @@ void    Span::addNumber(int n)
     if (_container.size() >= _cap)
         throw atCapException();
     _container.push_back(n);
+}
+
+size_t  Span::shortestSpan()
+{
+    
+}
+
+size_t  Span::longestSpan()
+{
+    
 }
 
 const char *Span::atCapException::what() const noexcept
