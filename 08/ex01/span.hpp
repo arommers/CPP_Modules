@@ -6,15 +6,21 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/01/11 15:24:04 by arommers      #+#    #+#                 */
-/*   Updated: 2024/01/11 16:30:17 by arommers      ########   odam.nl         */
+/*   Updated: 2024/01/12 12:13:36 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#include <iostream>
 #include <vector>
+#include <limits>
+#include <iostream>
 #include <algorithm>
+#include <random>
+
+#define RED "\033[31m"
+#define GREEN "\033[32m"
+#define RESET "\033[0m"
 
 class Span
 {
@@ -29,13 +35,21 @@ class Span
 
         const Span& operator=(const Span& rhs);
 
+        int     longestSpan();
+        int     shortestSpan();
         void    addNumber(int n);
-        size_t  shortestSpan();
-        size_t  longestSpan();
+        int     generateNum();
+        void    fill();
 
         class atCapException: public std::exception
         {
             public:
                 const char* what() const noexcept override;
+        };
+
+        class tooFewElements: public std::exception
+        {
+            public:
+                const char *what() const noexcept override;
         };
 };

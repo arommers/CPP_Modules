@@ -6,7 +6,7 @@
 #    By: arommers <arommers@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/01/11 15:23:06 by arommers      #+#    #+#                  #
-#    Updated: 2024/01/11 15:23:32 by arommers      ########   odam.nl          #
+#    Updated: 2024/01/12 11:01:38 by arommers      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ CPPFLAGS	= -Wall -Werror -Wextra
 SRC			= ./main.cpp ./span.cpp
 OBJ			= $(SRC:.cpp=.o)
 
-all: find
+all: $(NAME)
 
 $(NAME): $(OBJ)
 	@$(CC) $(CPPFLAGS) $(OBJ) -o $(NAME)

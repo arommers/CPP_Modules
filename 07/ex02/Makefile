@@ -6,7 +6,7 @@
 #    By: arommers <arommers@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/01/08 13:12:50 by arommers      #+#    #+#                  #
-#    Updated: 2024/01/08 14:11:14 by arommers      ########   odam.nl          #
+#    Updated: 2024/01/08 17:55:05 by arommers      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,9 @@ SRC				= ./main.cpp
 OBJ				= $(SRC:.cpp=.o)
 
 all: $(NAME)
-
+NAME	= harlfilter
+CC		= g++
+FLAGS	= -Wall -Wextra -Werror
 $(NAME): $(OBJ)
 	@$(CC) $(CPPFLAGS) $(OBJ) -o $(NAME)
 

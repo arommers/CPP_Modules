@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/01/08 10:59:36 by arommers      #+#    #+#                 */
-/*   Updated: 2024/01/08 11:36:30 by arommers      ########   odam.nl         */
+/*   Updated: 2024/01/08 12:35:54 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int main( void )
     int a = 2;
     int b = 3;
     
-    ::swap( a, b );
+    ::swap(a, b);
     std::cout << "a = " << a << ", b = " << b << std::endl;
     std::cout << std::endl;
     std::cout << "min( a, b ) = " << ::min( a, b ) << std::endl;
