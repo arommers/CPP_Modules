@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/01/11 15:23:49 by arommers      #+#    #+#                 */
-/*   Updated: 2024/01/12 12:31:08 by arommers      ########   odam.nl         */
+/*   Updated: 2024/01/12 16:28:16 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,9 @@ const Span& Span::operator=(const Span& rhs)
     return (*this);
 }
 
+unsigned int    Span::getCap() const {return (_cap);}
+std::vector<int>     Span::getContainer() const {return (_container);}
+
 void    Span::addNumber(int n)
 {
     if (_container.size() >= _cap)
@@ -36,16 +39,25 @@ void    Span::addNumber(int n)
 
 int Span::generateNum()
 {
-    std::random_device  seed;
-    std::mt19937        n(seed());
-    
-    return (n());   
+    return ((rand() % 2001) - 1000);
 }
+
+// int Span::generateNum()
+// {
+//     std::random_device  seed;       // Random device object (seed) for obtaining random numbers.
+//     std::mt19937        n(seed());  // Mersenne Twister pseudo-random number generator (n) and seeds it with a value from the random device
+    
+//     return (n());                   // Generates and returns a pseudo-random number using the Mersenne Twister generator.
+// }
 
 void    Span::fill()
 {
+    size_t  filled = _container.size();
     _container.resize(_cap);
-    std::generate(_container.begin(), _container.end(), [this]()
+    
+    auto beginIter = _container.begin() + filled;
+    auto endIter = _container.end();
+    std::generate(beginIter, endIter, [this]()
     {
         return (generateNum());
     });
@@ -56,11 +68,12 @@ int  Span::shortestSpan()
     if (_container.size() < 2)
         throw tooFewElements();
 
-    std::sort(_container.begin(), _container.end());
+    std::vector<int> temp = _container;
+    std::sort(temp.begin(), temp.end());
     unsigned int shortestSpan = std::numeric_limits<unsigned int>::max();
-    for(unsigned int i = 1; i < _container.size(); i++)
+    for(unsigned int i = 1; i < temp.size(); i++)
     {
-        unsigned int currentSpan = _container[i] - _container[i - 1];
+        unsigned int currentSpan = temp[i] - temp[i - 1];
         shortestSpan = std::min(shortestSpan, currentSpan);
     }
     return (shortestSpan);
@@ -83,4 +96,19 @@ const char *Span::atCapException::what() const noexcept
 const char *Span::tooFewElements::what() const noexcept
 {
     return ("Container needs at least two elements to calculate the span");
+}
+
+std::ostream& operator<<(std::ostream& os, const Span& obj)
+{
+    int index = 0;
+    os << "Stored in container: " << std::endl;
+    for (const int& value : obj.getContainer())
+    {
+        os << value;
+        if (++index % 10 == 0 && index != static_cast<int>(obj.getContainer().size()))
+            os << std::endl;
+        else
+            os << " ";
+    }
+    return (os);
 }

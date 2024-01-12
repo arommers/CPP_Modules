@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/01/11 15:24:04 by arommers      #+#    #+#                 */
-/*   Updated: 2024/01/12 12:13:36 by arommers      ########   odam.nl         */
+/*   Updated: 2024/01/12 15:06:45 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@
 #include <limits>
 #include <iostream>
 #include <algorithm>
-#include <random>
+#include <cstdlib>
+#include <ctime>
 
 #define RED "\033[31m"
 #define GREEN "\033[32m"
@@ -32,6 +33,9 @@ class Span
         Span(unsigned int N);
         Span(const Span& rhs);
         ~Span();
+
+        unsigned int        getCap() const;
+        std::vector<int>     getContainer() const;
 
         const Span& operator=(const Span& rhs);
 
@@ -53,3 +57,5 @@ class Span
                 const char *what() const noexcept override;
         };
 };
+
+std::ostream& operator<<(std::ostream& os, const Span& obj);
