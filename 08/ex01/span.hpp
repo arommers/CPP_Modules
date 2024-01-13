@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/01/11 15:24:04 by arommers      #+#    #+#                 */
-/*   Updated: 2024/01/12 15:06:45 by arommers      ########   odam.nl         */
+/*   Updated: 2024/01/13 14:23:46 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,13 +48,13 @@ class Span
         class atCapException: public std::exception
         {
             public:
-                const char* what() const noexcept override;
+                const char* what() const _NOEXCEPT override;
         };
 
         class tooFewElements: public std::exception
         {
             public:
-                const char *what() const noexcept override;
+                const char *what() const _NOEXCEPT override;
         };
 };
 

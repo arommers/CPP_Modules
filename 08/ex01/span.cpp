@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/01/11 15:23:49 by arommers      #+#    #+#                 */
-/*   Updated: 2024/01/12 16:28:16 by arommers      ########   odam.nl         */
+/*   Updated: 2024/01/13 14:24:09 by adri          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,12 +88,12 @@ int  Span::longestSpan()
     return (*longestSpan.second - *longestSpan.first);  
 }
 
-const char *Span::atCapException::what() const noexcept
+const char *Span::atCapException::what() const _NOEXCEPT
 {
     return ("Container is at capacity");
 }
 
-const char *Span::tooFewElements::what() const noexcept
+const char *Span::tooFewElements::what() const _NOEXCEPT
 {
     return ("Container needs at least two elements to calculate the span");
 }
