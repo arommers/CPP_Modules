@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/01/18 10:04:31 by arommers      #+#    #+#                 */
-/*   Updated: 2024/01/18 14:58:19 by arommers      ########   odam.nl         */
+/*   Updated: 2024/01/18 16:54:04 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,9 +94,9 @@ void    BitcoinExchange::parseInfile(const std::string& infile)
             {
                 std::cerr << "Error: Exchange rate is out of range." << std::endl;
             }
-            catch(...)
+            catch(const std::exception& e)
             {
-                std::cerr << "Error: something went wrong..." << std::endl;
+                std::cerr << "Error: " << e.what() << std::endl;
             }
         }
         else
@@ -106,6 +106,17 @@ void    BitcoinExchange::parseInfile(const std::string& infile)
 
 void    BitcoinExchange::printLine(const std::string& date, double rate)
 {
+    if (!validDate(date))
+    {
+        std::cerr << "Error: invalid date format." << std::endl;
+        return ;
+    }
+    if (!validRate(rate))
+    {
+        std::cerr << "Error: invalid rate." << std::endl;
+        return ;
+    }
+        
     auto    it = _prices.lower_bound(date);
     double  exchange, result;
     
@@ -120,6 +131,24 @@ void    BitcoinExchange::printLine(const std::string& date, double rate)
     std::cout << date << " => " << rate << " = " << result << std::endl;
 }
 
+
+bool    BitcoinExchange::validDate(const std::string& date)
+{
+    std::regex  check("^(\\d{4})-(0[0-9]|1[0-2])-(0[1-9]|[12][0-9]|3[0-1])\\s*$");
+    bool result = regex_match(date, check);
+    if (!result) {
+        std::cerr << "Invalid date format: " << date << std::endl;
+    }
+    return result;
+    // return (std::regex_match(date, check));
+};
+
+bool    BitcoinExchange::validRate(double rate)
+{
+    if (rate >= 0.0 && rate <= 1000.0)
+        return (true);
+    return (false);
+}
 
 void    BitcoinExchange::printMap()
 {
