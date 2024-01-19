@@ -6,7 +6,7 @@
 #    By: arommers <arommers@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/01/18 10:05:32 by arommers      #+#    #+#                  #
-#    Updated: 2024/01/18 13:25:18 by arommers      ########   odam.nl          #
+#    Updated: 2024/01/19 15:42:37 by arommers      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,11 +21,15 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	@$(CC) $(CPPFLAGS) $(OBJ) -o $(NAME)
 
+run: all
+	@./test_script.sh
+
 clean:
 	@rm -rf $(OBJ)
 
 fclean: clean
 	@rm -rf $(NAME)
+	@clear
 
 re: fclean all
 

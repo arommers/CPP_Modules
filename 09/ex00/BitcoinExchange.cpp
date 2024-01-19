@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/01/18 10:04:31 by arommers      #+#    #+#                 */
-/*   Updated: 2024/01/19 14:34:25 by arommers      ########   odam.nl         */
+/*   Updated: 2024/01/19 15:40:43 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -144,20 +144,18 @@ void    BitcoinExchange::printLine(const std::string& date, double value)
 
 bool    BitcoinExchange::validDate(const std::string& date)
 {
-    std::regex  check("^(\\d{4})-(0[0-9]|1[0-2])-(0[1-9]|[12][0-9]|3[0-1])\\s*$");
+    std::regex  check("^(\\d{4})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[0-1])\\s*$");
     bool result = regex_match(date, check);
-    if (!result) {
+    if (!result)
         std::cerr << "Error: Invalid date format: " << date << std::endl;
-    }
     return result;
-    // return (std::regex_match(date, check));
 };
 
 bool    BitcoinExchange::validRate(double value)
 {
     if (value >= 0.0 && value <= 1000.0)
         return (true);
-    std::cout << "Error: value not in range [0 - 1000] => " << value << std::endl;
+    std::cout << "Error: value not in range [0 - 1000]" << std::endl;
     return (false);
 }
 

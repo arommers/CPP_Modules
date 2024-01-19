@@ -19,6 +19,7 @@ echo "2012-01-11 | 2147483648" >> "$valid_input"
 # Define the invalid date format input file
 invalid_date_input="invalid_date_input.txt"
 echo "date | value" > "$invalid_date_input"
+echo "2008-12-31 | 1" > "$invalid_date_input"
 echo "2011/01/03 | 3" >> "$invalid_date_input"
 echo "2011-13-03 | 2" >> "$invalid_date_input"
 echo "2011-01-32 | 1" >> "$invalid_date_input"
@@ -35,6 +36,7 @@ echo "2011-01-03 | 2375795295" >> "$invalid_value_input"
 missing_delimiter_input="missing_delimiter_input.txt"
 echo "date | value" > "$missing_delimiter_input"
 echo "2011-01-03 3" >> "$missing_delimiter_input"
+echo "2011 - 01 - 03    |   3   " >> "$missing_delimiter_input"
 
 # Define the multiple delimiters input file
 multiple_delimiters_input="multiple_delimiters_input.txt"
@@ -70,7 +72,6 @@ special_characters_input="special_characters_input.txt"
 echo "date | value" > "$special_characters_input"
 echo "2011-01-03 | @" >> "$special_characters_input"
 echo "2011-01-03 | #" >> "$special_characters_input"
-
 
 # Define the large values input file
 large_values_input="large_values_input.txt"
