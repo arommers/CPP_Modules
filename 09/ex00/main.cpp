@@ -11,7 +11,6 @@ int main(int argc, char **argv)
     const std::string infile = argv[1];
     BitcoinExchange BTX("./data.csv");
     BTX.parseInfile(infile);
-    // example.printMap();
 
     return (0);
 }
