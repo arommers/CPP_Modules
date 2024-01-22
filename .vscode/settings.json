@@ -57,6 +57,10 @@
         "typeinfo": "cpp",
         "semaphore": "cpp",
         "set": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "bitset": "cpp",
+        "cstring": "cpp",
+        "map": "cpp",
+        "regex": "cpp"
     }
 }

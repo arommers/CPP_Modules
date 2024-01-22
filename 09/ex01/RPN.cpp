@@ -6,18 +6,23 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/01/22 10:37:19 by arommers      #+#    #+#                 */
-/*   Updated: 2024/01/22 11:57:33 by arommers      ########   odam.nl         */
+/*   Updated: 2024/01/22 14:59:20 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "RPN.hpp"
 
 RPN::RPN() {};
-RPN::RPN(const RPN& rhs) {};
+RPN::RPN(const RPN& rhs) {(void) rhs;};
 RPN::~RPN() {};
 
-const RPN& RPN::operator=(const RPN& rhs) {*this = rhs};
+const RPN& RPN::operator=(const RPN& rhs) {return(*this = rhs);};
 
+    class invalidNum: public std::exception
+    {
+        public:
+            const char *what() const noexcept override;
+    };
 
 int calculate(char& sign, int& first, int& second)
 {
@@ -36,11 +41,9 @@ int calculate(char& sign, int& first, int& second)
             break;
         case '/':
             if (second == 0)
-                throw std::runtime_error("Error: divison by zero");
+                throw RPN::zeroDivisionException();
             result = first / second;
             break;
-        default:
-            throw std::runtime_error("Error: not a valid operator detected");
     }
     return (result);
 }
@@ -53,12 +56,16 @@ int RPN::parseInput(const std::string& input)
 
     while (str >> token)
     {
-        if (isdigit(token[0]))
-            operands.push(token[0]);
+        if (token.size() == 1 && isdigit(token[0]))
+            operands.push(token[0] - '0');
+        else if (token.size() > 1 && std::all_of(token.begin(), token.end(), isdigit))
+            throw invalidNumException();
+        else if (!isdigit(token[0]) && token.find_first_of("+-*/") == std::string::npos)
+            throw invalidCharException();
         else
         {
             if (operands.size() < 2)
-                throw std::runtime_error("Error: too few elements to execute the operator");
+                throw std::runtime_error("Error: too few elements to execute operation");
             
             int operandTwo = operands.top();
             operands.pop();
@@ -66,10 +73,25 @@ int RPN::parseInput(const std::string& input)
             operands.pop();
 
             int result = calculate(token[0], operandOne, operandTwo);
-           operands.push(result); 
+            operands.push(result); 
         }
     }
     if (operands.size() != 1)
         throw std::runtime_error("Error: not a valid RPN expression");
     return (operands.top());
+}
+
+const char *RPN::invalidNumException::what() const noexcept
+{
+    return ("Error: string contains an element outside of [0 - 9]");    
+}
+
+const char *RPN::invalidCharException::what() const noexcept
+{
+    return ("Error: string contains an invalid char element");
+}
+
+const char *RPN::zeroDivisionException::what() const noexcept
+{
+    return ("Error: divison by zero");
 }

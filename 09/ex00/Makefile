@@ -12,14 +12,14 @@
 
 NAME			= btc
 CC				= c++
-CPPFLAGS		= -Wall -Werror -Wextra
+CPPFLAGS		= -Wall -Werror -Wextra -pedantic
 SRC				= ./main.cpp ./BitcoinExchange.cpp
 OBJ				= $(SRC:.cpp=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@$(CC) $(CPPFLAGS) $(OBJ) -o $(NAME)
+	@$(CC) $(CPPFLAGS) $^ -o $@
 
 run: all
 	@./test_script.sh
@@ -33,4 +33,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all run clean fclean re
