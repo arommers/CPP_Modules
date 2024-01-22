@@ -10,3 +10,24 @@
 #                                                                              #
 # **************************************************************************** #
 
+NAME 		= RPN
+CC			= c++
+CPPFLAGS	= -Wall -Werror -Wextra -pedantic
+SRC			= ./main.cpp ./RPN.cpp
+OBJ			= $(SRC:.cpp=.o)
+RM			= rm -rf
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) $(CPPFLAGS) $^ -o $@
+
+clean:
+	@rm -$(RM) $(OBJ)
+
+fclean: clean
+	@rm -$(RM) $(NAME)
+
+re: fclean all
+
+.PHONY: all run clean fclean re
