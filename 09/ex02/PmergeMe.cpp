@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/01/26 13:53:20 by arommers      #+#    #+#                 */
-/*   Updated: 2024/01/28 20:08:36 by arommers      ########   odam.nl         */
+/*   Updated: 2024/01/28 21:02:59 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,17 +18,6 @@ PmergeMe::~PmergeMe() {}
 const PmergeMe& PmergeMe::operator=(const PmergeMe& rhs) {return (*this = rhs);}
 
 //  ==================================== VECTOR FUNCTIONS ====================================
-
-// std::vector<int> PmergeMe::parseNumbers(const std::string& input)
-// {
-//     int num;
-//     std::vector<int>    numbers;
-//     std::istringstream  str(input);
-
-//     while (str >> num)
-//         numbers.push_back(num);
-//     return (numbers);
-// }
 
 void    PmergeMe::makeVecPairs(std::vector<int>& input, std::vector<int>& chainA, std::vector<int>& chainB)
 {
@@ -150,9 +139,32 @@ void PmergeMe::makeListPairs(std::list<int>& input, std::list<int>& chainA, std:
 
 void PmergeMe::binaryListInsert(std::list<int>& chainA, int value)
 {
-    auto it = std::upper_bound(chainA.begin(), chainA.end(), value);
+    auto it = chainA.begin();
+    int distance = std::distance(chainA.begin(), chainA.end());
+
+    while (distance > 0) 
+    {
+        int step = distance / 2;
+        auto mid = it;
+        std::advance(mid, step);
+
+        if (*mid < value)
+        {
+            it = mid;
+            ++it;  // Move to the right half
+            distance -= step + 1;
+        }
+        else
+            distance = step;
+    }
     chainA.insert(it, value);
 }
+
+// void PmergeMe::binaryListInsert(std::list<int>& chainA, int value)
+// {
+//     auto it = std::upper_bound(chainA.begin(), chainA.end(), value);
+//     chainA.insert(it, value);
+// }
 
 void PmergeMe::insertListSort(std::list<int>& chainA, const std::list<int>& chainB)
 {
@@ -231,3 +243,23 @@ void    PmergeMe::printResults(const vec& input, vec sortedVec, li sortedList, c
     std::cout << "Time to process a range of " << input.size() << " elements with std::vector   : " << durV.count() << "us" << std::endl;;
     std::cout << "Time to process a range of " << input.size() << " elements with std::list     : " << durL.count() << "us" << std::endl;
 }
+
+const char *PmergeMe::invalidValueException::what() const noexcept
+{
+    return ("Error: one of the elements is not a valid number");
+};
+
+const char *PmergeMe::negativeValueException::what() const noexcept
+{
+    return("Error: one of the elements is a negative value");
+};
+
+const char *PmergeMe::outOfRangeException::what() const noexcept
+{
+    return ("Error: one of the elements is out of range");
+};
+
+const char *PmergeMe::duplicateValueException::what() const noexcept
+{
+    return ("Error: The input contains duplicate values");
+};

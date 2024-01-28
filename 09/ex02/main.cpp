@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/01/26 13:58:51 by arommers      #+#    #+#                 */
-/*   Updated: 2024/01/28 20:04:52 by arommers      ########   odam.nl         */
+/*   Updated: 2024/01/28 21:29:27 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ int main(int argc, char **argv)
         std::cerr << "Error: Please provide: <./PmergeMe> <a list of non duplicate, positive numbers>..." << std::endl;
         return (1);
     }
+    
     PmergeMe pmergeme;
 
     // Sort with vector
