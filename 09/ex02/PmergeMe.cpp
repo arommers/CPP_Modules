@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/01/26 13:53:20 by arommers      #+#    #+#                 */
-/*   Updated: 2024/01/28 15:23:49 by arommers      ########   odam.nl         */
+/*   Updated: 2024/01/28 20:08:36 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,19 +17,20 @@ PmergeMe::PmergeMe(const PmergeMe& rhs){}
 PmergeMe::~PmergeMe() {}
 const PmergeMe& PmergeMe::operator=(const PmergeMe& rhs) {return (*this = rhs);}
 
+//  ==================================== VECTOR FUNCTIONS ====================================
 
-std::vector<int> PmergeMe::parseNumbers(const std::string& input)
-{
-    int num;
-    std::vector<int>    numbers;
-    std::istringstream  str(input);
+// std::vector<int> PmergeMe::parseNumbers(const std::string& input)
+// {
+//     int num;
+//     std::vector<int>    numbers;
+//     std::istringstream  str(input);
 
-    while (str >> num)
-        numbers.push_back(num);
-    return (numbers);
-}
+//     while (str >> num)
+//         numbers.push_back(num);
+//     return (numbers);
+// }
 
-void    PmergeMe::pairUp(std::vector<int>& input, std::vector<int>& chainA, std::vector<int>& chainB)
+void    PmergeMe::makeVecPairs(std::vector<int>& input, std::vector<int>& chainA, std::vector<int>& chainB)
 {
     std::vector<std::vector<int> >   pairs;
     int value = 0;
@@ -57,10 +58,9 @@ void    PmergeMe::pairUp(std::vector<int>& input, std::vector<int>& chainA, std:
     }
     if (value != 0)
         chainB.push_back(value);
-    std::cout << "last value in b: " << chainB.back() << std::endl;
 }
 
-void    PmergeMe::binaryInsert(std::vector<int>& chainA, int start, int len, int value)
+void    PmergeMe::binaryVecInsert(std::vector<int>& chainA, int start, int len, int value)
 {
     if (start >= len)
     {
@@ -71,10 +71,130 @@ void    PmergeMe::binaryInsert(std::vector<int>& chainA, int start, int len, int
     int mid = start + (len - start) / 2;
     
     if (chainA[mid] < value)
-        binaryInsert(chainA, mid + 1, len, value);
+        binaryVecInsert(chainA, mid + 1, len, value);
     else
-        binaryInsert(chainA, start, mid, value);
+        binaryVecInsert(chainA, start, mid, value);
 }
+
+void    PmergeMe::insertVecSort(std::vector<int>& chainA, std::vector<int>& chainB)
+{
+    int i = 1;
+    int n = 1;
+    int len = chainB.size();
+       
+    chainA.insert(chainA.begin(), chainB.front());
+
+    while (i < len)
+    {
+        for (int j = jacobS(n); j > 0 && j > jacobS(n - 1); --j)
+        {
+            auto it = chainB.begin();
+            if (j >= len)
+                j = len - 1;
+            std::advance(it, j);
+            binaryVecInsert(chainA, 0, chainA.size(), *it);
+            ++i;
+        }
+        ++n;
+    }
+}
+
+std::vector<int>    PmergeMe::sortVector(const std::string& input)
+{
+    std::vector<int>    chainA;
+    std::vector<int>    chainB;
+    
+    auto start = std::chrono::high_resolution_clock::now();
+    std::vector<int>    numbers = parseNumbers<std::vector<int> >(input);
+
+    makeVecPairs(numbers, chainA, chainB);
+    insertVecSort(chainA, chainB);
+    auto end = std::chrono::high_resolution_clock::now();
+    auto dur = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+    return (chainA);
+}
+
+//  ==================================== LIST FUNCTIONS ====================================
+
+void PmergeMe::makeListPairs(std::list<int>& input, std::list<int>& chainA, std::list<int>& chainB)
+{
+    std::list<std::pair<int, int>> pairs;
+    int value = 0;
+
+    if (input.size() % 2 == 1)
+    {
+        value = input.back();
+        input.pop_back();
+    }
+
+    auto it = input.begin();
+    while (it != input.end())
+    {
+        int first = *it++;
+        int second = *it++;
+        pairs.emplace_back(std::min(first, second), std::max(first, second));
+    }
+
+    pairs.sort([](const auto& a, const auto& b) {
+        return a.second < b.second;
+    });
+
+    for (const auto& pair : pairs) {
+        chainA.push_back(pair.second);
+        chainB.push_back(pair.first);
+    }
+
+    if (value != 0)
+        chainB.push_back(value);
+}
+
+void PmergeMe::binaryListInsert(std::list<int>& chainA, int value)
+{
+    auto it = std::upper_bound(chainA.begin(), chainA.end(), value);
+    chainA.insert(it, value);
+}
+
+void PmergeMe::insertListSort(std::list<int>& chainA, const std::list<int>& chainB)
+{
+    auto itA = chainA.begin();
+    auto itB = chainB.begin();
+
+    if (itB != chainB.end())
+        chainA.insert(chainA.begin(), *itB++);
+
+    int i = 1;
+    int n = 1;
+    int len = chainB.size();
+
+    while (i < len) {
+        for (int j = jacobS(n); j > 0 && j > jacobS(n - 1); --j) {
+            auto it = chainB.begin();
+            if (j >= len)
+                j = len - 1;
+            std::advance(it, j);
+            binaryListInsert(chainA, *it);
+            ++i;
+        }
+        ++n;
+    }
+}
+
+std::list<int>    PmergeMe::sortList(const std::string& input)
+{
+    std::list<int>    chainA;
+    std::list<int>    chainB;
+    
+    auto start = std::chrono::high_resolution_clock::now();
+    std::list<int>    numbers = parseNumbers<std::list<int> >(input);
+
+    makeListPairs(numbers, chainA, chainB);
+    insertListSort(chainA, chainB);
+    auto end = std::chrono::high_resolution_clock::now();
+    auto dur = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+    return (chainA);
+}
+
+// ==================================== COMMON FUNCTIONS ====================================
 
 int PmergeMe::jacobS(int n)
 {
@@ -94,45 +214,20 @@ int PmergeMe::jacobS(int n)
     return (current);
 }
 
-void    PmergeMe::insertSort(std::vector<int>& chainA, std::vector<int>& chainB)
+void    PmergeMe::printResults(const vec& input, vec sortedVec, li sortedList, const durType& durV,  const durType& durL)
 {
-    int i = 1;
-    int n = 1;
-    int len = chainB.size();
-       
-    chainA.insert(chainA.begin(), chainB.front());
-
-    while (i < len)
-    {
-        for (int j = jacobS(n); j > 0 && j > jacobS(n - 1); --j)
-        {
-            auto it = chainB.begin();
-            if (j >= len)
-                j = len - 1;
-            std::advance(it, j);
-            binaryInsert(chainA, 0, chainA.size(), *it);
-            ++i;
-        }
-        ++n;
-    }
-}
-
-void    PmergeMe::sortVector(const std::string& input)
-{
-    std::vector<int>    numbers = parseNumbers(input);
-    std::vector<int>    chainA;
-    std::vector<int>    chainB;
-
-    printVector(numbers);
-    pairUp(numbers, chainA, chainB);
-    insertSort(chainA, chainB);
-    printVector(chainA);
-}
-
-void    PmergeMe::printVector(const std::vector<int>& input)
-{
-    std::cout << "Numbers: ";
+    std::cout << "Before:\t";
     for (auto value : input)
         std::cout << value << " ";
     std::cout << std::endl;
+    std::cout << "Vector After:\t";
+    for (auto value : sortedVec)
+        std::cout << value << " ";
+    std::cout << std::endl;
+    std::cout << "List After:\t";
+    for (auto value : sortedList)
+        std::cout << value << " ";
+    std::cout << std::endl;
+    std::cout << "Time to process a range of " << input.size() << " elements with std::vector   : " << durV.count() << "us" << std::endl;;
+    std::cout << "Time to process a range of " << input.size() << " elements with std::list     : " << durL.count() << "us" << std::endl;
 }
