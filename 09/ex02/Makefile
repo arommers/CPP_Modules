@@ -6,11 +6,11 @@
 #    By: arommers <arommers@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/01/19 15:44:58 by arommers      #+#    #+#                  #
-#    Updated: 2024/01/26 13:58:42 by arommers      ########   odam.nl          #
+#    Updated: 2024/01/28 14:29:27 by arommers      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
-NAME 		= PmergeME
+NAME 		= PmergeMe
 CC			= c++
 CCFLAGS		= -Wall -Wextra -Werror -pedantic
 SRC			= ./main.cpp ./PmergeMe.cpp
