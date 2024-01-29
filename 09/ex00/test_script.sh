@@ -1,8 +1,12 @@
 #!/bin/bash
 
 # Define color codes
+RED="\e[31m"
 GREEN="\e[32m"
 RESET="\e[0m"
+
+# Define the script to execute
+script="./btc"
 
 # Define the main input file
 valid_input="provided_main_example.txt"
@@ -79,18 +83,27 @@ echo "date | value" > "$large_values_input"
 echo "2011-01-03 | 999.99" >> "$large_values_input"
 echo "2011-01-03 | 1000" >> "$large_values_input"
 
-# Define the script to execute
-script="./btc"
 
 # Clear the terminal
 clear
 
+echo -e "${GREEN}Running $script with $valid_input${RESET}"
+$script "$valid_input"
+echo ""
+
+echo -e "${GREEN}Running $script with $large_values_input${RESET}"
+$script "$large_values_input"
+echo ""
+
+echo -e "${RED}Press 'ENTER' to show a list of tests with invalid arguments... ${RESET}"
+read -r
+
 # Run the script with each input file
-for input_file in "$valid_input" "$invalid_date_input" "$invalid_value_input" "$missing_delimiter_input"      \
+for input_file in "$invalid_date_input" "$invalid_value_input" "$missing_delimiter_input"                     \
                   "multiple_delimiters_input.txt" "$empty_input" "empty_date_input.txt" "$empty_value_input"  \
-                  "empty_line_input.txt" "$special_characters_input" "$large_values_input"
+                  "empty_line_input.txt" "$special_characters_input"
 do
-  echo -e "${GREEN}Running $script with $input_file${RESET}"
+  echo -e "${RED}Running $script with $input_file${RESET}"
   $script "$input_file"
   echo ""
 done

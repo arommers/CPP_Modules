@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/01/22 10:36:40 by arommers      #+#    #+#                 */
-/*   Updated: 2024/01/22 14:58:33 by arommers      ########   odam.nl         */
+/*   Updated: 2024/01/29 13:00:15 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int main(int argc, char **argv)
         std::cerr << "Error: Please provide: <./RPN> <inverted Polish mathematical expression>" << std::endl;
         return (1);
     }
-    
+
     RPN rpn;
     try
     {

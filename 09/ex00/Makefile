@@ -6,13 +6,13 @@
 #    By: arommers <arommers@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/01/18 10:05:32 by arommers      #+#    #+#                  #
-#    Updated: 2024/01/19 15:42:37 by arommers      ########   odam.nl          #
+#    Updated: 2024/01/29 13:12:25 by arommers      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 NAME			= btc
 CC				= c++
-CPPFLAGS		= -Wall -Werror -Wextra -pedantic
+CPPFLAGS		= -Wall -Werror -Wextra
 SRC				= ./main.cpp ./BitcoinExchange.cpp
 OBJ				= $(SRC:.cpp=.o)
 
@@ -22,6 +22,7 @@ $(NAME): $(OBJ)
 	@$(CC) $(CPPFLAGS) $^ -o $@
 
 run: all
+	@clear
 	@./test_script.sh
 
 clean:

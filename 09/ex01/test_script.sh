@@ -1,5 +1,7 @@
 #!/bin/bash
 
+exe=./RPN
+
 # Define color codes
 RED="\e[31m"
 BLUE="\e[34m"
@@ -37,11 +39,6 @@ invalid=(
   "+ - * /"             # No operands
 )
 
-exe=./RPN
-
-echo -e "${RED}Running RPN without arguments: ${RESET}"
-$exe
-echo ""
 
 echo -e "${GREEN}Running RPN with a list of valid arguments: ${RESET}"
 echo ""
@@ -52,8 +49,12 @@ do
     echo ""
 done
 
-echo -e "${BLUE}Press 'enter' to show a list of tests with invalid arguments... ${RESET}"
+echo -e "${RED}Press 'enter' to show a list of tests with invalid arguments... ${RESET}"
 read -r
+
+echo -e "${RED}Running RPN without arguments: ${RESET}"
+$exe
+echo ""
 
 echo -e "${RED}Running RPN with a list of invalid arguments: ${RESET}"
 echo ""
