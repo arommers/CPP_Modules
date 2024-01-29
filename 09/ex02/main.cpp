@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/01/26 13:58:51 by arommers      #+#    #+#                 */
-/*   Updated: 2024/01/29 10:15:44 by arommers      ########   odam.nl         */
+/*   Updated: 2024/01/29 12:40:30 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int main(int argc, char **argv)
 {
     if (argc < 2)
     {
-        std::cerr << "Error: Please provide: <./PmergeMe> <a list of non duplicate, positive numbers>..." << std::endl;
+        std::cerr << "Error: Please provide: <./PmergeMe> <a list positive numbers>..." << std::endl;
         return (1);
     }
     

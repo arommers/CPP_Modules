@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/01/26 13:53:44 by arommers      #+#    #+#                 */
-/*   Updated: 2024/01/29 10:55:57 by arommers      ########   odam.nl         */
+/*   Updated: 2024/01/29 11:45:37 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,17 +97,4 @@ class PmergeMe
         }
         return numbers;
     }
-    
-    // template <typename T>
-    // T parseNumbers(const std::string& input)
-    // {
-    //   int num;
-    //   T numbers;
-    //   std::istringstream str(input);
-
-    //   while (str >> num)
-    //       numbers.push_back(num);
-
-    //   return numbers;
-    // }
 };
