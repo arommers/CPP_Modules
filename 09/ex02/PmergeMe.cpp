@@ -6,7 +6,7 @@
 /*   By: arommers <arommers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/01/26 13:53:20 by arommers      #+#    #+#                 */
-/*   Updated: 2024/01/28 21:02:59 by arommers      ########   odam.nl         */
+/*   Updated: 2024/01/29 11:01:30 by arommers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,8 +61,13 @@ void    PmergeMe::binaryVecInsert(std::vector<int>& chainA, int start, int len, 
     
     if (chainA[mid] < value)
         binaryVecInsert(chainA, mid + 1, len, value);
-    else
+    else if (chainA[mid] > value)
         binaryVecInsert(chainA, start, mid, value);
+    else
+    {
+        chainA.insert(chainA.begin() + mid, value);
+        return ;
+    }
 }
 
 void    PmergeMe::insertVecSort(std::vector<int>& chainA, std::vector<int>& chainB)
@@ -88,18 +93,14 @@ void    PmergeMe::insertVecSort(std::vector<int>& chainA, std::vector<int>& chai
     }
 }
 
-std::vector<int>    PmergeMe::sortVector(const std::string& input)
+std::vector<int>    PmergeMe::sortVector(int argc, char **argv)
 {
     std::vector<int>    chainA;
     std::vector<int>    chainB;
-    
-    auto start = std::chrono::high_resolution_clock::now();
-    std::vector<int>    numbers = parseNumbers<std::vector<int> >(input);
+    std::vector<int>    numbers = parseNumbers<std::vector<int> >(argc, argv);
 
     makeVecPairs(numbers, chainA, chainB);
-    insertVecSort(chainA, chainB);
-    auto end = std::chrono::high_resolution_clock::now();
-    auto dur = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+    insertVecSort(chainA, chainB);;
     return (chainA);
 }
 
@@ -151,20 +152,19 @@ void PmergeMe::binaryListInsert(std::list<int>& chainA, int value)
         if (*mid < value)
         {
             it = mid;
-            ++it;  // Move to the right half
+            ++it;
             distance -= step + 1;
         }
-        else
+        else if (*mid > value)
             distance = step;
+        else
+        {
+            chainA.insert(mid, value);
+            return ;
+        }
     }
     chainA.insert(it, value);
 }
-
-// void PmergeMe::binaryListInsert(std::list<int>& chainA, int value)
-// {
-//     auto it = std::upper_bound(chainA.begin(), chainA.end(), value);
-//     chainA.insert(it, value);
-// }
 
 void PmergeMe::insertListSort(std::list<int>& chainA, const std::list<int>& chainB)
 {
@@ -191,18 +191,14 @@ void PmergeMe::insertListSort(std::list<int>& chainA, const std::list<int>& chai
     }
 }
 
-std::list<int>    PmergeMe::sortList(const std::string& input)
+std::list<int>    PmergeMe::sortList( int argc, char **argv)
 {
     std::list<int>    chainA;
     std::list<int>    chainB;
-    
-    auto start = std::chrono::high_resolution_clock::now();
-    std::list<int>    numbers = parseNumbers<std::list<int> >(input);
+    std::list<int>    numbers = parseNumbers<std::list<int> >(argc, argv);
 
     makeListPairs(numbers, chainA, chainB);
     insertListSort(chainA, chainB);
-    auto end = std::chrono::high_resolution_clock::now();
-    auto dur = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
     return (chainA);
 }
 
@@ -244,22 +240,9 @@ void    PmergeMe::printResults(const vec& input, vec sortedVec, li sortedList, c
     std::cout << "Time to process a range of " << input.size() << " elements with std::list     : " << durL.count() << "us" << std::endl;
 }
 
-const char *PmergeMe::invalidValueException::what() const noexcept
-{
-    return ("Error: one of the elements is not a valid number");
-};
+// ==================================== EXCEPTIONS ====================================
 
 const char *PmergeMe::negativeValueException::what() const noexcept
 {
-    return("Error: one of the elements is a negative value");
-};
-
-const char *PmergeMe::outOfRangeException::what() const noexcept
-{
-    return ("Error: one of the elements is out of range");
-};
-
-const char *PmergeMe::duplicateValueException::what() const noexcept
-{
-    return ("Error: The input contains duplicate values");
-};
+    return("Error: negative value encountered");
+}
