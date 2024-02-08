@@ -1,4 +1,4 @@
-## [Module 00](https://github.com/arommers/CPP_Modules/tree/master/00)
+## Module 00: Encapsulation, initialization and namespaces
 
 In this introductory module, we'll cover fundamental Object-Oriented Programming (OOP) concepts, including creating classes, managing namespaces, implementing encapsulation, and applying initialization. The aim is to establish a solid foundation in OOP principles.
 
