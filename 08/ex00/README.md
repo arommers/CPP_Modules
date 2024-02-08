@@ -2,8 +2,7 @@
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="150" height="150" />
 </div>
 
-## Easy Find
-A tiny introduction to iterators.  
+## Easy Find: A tiny introduction to iterators.  
 
 Iterator are objects that enable traversal through the elements of a container (such as arrays, vectors, lists, etc.) in a sequential manner. They act as pointers to elements within the container, allowing operations like incrementing, decrementing, dereferencing, and accessing elements. They play a crucial role in facilitating generic algorithms and provide a uniform interface for working with different types of containers.
 
