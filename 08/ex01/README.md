@@ -2,8 +2,7 @@
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="150" height="150" />
 </div>
 
-## Span
-Continuing with iterators.  
+## Span: continuing with iterators.  
 
 Not much is added to our previous implementation of iterators. Once again we combine iterators with functions from the algorithm library.  Instead of moving our iterators, we declare the range of values that need to be considered.  
 
