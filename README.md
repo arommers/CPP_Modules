@@ -8,16 +8,14 @@ These modules cover a wide range of topics, from basic syntax to advanced data s
 
 Each module contains several exercises that are selfcontained and respectively deal with solving a particular problem.
 
----
 
-### Key Concepts
+## Key Concepts
 - **Hands-On Learning:** Each module is structured around practical exercises that focus on one or more C++ concepts.
 - **Progressive Difficulty:** The modules are organized in a progressive manner, starting with fundamental concepts and gradually building up to more complex topics.
 - **Diverse Topics:** Topics include data types, loops, arrays, pointers, classes, inheritance, polymorphism, templates, standard library functions, and more.
 - **Object-Oriented Programming (OOP):** Focus on the principles of OOP, such as classes, objects, inheritance, polymorphism, and encapsulation.
 - **STL Containers:** Explores the Standard Template Library (STL) and its various container classes like vectors, lists, and maps
 
----
 
 ## Table of contents  
 
@@ -34,9 +32,8 @@ Each module contains several exercises that are selfcontained and respectively d
 | [08](https://github.com/arommers/CPP_Modules/tree/master/08) | *Containers & iterators* |
 | [09](https://github.com/arommers/CPP_Modules/tree/master/09) | *Containers continued* |
 
----
 
-### Sources
+## Sources
 - https://cppreference.com/
 - https://cplusplus.com/
 - [The Cherno C++ playlist](https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb)
