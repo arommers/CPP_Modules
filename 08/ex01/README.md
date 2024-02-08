@@ -13,4 +13,4 @@ Examples used in this assignment:
 * `std::generate(beginIter, endIter, []())`* Generate a value for each element
 * `std::minmax_element(_container.begin(), _container.end())` Return a pair of iterators point to the smallest and biggest value in the container
 
-**The third argument for generate can function pointer or a function object. I chose to use a lambda function*
+**The third argument for generate can be a function pointer or a function object. I chose to use a lambda/anonymous function*
