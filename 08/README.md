@@ -3,12 +3,11 @@
 </div>
 
 
-## Module 08
-Templated Containers, Iterators & Algorithms  
+## Module 08: Templated Containers, Iterators & Algorithms  
 
-In this module, we dive into the fundamentals of standard containers and iterators, familiarizing ourselves with their fundamental concepts and functionalities. Additionally, we explore the versatile capabilities offered by the algorithm library, learning how to leverage its tools to manage data effectively.  
+In this module, we dive into the fundamentals of standard containers and iterators, familiarizing ourselves with their fundamental concepts and functionalities. Additionally, we explore the capabilities and functions offered by the algorithm library, learning how to leverage its tools to manage data effectively.  
 
-This trio of exercises, offers us a solid foundation in using standard containers, iterators, and the algorithm library.
+This trio of exercises, lays a solid foundation for using standard containers, iterators, and the algorithm library.
 
 | Exercise                                       | Concepts                       |
 | -----------------------------------------------| ------------------------------- |
