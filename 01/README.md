@@ -2,7 +2,7 @@
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="150" height="150" />
 </div>
 
-## Module 01: Pointers and References
+## Module 01: Memory allocation, pointers to members, references, switch statement
 
 This module covers memory allocation (stack vs. heap), pointers, references, and function pointers for efficient data manipulation. It also explores the practical use of switch statements for streamlined conditional branching.
 
@@ -16,4 +16,4 @@ This module covers memory allocation (stack vs. heap), pointers, references, and
 | [EX05: Harl 2.0](https://github.com/arommers/CPP_Modules/tree/master/01/ex05) | *Function Pointers* |
 | [EX06: Harl Filter](https://github.com/arommers/CPP_Modules/tree/master/01/ex06) | *Switch Statements* |
 
-### [Subject File](https://cdn.intra.42.fr/pdf/pdf/121208/en.subject.pdf)
+#### [Subject File](https://cdn.intra.42.fr/pdf/pdf/121208/en.subject.pdf)
