@@ -2,7 +2,7 @@
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="150" height="150" />
 </div>
 
-## Module 05:Repetition and Exceptions
+## Module 05: Repetition and Exceptions
 
 Exceptions and try/catch blocks
 
