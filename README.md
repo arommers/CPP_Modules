@@ -23,102 +23,16 @@ Each module contains several exercises that are selfcontained and respectively d
 
 | Module                                       | Concepts                                       |
 | -----------------------------------------------| ------------------------------------------------- |
-| [00](https://github.com/arommers/CPP_Modules/blob/master/00/README.md) | *Encapsulation, initialization and namespaces* |
-| [01](https://github.com/arommers/CPP_Modules/blob/master/01/README.md) | *Heap allocation & pointers/references* |
-| [02](https://github.com/arommers/CPP_Modules/blob/master/02/README.md) | *String vs References* |
-| [03](https://github.com/arommers/CPP_Modules/blob/master/03/README.md) | *String vs References, Getters & Setters* |
-| [04](https://github.com/arommers/CPP_Modules/blob/master/04/README.md) | *File manipulation* |
-| [05](https://github.com/arommers/CPP_Modules/blob/master/05/README.md) | *Function Pointers* |
-| [06](https://github.com/arommers/CPP_Modules/blob/master/06/README.md) | *Switch Statements* |
-| [07](https://github.com/arommers/CPP_Modules/blob/master/07/README.md) | *Switch Statements* |
-| [08](https://github.com/arommers/CPP_Modules/blob/master/08/README.md) | *Switch Statements* |
-| [09](https://github.com/arommers/CPP_Modules/blob/master/09/README.md) | *Switch Statements* |
-
-## [Module 00](https://github.com/arommers/CPP_Modules/tree/master/00)
-
-In this introductory module, we'll cover fundamental Object-Oriented Programming (OOP) concepts, including creating classes, managing namespaces, implementing encapsulation, and applying initialization. The aim is to establish a solid foundation in OOP principles.
-
-| Exercise                                       | Concepts                                |
-| -----------------------------------------------| ------------------------------------------ |
-| [EX00: Megaphone](https://github.com/arommers/CPP_Modules/blob/master/00/ex00/README.md) | *Namespaces, Standard output stream* |
-| [EX01: My Awesome Phonebook](https://github.com/arommers/CPP_Modules/tree/master/00/ex01) | *Encapsulation, Initialization, String library* |
-| [EX02: The Job of Your Dreams](https://github.com/arommers/CPP_Modules/tree/master/00/ex02) | *Static data, Vectors* |
-
-## [Module 01](https://github.com/arommers/CPP_Modules/tree/master/01)
-
-This module covers memory allocation (stack vs. heap), pointers, references, and function pointers for efficient data manipulation. It also explores the practical use of switch statements for streamlined conditional branching.
-
-| Exercise                                       | Concepts                                       |
-| -----------------------------------------------| ------------------------------------------------- |
-| [EX00: BraiiiiiiinnnzzzZ](https://github.com/arommers/CPP_Modules/tree/master/01/ex00) | *Heap vs Stack* |
-| [EX01: Moar brainz!](https://github.com/arommers/CPP_Modules/tree/master/01/ex01) | *Arrays and the Heap* |
-| [EX02: HI THIS IS BRAIN](https://github.com/arommers/CPP_Modules/tree/master/01/ex02) | *String vs References* |
-| [EX03: Unnecessary violence](https://github.com/arommers/CPP_Modules/tree/master/01/ex03) | *String vs References, Getters & Setters* |
-| [EX04: Sed is for losers](https://github.com/arommers/CPP_Modules/tree/master/01/ex04) | *File manipulation* |
-| [EX05: Harl 2.0](https://github.com/arommers/CPP_Modules/tree/master/01/ex05) | *Function Pointers* |
-| [EX06: Harl Filter](https://github.com/arommers/CPP_Modules/tree/master/01/ex06) | *Switch Statements* |
-
-## [Module 02](https://github.com/arommers/CPP_Modules/tree/master/02)
-
-Introducing the Canonical Orthodox form and the intracacies of overloading operators
-
-| Exercise                                      | Concepts                               |
-| ----------------------------------------------| ------------------------------------------ |
-| [EX00: My First Class in Orthodox Canonical Form](https://github.com/arommers/CPP_Modules/tree/master/02/ex00) | *Orthodox Canonical Form, Fixed Point Numbers* |
-| [EX01: Towards a more useful fixed-point number class](https://github.com/arommers/CPP_Modules/tree/master/02/ex01) | *Overload of the Insertion Operator* |
-| [EX02: Now We're Talking](https://github.com/arommers/CPP_Modules/tree/master/02/ex02) | *Comparison, Arithmetic and other operators* |
-
-
-## [Module 03](https://github.com/arommers/CPP_Modules/tree/master/03)
-
-The fundamentals of inheritance in object orientated programming, featuring proper construction/destruction chaining
-
-| Exercise                                       | Concepts                                               |
-| -----------------------------------------------| ------------------------------------------------------ |
-| [EX00: Aaaaand... OPEN!](https://github.com/arommers/CPP_Modules/tree/master/03/ex00) | *Class Implementation* |
-| [EX01: Serena, my love!](https://github.com/arommers/CPP_Modules/tree/master/03/ex01) | *Inheritance, Constructor/Destructor Chaining* |
-| [EX02: Repetitive work](https://github.com/arommers/CPP_Modules/tree/master/03/ex02) | *Inheritance Practice* |
-
-
-## [Module 04](https://github.com/arommers/CPP_Modules/tree/master/04)
-
-| Exercise                                       | Concepts                                    |
-| -----------------------------------------------| ------------------------------------------- |
-| [EX00: Polymorphism](https://github.com/arommers/CPP_Modules/tree/master/04/ex00#readme) | *Polymorphism* |
-| [EX01: I don’t want to set the world on fire]() | *TBD* |
-| [EX02: Abstract class]() | *Abstract Classes* |
-| [EX03: Interface & recap]() | *Interfaces* |
-
-## [Module 05](https://github.com/arommers/CPP_Modules/tree/master/05)
-
-Exceptions and try/catch blocks
-
-| Exercise                                       | Concepts                       |
-| -----------------------------------------------| ------------------------------- |
-| [EX00: Mommy, when I grow up, I want to be a bureaucrat!](https://github.com/arommers/CPP_Modules/tree/master/05/ex00) | *Exceptions* |
-| [EX01: Form up, maggots!](https://github.com/arommers/CPP_Modules/tree/master/05/ex01) | *Nested Exceptions* |
-| [EX02: No, you need form 28B, not 28C...](https://github.com/arommers/CPP_Modules/tree/master/05/ex02) | *Derived Exceptions* |
-| [EX03: At least this beats coffee-making](https://github.com/arommers/CPP_Modules/tree/master/05/ex03) | *Repetition* |
-
-## [Module 06](https://github.com/arommers/CPP_Modules/tree/master/06)
-
-Almost everything about casting in cpp. Specifically static, dynamic and reinterpret casting. No const casting.
-
-| Exercise                                       | Concepts                       |
-| -----------------------------------------------| ------------------------------- |
-| [EX00: Conversion of scalar types](https://github.com/arommers/CPP_Modules/blob/master/06/ex00/README.md) | *Static Casting* |
-| [EX01: Serialization](https://github.com/arommers/CPP_Modules/blob/master/06/ex01/README.md)) | *Reinterpret Casting* |
-| [EX02: Identify real type](https://github.com/arommers/CPP_Modules/blob/master/06/ex02/README.md) | *Dynamic Casting* |
-
-## [Module 07](https://github.com/arommers/CPP_Modules/tree/master/07)
-
-Class and function templates
-
-| Exercise                                       | Concepts                       |
-| -----------------------------------------------| ------------------------------- |
-| [EX00: Start with a few functions](https://github.com/arommers/CPP_Modules/blob/master/07/ex00/README.md) | *Function Templates* |
-| [EX01: Iter](https://github.com/arommers/CPP_Modules/blob/master/07/ex01/README.md) | *More Function Templates* |
-| [EX02: Array](https://github.com/arommers/CPP_Modules/blob/master/07/ex02/README.md) | *Class Templates* |
+| [00](https://github.com/arommers/CPP_Modules/tree/master/00) | *Encapsulation, initialization and namespaces* |
+| [01](https://github.com/arommers/CPP_Modules/tree/master/01) | *Memory allocation & pointers/references* |
+| [02](https://github.com/arommers/CPP_Modules/tree/master/02) | *Ad-hoc polymorphism, operator overloading* |
+| [03](https://github.com/arommers/CPP_Modules/tree/master/03) | *Inheritance* |
+| [04](https://github.com/arommers/CPP_Modules/tree/master/04) | *Abstract classes, interfaces* |
+| [05](https://github.com/arommers/CPP_Modules/tree/master/05) | *Exceptions* |
+| [06](https://github.com/arommers/CPP_Modules/tree/master/06) | *Casting* |
+| [07](https://github.com/arommers/CPP_Modules/tree/master/07) | *Templates* |
+| [08](https://github.com/arommers/CPP_Modules/tree/master/08) | *Containers & iterators* |
+| [09](https://github.com/arommers/CPP_Modules/tree/master/09) | *Containers continued* |
 
 ---
 
