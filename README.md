@@ -21,6 +21,19 @@ Each module contains several exercises that are selfcontained and respectively d
 
 ## Table of contents  
 
+| Module                                       | Concepts                                       |
+| -----------------------------------------------| ------------------------------------------------- |
+| [00](https://github.com/arommers/CPP_Modules/blob/master/00/README.md) | *Encapsulation, initialization and namespaces* |
+| [01](https://github.com/arommers/CPP_Modules/blob/master/01/README.md) | *Heap allocation & pointers/references* |
+| [02](https://github.com/arommers/CPP_Modules/blob/master/02/README.md) | *String vs References* |
+| [03](https://github.com/arommers/CPP_Modules/blob/master/03/README.md) | *String vs References, Getters & Setters* |
+| [04](https://github.com/arommers/CPP_Modules/blob/master/04/README.md) | *File manipulation* |
+| [05](https://github.com/arommers/CPP_Modules/blob/master/05/README.md) | *Function Pointers* |
+| [06](https://github.com/arommers/CPP_Modules/blob/master/06/README.md) | *Switch Statements* |
+| [07](https://github.com/arommers/CPP_Modules/blob/master/07/README.md) | *Switch Statements* |
+| [08](https://github.com/arommers/CPP_Modules/blob/master/08/README.md) | *Switch Statements* |
+| [09](https://github.com/arommers/CPP_Modules/blob/master/09/README.md) | *Switch Statements* |
+
 ## [Module 00](https://github.com/arommers/CPP_Modules/tree/master/00)
 
 In this introductory module, we'll cover fundamental Object-Oriented Programming (OOP) concepts, including creating classes, managing namespaces, implementing encapsulation, and applying initialization. The aim is to establish a solid foundation in OOP principles.
@@ -110,6 +123,7 @@ Class and function templates
 ---
 
 ### Sources
+- https://cppreference.com/
 - https://cplusplus.com/
 - [The Cherno C++ playlist](https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb)
 - [Portfolio Course's C++ tutorials](https://www.youtube.com/watch?v=qWPlRubVQ38&list=PLA1FTfKBAEX6BdpNaWp2uw-YspHwY7qwW)
