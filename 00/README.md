@@ -1,3 +1,7 @@
+<div align=center>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="150" height="150" />
+</div>
+
 ## Module 00: Encapsulation, initialization and namespaces
 
 In this introductory module, we'll cover fundamental Object-Oriented Programming (OOP) concepts, including creating classes, managing namespaces, implementing encapsulation, and applying initialization. The aim is to establish a solid foundation in OOP principles.
